@@ -1,0 +1,416 @@
+# Nation Index
+
+<!-- source: PDF p.241 -->
+
+## Arcoscephale, Golden Era
+
+<!-- p.243 -->
+
+## Mekone, Brazen Giants
+
+<!-- p.245 -->
+
+## Pangaea, Age of Revelry
+
+<!-- p.246 -->
+
+## Ermor, New Faith
+
+<!-- p.248 -->
+
+## Sauromatia, Amazon Queens
+
+<!-- p.250 -->
+
+## Fomoria, The Cursed Ones
+
+<!-- p.252 -->
+
+## Tir na n'Og, Land of the Ever Young
+
+<!-- p.254 -->
+
+## Marverni, Time of Druids
+
+<!-- p.256 -->
+
+## Ulm, Enigma of Steel
+
+<!-- p.258 -->
+
+## PyrÃ¨ne, Kingdom of the Bekrydes
+
+<!-- p.259 -->
+
+## Agartha, Pale Ones
+
+<!-- p.261 -->
+
+## Abysia, Children of Flame
+
+<!-- p.263 -->
+
+## Hinnom, Sons of the Fallen
+
+<!-- p.265 -->
+
+## Ubar, Kingdom of the Unseen
+
+<!-- p.267 -->
+
+## Ur, The First City
+
+<!-- p.269 -->
+
+## Kailasa, Rise of the Ape Kings
+
+<!-- p.271 -->
+
+## Lanka, Land of Demons
+
+<!-- p.272 -->
+
+## T'ien Ch'i, Spring and Autumn
+
+<!-- p.274 -->
+
+## Yomi, Oni Kings
+
+<!-- p.276 -->
+
+## Caelum, Eagle Kings
+
+<!-- p.277 -->
+
+## Mictlan, Reign of Blood
+
+<!-- p.279 -->
+
+## Xibalba, Vigil of the Sun
+
+<!-- p.280 -->
+
+## C'tis, Lizard Kings
+
+<!-- p.282 -->
+
+## Machaka, Lion Kings
+
+<!-- p.284 -->
+
+## Berytos, The Phoenix Empire
+
+<!-- p.286 -->
+
+## Vanheim, Age of Vanir
+
+<!-- p.288 -->
+
+## Helheim, Dusk and Death
+
+<!-- p.289 -->
+
+## Rus, Sons of Heaven
+
+<!-- p.291 -->
+
+## Niefelheim, Sons of Winter
+
+<!-- p.293 -->
+
+## Muspelheim, Sons of Fire
+
+<!-- p.294 -->
+
+## Pelagia, Pearl Kings
+
+<!-- p.296 -->
+
+## Oceania, Coming of the Capricorns
+
+<!-- p.298 -->
+
+## Therodos, Telkhine Spectre
+
+<!-- p.299 -->
+
+## Atlantis, Emergence of the Deep Ones
+
+<!-- p.300 -->
+
+## R'lyeh, Time of Aboleths
+
+<!-- p.301 -->
+
+## Arcoscephale, The Old Kingdom
+
+<!-- p.303 -->
+
+## Phlegra, Deformed Giants
+
+<!-- p.305 -->
+
+## Pangaea, Age of Bronze
+
+<!-- p.306 -->
+
+## Asphodel, Carrion Woods
+
+<!-- p.308 -->
+
+## Ermor, Ashen Empire
+
+<!-- p.310 -->
+
+## Sceleria, The Reformed Empire
+
+<!-- p.311 -->
+
+## Pythium, Emerald Empire
+
+<!-- p.313 -->
+
+## Man, Tower of Avalon
+
+<!-- p.315 -->
+
+## Eriu, Last of the Tuatha
+
+<!-- p.317 -->
+
+## Agartha, Golem Cult
+
+<!-- p.319 -->
+
+## Ulm, Forges of Ulm
+
+<!-- p.321 -->
+
+## Marignon, Fiery Justice
+
+<!-- p.323 -->
+
+## PyrÃ¨ne, Time of the Akelarre
+
+<!-- p.325 -->
+
+## Abysia, Blood and Fire
+
+<!-- p.327 -->
+
+## Ashdod, Reign of the Anakim
+
+<!-- p.329 -->
+
+## Na'Ba, Queens of the Desert
+
+<!-- p.331 -->
+
+## Uruk, City States
+
+<!-- p.333 -->
+
+## Ind, Magnificent Kingdom of Exalted Virtue
+
+<!-- p.335 -->
+
+## Bandar Log, Land of the Apes
+
+<!-- p.336 -->
+
+## T'ien Ch'i, Imperial Bureaucracy
+
+<!-- p.338 -->
+
+## Shinuyama, Land of the Bakemono
+
+<!-- p.340 -->
+
+## Caelum, Reign of the Seraphim
+
+<!-- p.342 -->
+
+## Nazca, Kingdom of the Sun
+
+<!-- p.344 -->
+
+## Mictlan, Reign of the Lawgiver
+
+<!-- p.346 -->
+
+## Xibalba, Flooded Caves
+
+<!-- p.348 -->
+
+## C'tis, Miasma
+
+<!-- p.350 -->
+
+## Machaka, Reign of Sorcerors
+
+<!-- p.352 -->
+
+## Phaeacia, Isle of the Dark Ships
+
+<!-- p.354 -->
+
+## Vanheim, Arrival of Man
+
+<!-- p.356 -->
+
+## Vanarus, Land of the Chuds
+
+<!-- p.357 -->
+
+## Jotunheim, Iron Woods
+
+<!-- p.359 -->
+
+## Nidavangr, Bear, Wolf and Crow
+
+<!-- p.361 -->
+
+## Ys, Morgen Queens
+
+<!-- p.363 -->
+
+## Pelagia, Triton Kings
+
+<!-- p.365 -->
+
+## Oceania, Mermidons
+
+<!-- p.367 -->
+
+## Atlantis, Kings of the Deep
+
+<!-- p.369 -->
+
+## R'lyeh, Fallen Star
+
+<!-- p.371 -->
+
+## Arcoscephale, Sibylline Guidance
+
+<!-- p.373 -->
+
+## Phlegra, Sleeping Giants
+
+<!-- p.375 -->
+
+## Pangaea, New Era
+
+<!-- p.377 -->
+
+## Pythium, Serpent Cult
+
+<!-- p.378 -->
+
+## Lemuria, Soul Gates
+
+<!-- p.380 -->
+
+## Man, Towers of Chelms
+
+<!-- p.381 -->
+
+## Ulm, Black Forest
+
+<!-- p.383 -->
+
+## Agartha, Ktonian Dead
+
+<!-- p.385 -->
+
+## Marignon, Conquerors of the Sea
+
+<!-- p.387 -->
+
+## Abysia, Blood of Humans
+
+<!-- p.389 -->
+
+## Ragha, Dual Kingdom
+
+<!-- p.391 -->
+
+## Caelum, Return of the Raptors
+
+<!-- p.393 -->
+
+## Gath, Last of the Giants
+
+<!-- p.395 -->
+
+## Patala, Reign of the Nagas
+
+<!-- p.397 -->
+
+## T'ien Ch'i, Barbarian Kings
+
+<!-- p.399 -->
+
+## Jomon, Human Daimyos
+
+<!-- p.401 -->
+
+## Mictlan, Blood and Rain
+
+<!-- p.403 -->
+
+## Xibalba, Return of the Zotz
+
+<!-- p.405 -->
+
+## C'tis, Desert Tombs
+
+<!-- p.407 -->
+
+## MidgÃ¥rd, Age of Men
+
+<!-- p.409 -->
+
+## Bogarus, Age of Heroes
+
+<!-- p.410 -->
+
+## UtgÃ¥rd, Well of Urd
+
+<!-- p.412 -->
+
+## Vaettiheim, Wolf Kin Jarldom
+
+<!-- p.414 -->
+
+## Feminie, Sage-Queens
+
+<!-- p.416 -->
+
+## Piconye, Legacy of the Prester King
+
+<!-- p.418 -->
+
+## Andramania, Dog Republic
+
+<!-- p.420 -->
+
+## PyrÃ¨ne, Cambion Kings
+
+<!-- p.422 -->
+
+## Erytheia, Kingdom of Two Worlds
+
+<!-- p.424 -->
+
+## Atlantis, Frozen Sea
+
+<!-- p.426 -->
+
+## R'lyeh, Dreamlands
+
+<!-- p.428 -->
+
+
+::: callout-note
+Transcription pending.
+:::

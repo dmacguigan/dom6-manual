@@ -1,0 +1,96 @@
+# Units
+
+<!-- source: PDF p.37 -->
+
+## Basic attributes
+
+<!-- p.38 -->
+
+## Special abilities
+
+<!-- p.38 -->
+
+## Unit classes
+
+<!-- p.40 -->
+
+## Additional abilities
+
+<!-- p.40 -->
+
+## XP: Experience points
+
+<!-- p.41 -->
+
+## Heroic abilities
+
+<!-- p.41 -->
+
+## Afflictions
+
+<!-- p.41 -->
+
+## Recruiting units
+
+<!-- p.42 -->
+
+### Recruitment costs
+
+<!-- p.42 -->
+
+#### Recruitment restrictions
+
+<!-- p.42 -->
+
+## Army Setup
+
+<!-- p.43 -->
+
+### Garrison units
+
+<!-- p.43 -->
+
+### Squads
+
+<!-- p.43 -->
+
+### Battle position
+
+<!-- p.44 -->
+
+### Battle Orders
+
+<!-- p.44 -->
+
+#### General orders
+
+<!-- p.44 -->
+
+#### Target orders
+
+<!-- p.45 -->
+
+### Commander orders
+
+<!-- p.45 -->
+
+#### Specific orders
+
+<!-- p.46 -->
+
+#### General orders
+
+<!-- p.46 -->
+
+## Unit Inventories
+
+<!-- p.46 -->
+
+### Magic gem inventory
+
+<!-- p.46 -->
+
+
+::: callout-note
+Transcription pending.
+:::

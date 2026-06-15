@@ -1,0 +1,240 @@
+# Combat
+
+<!-- source: PDF p.57 -->
+
+## Battles View
+
+<!-- p.58 -->
+
+## Battle sequence
+
+<!-- p.58 -->
+
+## Army Setup
+
+<!-- p.58 -->
+
+### Formations
+
+<!-- p.59 -->
+
+### Battlefield movement
+
+<!-- p.60 -->
+
+## Melee combat
+
+<!-- p.60 -->
+
+### Armor defeating hits
+
+<!-- p.61 -->
+
+### Shield destruction
+
+<!-- p.61 -->
+
+### Hit locations
+
+<!-- p.61 -->
+
+### Weapon types
+
+<!-- p.61 -->
+
+### Harassed
+
+<!-- p.62 -->
+
+### Fatigue
+
+<!-- p.62 -->
+
+#### Unconsciousness
+
+<!-- p.62 -->
+
+### Repel
+
+<!-- p.62 -->
+
+### Multiple attacks
+
+<!-- p.63 -->
+
+#### Multiple weapons
+
+<!-- p.63 -->
+
+### Melee attack resolution
+
+<!-- p.63 -->
+
+### Dancing Weapons
+
+<!-- p.64 -->
+
+## Mounted Units
+
+<!-- p.64 -->
+
+### Hitting mounted units
+
+<!-- p.64 -->
+
+### Mounted units and magic items
+
+<!-- p.64 -->
+
+### Rider skill
+
+<!-- p.64 -->
+
+### Mounted units and morale
+
+<!-- p.64 -->
+
+### Rerecruiting mounted units
+
+<!-- p.65 -->
+
+## Missile combat
+
+<!-- p.65 -->
+
+## Special damage
+
+<!-- p.66 -->
+
+### Fire damage
+
+<!-- p.66 -->
+
+### Cold damage
+
+<!-- p.66 -->
+
+### Profuse bleeding
+
+<!-- p.66 -->
+
+### Poison damage
+
+<!-- p.66 -->
+
+### Shock damage
+
+<!-- p.67 -->
+
+### Acid damage
+
+<!-- p.67 -->
+
+### Rust
+
+<!-- p.67 -->
+
+### Life Drain damage
+
+<!-- p.67 -->
+
+### Paralysis damage
+
+<!-- p.67 -->
+
+### Fatigue damage
+
+<!-- p.68 -->
+
+### False damage
+
+<!-- p.68 -->
+
+## Clouds
+
+<!-- p.68 -->
+
+## Morale and rout
+
+<!-- p.69 -->
+
+### Morale
+
+<!-- p.69 -->
+
+### Morale bonuses
+
+<!-- p.69 -->
+
+#### Morale, magic bonus
+
+<!-- p.69 -->
+
+### Rout
+
+<!-- p.69 -->
+
+#### Army rout
+
+<!-- p.70 -->
+
+#### Morale check
+
+<!-- p.70 -->
+
+#### Rout effects
+
+<!-- p.70 -->
+
+#### Mindless units
+
+<!-- p.70 -->
+
+#### Magic beings and undead
+
+<!-- p.70 -->
+
+#### Magic fear effects
+
+<!-- p.70 -->
+
+#### Long lasting battles and Twilight
+
+<!-- p.71 -->
+
+## Afflictions
+
+<!-- p.71 -->
+
+## Sieges
+
+<!-- p.71 -->
+
+### Supply during sieges
+
+<!-- p.72 -->
+
+## Storming a castle
+
+<!-- p.72 -->
+
+## Weather
+
+<!-- p.72 -->
+
+## Retreats
+
+<!-- p.72 -->
+
+### Retreating when besieged
+
+<!-- p.73 -->
+
+## Battle Summary
+
+<!-- p.73 -->
+
+
+::: callout-note
+Transcription pending.
+:::

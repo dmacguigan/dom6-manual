@@ -1,0 +1,23 @@
+# Welcome {.unnumbered}
+
+This is an unofficial web edition of the **Dominions 6** manual, transcribed from the
+[official PDF](https://www.illwinter.com/dom6/dom6manual.pdf) into a searchable,
+navigable website.
+
+Use the sidebar to browse chapters, or the search box to jump to any topic.
+
+::: callout-important
+Dominions 6 and its manual are the property of **Illwinter Game Design**. This site is
+a fan-made reformatting of the manual for easier reading and is not affiliated with or
+endorsed by Illwinter.
+:::
+
+## Contents at a glance
+
+- **Core Rules** -- the introduction, basics, pretenders, units, movement, combat,
+  magic, and dominion.
+- **Nations** -- the origins of the nations.
+- **Magic Reference** -- magic items, path boosters, battlefield spells, summoning
+  rituals, global enchantments, and other rituals.
+- **Nation Index** -- detailed entries for every nation.
+- **Appendix** -- launch options.

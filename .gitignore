@@ -1,0 +1,11 @@
+# Quarto build output
+/_book/
+/.quarto/
+
+# Source PDF + raw extraction (regenerated via scripts/extract.sh)
+/assets/dom6manual.pdf
+/assets/raw/
+
+# OS / editor cruft
+.DS_Store
+*.swp

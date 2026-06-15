@@ -1,0 +1,301 @@
+# The Basics
+
+<!-- source: PDF p.13 -->
+
+## Dominions Random Number (DRN)
+
+Most Dominions game mechanisms use something called the **Dominions Random Number
+(DRN)**. When a random number is called for, the number used is actually a DRN. This is
+a roll of two six-sided dice (2d6) but with an additional bonus: if any individual die
+roll is "6," one is subtracted, and then that die is re-rolled and added to the result.
+This is referred to as an "open-ended" 2d6 roll.
+
+> **Example:** The game calls for a DRN. Two dice are rolled and they come up 2, 6.
+> Because one of the dice was a "6," one is subtracted from the total (making 7), and the
+> die is rolled again. But this die is also a 6. So one is subtracted from the total (now
+> up to 12) and a die is rolled again. It is a 4. The final result for this DRN is 16.
+
+Note that if both original dice came up as 6, both would be re-rolled and added as above.
+If a die keeps coming up 6, it keeps getting re-rolled and added, which can very
+occasionally lead to large numbers.
+
+Dominions has a lot of situations where something is very unlikely to happen, like a
+militia soldier hitting an ethereal monster. However, in the real world of Dominions,
+very few things are actually impossible. To model this fact as closely as can be, the
+Dominions Random Number was created. With it, it is always possible for such an event to
+occur, which would not be the case if the roll was not open-ended.
+
+In some rare cases, there may be only one six-sided die rolled. It is still open-ended,
+but in this case, the rules refer to it as a **drn**, in lower-case letters.
+
+### Probabilities in Dominions 6
+
+Most die rolls in Dominions 6 involve one player rolling higher than another player using
+the DRN system. To give players some idea of how likely something is to happen, here is a
+table that shows the difference between two values on the left, and the chance of beating
+that value using two open-ended dice on the right.
+
+| Difference | Chance |
+|-----------:|-------:|
+| -10 |  3% |
+|  -9 |  5% |
+|  -8 |  6% |
+|  -7 |  8% |
+|  -6 | 11% |
+|  -5 | 14% |
+|  -4 | 18% |
+|  -3 | 24% |
+|  -2 | 30% |
+|  -1 | 38% |
+|   0 | 46% |
+|   1 | 54% |
+|   2 | 62% |
+|   3 | 70% |
+|   4 | 76% |
+|   5 | 82% |
+|   6 | 86% |
+|   7 | 89% |
+|   8 | 92% |
+|   9 | 94% |
+|  10 | 95% |
+
+What does this mean? It means that if you have a Jotun Moose Rider with attack skill 9 and
+your opponent has an Abysian Infantry with defense skill 10, your chance of beating him
+with two open-ended dice (and thus scoring a hit) is 38%. If the values were reversed,
+your chance of success would be 54%. Why the seeming disjunction? Because the "zero-point"
+is only 46%. Remember, the table shows the chance of *beating* your opponent. Thus, if you
+are evenly matched, you need to roll higher than he or she does on the same type of dice,
+and thus your chances of doing so are less than even. 46%, to be exact.
+
+## The Interface
+
+<!-- p.14 -->
+
+### Starting a Game
+
+<!-- p.14 -->
+
+### Creating a new game
+
+<!-- p.14 -->
+
+### Choosing an Age
+
+<!-- p.14 -->
+
+### Choosing participants
+
+<!-- p.15 -->
+
+### Disciple games
+
+<!-- p.15 -->
+
+### Creating Pretender
+
+<!-- p.16 -->
+
+### Game settings
+
+<!-- p.16 -->
+
+#### Score graphs
+
+<!-- p.16 -->
+
+#### Master password
+
+<!-- p.16 -->
+
+#### Limited unique artifact forging rate
+
+<!-- p.16 -->
+
+#### Limited legendary spell research rate
+
+<!-- p.16 -->
+
+#### Renaming
+
+<!-- p.16 -->
+
+#### Cheat prevention
+
+<!-- p.17 -->
+
+### Throne game settings
+
+<!-- p.17 -->
+
+#### Cataclysm
+
+<!-- p.17 -->
+
+#### Throne settings
+
+<!-- p.17 -->
+
+### Game Tools
+
+<!-- p.18 -->
+
+## Playing a multiplayer game
+
+<!-- p.18 -->
+
+### Playing a hotseat game
+
+<!-- p.18 -->
+
+### Playing a network game
+
+<!-- p.18 -->
+
+## Playing the Game
+
+<!-- p.18 -->
+
+### Basic Game Functions
+
+<!-- p.18 -->
+
+## The Map
+
+<!-- p.20 -->
+
+### Province attributes
+
+<!-- p.21 -->
+
+#### Terrain
+
+<!-- p.21 -->
+
+#### Population
+
+<!-- p.22 -->
+
+#### Income
+
+<!-- p.22 -->
+
+#### Resources
+
+<!-- p.22 -->
+
+#### Recruitment Points
+
+<!-- p.22 -->
+
+#### Dominion
+
+<!-- p.23 -->
+
+#### Capsule screen
+
+<!-- p.23 -->
+
+#### Unrest
+
+<!-- p.23 -->
+
+#### Supplies
+
+<!-- p.23 -->
+
+#### Supply Usage
+
+<!-- p.23 -->
+
+##### Starvation
+
+<!-- p.24 -->
+
+#### Defense
+
+<!-- p.24 -->
+
+#### Corpses
+
+<!-- p.24 -->
+
+#### Dominion scales
+
+<!-- p.24 -->
+
+### National summary
+
+<!-- p.24 -->
+
+#### Magic gem inventory
+
+<!-- p.24 -->
+
+### Forts
+
+<!-- p.25 -->
+
+#### Fortress types
+
+<!-- p.25 -->
+
+#### Admin
+
+<!-- p.25 -->
+
+#### Defense
+
+<!-- p.25 -->
+
+#### Supply
+
+<!-- p.25 -->
+
+#### Castle Guards and Wall Defenders
+
+<!-- p.26 -->
+
+#### Fortress statistics
+
+<!-- p.26 -->
+
+#### How forts collect resources
+
+<!-- p.26 -->
+
+### Temples
+
+<!-- p.28 -->
+
+### Laboratories
+
+<!-- p.28 -->
+
+### Magic Sites
+
+<!-- p.28 -->
+
+### Province Defense
+
+<!-- p.29 -->
+
+### Unrest
+
+<!-- p.29 -->
+
+### Mercenaries
+
+<!-- p.29 -->
+
+### Scouting and Scrying
+
+<!-- p.30 -->
+
+## AI Opponents
+
+<!-- p.30 -->
+
+
+::: callout-note
+Transcription pending.
+:::
