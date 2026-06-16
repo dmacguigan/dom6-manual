@@ -12,8 +12,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SPLIT = re.compile(r"\s{2,}")
-COLS = ["School", "Spell Name", "Path", "Fat", "Rng", "AoE", "Pre", "Dmg", "NoE", "Special"]
-SCHOOLROW = re.compile(r"^(?:Conj|Alt|Evo|Const|Ench|Thau|Blood|Div)\s+\d+\s{2,}\S")
+SCHOOLROW = re.compile(r"^(?:Conj|Alt|Evo|Const|Ench|Thaum?|Blood|Div)\s+\d+\s{2,}\S")
 CREATURE = re.compile(r"^(.+?\sx\d+\+?)\s+(HP\b.*)$")
 
 
@@ -24,25 +23,26 @@ def md(cell):
 def main(first, last):
     out = []
     rows = []
+    cols = []
     in_table = False
     pending_title = None
     title_emitted = set()
 
     def flush():
         nonlocal rows, in_table
-        if rows:
-            out.append("| " + " | ".join(COLS) + " |")
-            out.append("|" + "|".join("---" for _ in COLS) + "|")
+        if rows and cols:
+            out.append("| " + " | ".join(cols) + " |")
+            out.append("|" + "|".join("---" for _ in cols) + "|")
             for r in rows:
-                r = (r + [""] * len(COLS))[: len(COLS)]
+                r = (r + [""] * len(cols))[: len(cols)]
                 out.append("| " + " | ".join(md(c) for c in r) + " |")
             out.append("")
         rows = []
         in_table = False
 
     def append_special(text):
-        if len(rows[-1]) < len(COLS):
-            rows[-1].extend([""] * (len(COLS) - len(rows[-1])))
+        if len(rows[-1]) < len(cols):
+            rows[-1].extend([""] * (len(cols) - len(rows[-1])))
         rows[-1][-1] = (rows[-1][-1] + " " + text).strip()
 
     for p in range(first, last + 1):
@@ -56,8 +56,9 @@ def main(first, last):
                 continue
             indented = raw[:1] == " "
             # column header
-            if s.startswith("School") and "Spell Name" in s:
+            if s.startswith("School") and ("Spell Name" in s or "Ritual Name" in s):
                 flush()
+                cols = SPLIT.split(s)
                 in_table = True
                 if pending_title and pending_title not in title_emitted:
                     out.append(f"## {pending_title}\n")
