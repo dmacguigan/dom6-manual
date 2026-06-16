@@ -1,240 +1,656 @@
 # Combat
 
-<!-- source: PDF p.57 -->
+Combat is what happens when two discovered enemy forces occupy the same location on the map.
+If one force or both forces are undiscovered, no combat occurs. Two discovered forces may
+occupy the same province, but one might be in a fortress which has not yet been breached. When
+one army is in a fort and one besieges, the province is owned by the besieging player and the
+fort by the besieged. This is **partial ownership** of the province; when the same player owns
+both, it is **full ownership**. (Some events cannot happen in a partially owned province.)
+
+Once combat occurs, units move according to their tactical movement allowance on a grid placed
+over the map (toggle with `g` or `w`). It is important to understand that battles in Dominions
+are not fought to the death. They are fought until one side loses its nerve and routs. This
+allows small units of elite troops to hold off masses of undisciplined barbarians.
+
+Basic points about combat:
+
+- Units are deployed on the battlefield corresponding to the Army Setup screen under Position
+  squads.
+- The attacker is on the left, the defender on the right.
+- Units move across the battlefield in accordance with `<set battle orders>`.
+- When units move adjacent to an enemy, they halt due to a "zone of control."
+- Once units are adjacent, they attack each other every turn.
+- The chance of scoring a hit in melee depends on the difference between attack and defense
+  values.
+- The chance of scoring a hit with missile weapons depends on the number of units in the
+  square the missile hits, and how good the target's shield is.
+- The chance of doing damage after scoring a hit depends on the attacker's strength and weapon
+  damage versus the defender's protection.
+- Magic in combat works a lot like missile weapons.
+- Morale is calculated for each squad. A squad takes a morale check when it suffers enough
+  casualties, and routs when it fails one.
+- Battles are fought until one side routs off the map.
+- Troops will rout when all of their commanders have been killed or routed. The entire army
+  will rout when their side loses 75% of its total hit points.
+
+So if you kill or rout all of an army's commanders, the whole army will rout, no matter how
+big it is. (For this reason, there is no "attack commanders" order; you have to figure out how
+best to do this yourself.)
 
 ## Battles View
 
-<!-- p.58 -->
+When you get a report on a battle, click on the message "There was a battle in `<province>`"
+to get the battle summary with casualty lists. Clicking "View battle" takes you into the
+battle replay. You can change the level of detail in the upper-left action box by hitting the
+number keys: `1` for least detail, `2-3` for more, `4` for most.
 
-## Battle sequence
+| Key | Action |
+|-----|--------|
+| Arrow | scroll around the map |
+| PageUp / PageDown | adjust the camera height |
+| Space | pause the action |
+| c | toggle colored squares for the teams |
+| g | toggle grid |
+| w | toggle the wire frame grid (battlefield graphics disappear) |
+| q | quit out of the battle replay |
+| f | speed up replay to fast speed |
+| t | speed up replay to fastest speed |
+| s | switch replay back to normal speed |
+| v | while viewing a unit, show its combat log |
+| z | slow motion replay |
+| F1 | list of all the units |
+| F2 | view current weather and dominion scales |
+| ? | view the available hotkeys |
+| 1/2/3/4 | adjust the level of detail in the battle log |
+| +/- | scroll the battle log |
 
-<!-- p.58 -->
+: Battle replay keys
 
 ## Army Setup
 
-<!-- p.58 -->
+Units in Dominions 6 are placed into squads under the leadership of a commander. A single
+commander can lead up to five squads. The total number of units a commander can lead is the
+Leadership rating found in the unit abilities.
+
+Squad limits related to leadership values:
+
+- **Leadership 10:** automatic -1 to morale for a single squad. An additional -1 to all squads
+  for every squad beyond the first (so five squads = -1 base and -4 for four extra = -5).
+- **Leadership 50:** No morale penalty if leading one or two squads. -1 penalty for every
+  additional squad.
+- **Leadership 100:** +1 morale for all squads if three or fewer. -1 penalty for every squad
+  above three.
+- **Leadership 150:** +2 morale for up to 4 squads, -1 penalty to all if a fifth squad is
+  added.
+- **Leadership 200:** +3 morale for all five squads.
+
+The morale effects of leadership rating are based on the base leadership rating of the
+commander. Commanders gain more leadership with experience, but the morale bonuses stay the
+same.
+
+| Experience level | Leadership bonus | Poor leaders (ldr 10) |
+|-----------------:|-----------------:|----------------------:|
+| 1 | +25 | +5 |
+| 2 | +50 | +10 |
+| 3 | +50 | +10 |
+| 4 | +50 | +10 |
+| 5 | +50 | +10 |
+
+Other effects on morale:
+
+- Mixing undisciplined units with normal makes the entire squad undisciplined and hits them
+  with -1 morale.
+- Mixing undead with living gets a morale penalty of -1.
+- Mixing demons with normal units gets a morale penalty of -1.
+
+Each unit is placed on the map in a grid square. A single grid square can hold a total of ten
+size points of units (so three human-sized units of size 3). Unassigned units (those in the
+garrison box) are formed into one large squad at the center of their side's army.
 
 ### Formations
 
-<!-- p.59 -->
+Formations are the patterns used to deploy units of a squad onto the map. There are five
+types, some of which can only be used by good leaders.
 
-### Battlefield movement
+**Box**
+: Deploys your units in as close to a square as possible. A squad of 36 Infantry of Ulm (size
+3) deployed in a box would be placed with four squares frontage and three deep, yielding 12
+squares of three units each.
 
-<!-- p.60 -->
+**Line**
+: Deploys your units in a straight line facing the enemy. Only available to good commanders.
+
+**Double line**
+: The same as a line except half the units are placed in a rank immediately behind the first.
+Only available to good commanders.
+
+**Sparse line**
+: Identical to a line, except that an empty square is inserted between each square of units.
+This doubles the length of the line and carries a -1 penalty to morale. Only available to good
+commanders.
+
+**Skirmish**
+: A box-like checkerboard formation which separates each square of units from its neighbors
+with an empty square in four directions. It has a -1 penalty to morale.
+
+Undisciplined squads automatically use the skirmish formation and cannot use any other. The
+ability **Tight Rein** negates the undisciplined trait of a commander's units. The
+**Skirmisher** ability negates the -1 morale penalty for skirmish or sparse line formations.
+The **Formation Fighter** ability allows you to fit more units in a square.
+
+## Battlefield movement
+
+Each unit in combat has a combat speed. A move of one square costs roughly one point of combat
+speed, unless it is diagonal (50% more). When units move adjacent to an enemy, they become
+locked in a "zone of control." Fleeing units ignore zones of control.
+
+Usually there can only be 10 size points in a single square. However, giants or other monsters
+considerably larger than the other units can enter the square by displacing the smaller units.
+The large unit must be at least 3 size points larger than any displaced unit and it costs one
+extra point of combat speed. Trampling units will never try to displace anyone as long as they
+are not routing.
+
+Each unit moves individually and has a cooldown at the end of each action. A long cooldown is
+one round (after a strike); a short cooldown comes after a move. When moving, the cooldown is
+mostly determined by the unit's combat move, so faster units wait a shorter time. If two units
+are adjacent, the one that finishes its cooldown first strikes next.
 
 ## Melee combat
 
-<!-- p.60 -->
+Melee combat is one combatant physically striking another. The attacker makes an attack roll,
+the defender makes a defense roll, and these are compared. If the attack roll (with modifiers)
+is greater than the defense roll, it hits.
+
+- **Attack roll:** attacker's Attack attribute + DRN - Fatigue penalty
+- **Defense roll:** defender's Defense value + DRN - Fatigue penalty
+
+Once a hit is scored, damage is determined:
+
+- **Damage roll:** attacker's Strength attribute + weapon Damage attribute + DRN
+- **Protection roll:** defender's Protection attribute + DRN (+ shield Protection if it is a
+  "shield hit")
+
+If the defender has a shield, the hit is a shield hit unless the attack beats the combined
+value of the target's defense and the shield's Parry value plus the random roll. If a hit is a
+shield hit, the shield's Protection is added to the defender's protection roll.
+
+> **Example:** A Heavy Infantry unit has a broad sword, chain mail hauberk, half helmet and
+> shield, with base defense 10, +1 from the sword, -2 from the armor, -1 from the shield, and a
+> shield Parry value of 4. Actual defense is 8; total defense with parry is 12. It is attacked
+> by a Vanjarl of Vanheim (attack 14). The Vanjarl rolls a 6 for a total of 20. If the Heavy
+> Infantry rolls 7 or less it is a clean hit; 8-11 is a shield hit; 12 or higher is a miss.
+
+The Protection value used is the target's listed Protection, unless it is a head hit, in which
+case the helmet Protection is used (shield Protection is still added on a shield hit). If the
+damage roll is greater than the protection roll, the difference is subtracted from hit points.
 
 ### Armor defeating hits
 
-<!-- p.61 -->
+A low protection roll may result in an armor defeating hit that bypasses 25% of the protection.
+Fatigue plays a large role; units that are immobilized or unconscious count as having 100
+fatigue for this purpose.
+
+- Protection roll of 2 always results in an armor defeating hit.
+- Protection roll of 3 results in an armor defeating hit against targets with 50+ fatigue.
+- Protection roll of 4 results in an armor defeating hit against targets with 100+ fatigue.
 
 ### Shield destruction
 
-<!-- p.61 -->
+Shield hits can damage or destroy the shield. A shield has a Resistance (its shield protection
+value, +5 if magic). The attack has a Break value (its damage before any Protection; slashing
+adds 50%, blunt adds 25%).
+
+- If the Break value is >= 3x the Shield Resistance, the shield is damaged.
+- If the Break value is >= 5x the Shield Resistance, the shield is broken.
+- An already-damaged shield which is damaged again has a 25% chance of breaking.
+- A damaged shield has -20% Protection; a broken shield has -50% Protection.
+
+A magic shield that is damaged repairs itself after battle; if broken, it is permanently
+destroyed. Damaged or broken mundane shields are repaired in a province with enough spare
+production resources.
 
 ### Hit locations
 
-<!-- p.61 -->
+An attack has a 50% chance of striking the torso, 20% the arms, 20% the legs, and 10% the
+head. Certain hits can cause afflictions, such as losing the limb that was hit. Losing your
+head is usually instant death (with exceptions like undead and multi-headed creatures).
 
-### Weapon types
+To score a hit on a body part, the attacker must be able to reach it. To score a head hit,
+attacker size + weapon length must equal target size; one less to hit the torso, two less for
+the arms. Thus a human (size 3) wielding a mace (length 1) could hit a size-7 creature only in
+the legs. Some monsters have their heads located lower (lizards and dragons are two steps
+easier to hit above the legs; most four-footed beings are one step easier). Some monsters lack
+hit locations (a dragon has no arms; a gelatinous cube has no arms, legs, or head). A
+significantly larger unit (2+ sizes larger) attacking a smaller one has an increased chance of
+a head hit and lower chance of a leg hit (20% head, 10% leg).
 
-<!-- p.61 -->
+## Weapon types
 
-### Harassed
+Melee weapons come in three types: slashing, piercing, and blunt.
 
-<!-- p.62 -->
+- **Blunt** weapons do 25% more damage on head hits (before Protection is deducted) and 25%
+  more toward shield destruction.
+- **Slashing** weapons do 25% more damage after Protection is deducted, and 50% more toward
+  shield destruction. A slashing leg/arm/head hit costing >= 50% of the target's hit points
+  chops off that body part.
+- **Piercing** weapons reduce Protection by 15% prior to any calculation. (The Armor-Piercing
+  ability reduces Protection by 50% and stacks with piercing for 65% total.)
+- **Two-handed** weapons add 125% of Strength to damage.
 
-### Fatigue
+A weapon may inflict more than one type of damage, with an equal chance of doing each but only
+one per attack (e.g. the short sword does slashing or piercing, never both). Weapon types apply
+to natural weapons too (a spider's fangs do piercing damage).
 
-<!-- p.62 -->
+**Underwater effects:** Slashing and blunt weapons have an attack penalty equal to weapon
+length underwater, while piercing weapons do not. If a weapon does both piercing and another
+type, the underwater penalty is halved. Flails have an additional penalty of -1.
 
-#### Unconsciousness
+Damage is displayed in colored numbers above the unit: pale red is normal damage, dark red is
+bleeding, green is poison, etc.
 
-<!-- p.62 -->
+## Harassed
 
-### Repel
+Every time a unit is attacked, it gets a point of harassment penalty, each reducing the unit's
+defense by 1. It is then reduced continuously by a percentage. For cavalry units only the unit
+attacked (rider or horse) is affected. A weapon with multiple attacks inflicts 1 point of
+harassment per attack. Only directed melee attacks cause harassment; ranged and AoE attacks do
+not.
 
-<!-- p.62 -->
+## Fatigue
 
-### Multiple attacks
+Fatigue is affected by a unit's encumbrance value. Each time a unit attacks, it gains Fatigue
+equal to its current Encumbrance value.
 
-<!-- p.63 -->
+- **Defense penalty:** for each 10 points of fatigue (rounded down) a unit has its defense
+  reduced by 1.
+- **Attack penalty:** for each 20 points of fatigue (rounded down) a unit has its attack
+  reduced by 1.
+- **Unconsciousness:** a unit falls unconscious at 100 fatigue, regaining 5 fatigue per turn
+  until it drops below 100. A unit at 200 fatigue starts taking hit point damage from
+  exhaustion instead of fatigue.
 
-#### Multiple weapons
+## Repel
 
-<!-- p.63 -->
+Repel represents the effectiveness of long weapons (halberds, pikes, etc.). Any defender with
+a longer weapon than its attacker makes a repel attack automatically upon being attacked. If
+the result is a hit, the attacker must pass a repel morale check or immediately abort his
+attack.
 
-### Melee attack resolution
+- **Attacker morale check:** morale + DRN - (weapon length difference)
+- **Repeller check:** 10 + DRN + (the number by which the defender won the repel attack) / 2
 
-<!-- p.63 -->
+Units with low morale are more likely to be repelled, so using long weapons against
+low-morale troops is very effective. Units with claws and bites (weapon length zero) are
+easier to repel. The repelling unit gets a lingering -2 to its Repel roll, gradually removed,
+so it's harder to repel attacks in quick succession. Giant-sized units (size 6+) wield weapons
+1 point longer than ordinary human weapons.
+
+## Multiple attacks and weapons
+
+Some units have multiple attacks (multiple weapons, or biting/clawing/tentacles). Multiple
+attacks can target different units in reach. Some weapons (e.g. flail) have more than one
+attack that always target the same unit.
+
+Attackers with multiple weapons have their attack skill reduced by the sum of their weapon
+lengths, so it is much easier to fight with two daggers than two swords. The Ambidextrous
+ability reduces this penalty. Some natural weapons are "bonus weapons" (e.g. a lizardman's bite
+alongside a trident) and cause no multiple-weapon penalty. Units with multiple wielded weapons
+get one point of extra encumbrance for each weapon after the first.
+
+### Melee attack resolution order
+
+1. **Determine target** -- which unit (or mount) in the square is targeted.
+2. **Early strikeback effects** -- longer-range defensive abilities (Awe, the Gorgon's
+   petrifying gaze). If the attacker is immobilized, the attack aborts.
+3. **Repel** -- check for repel; abort if repelled.
+4. **Strikeback effect** -- Slimer, Sight Vengeance, Horror Mark Attacker, etc. Abort if the
+   attacker is immobilized.
+5. **Attack and Defence rolls** -- abort if the attack missed completely.
+6. **Damage and Protection rolls** -- shield protection added if a shield hit was indicated.
+7. **Defensive abilities** -- Mirror Image, Protective Force, Luck, Mossbody, etc. may reduce
+   damage or negate the attack.
+8. **Limb cap** -- a hit to an arm or leg (or head for certain beings) is limited to at most
+   half of max HP.
+9. **Damage Redistribution** -- Damage Reversal, Blood Bond, or Blood Vengeance may shift
+   damage or kill the attacker (without negating the attack).
+10. **Deal damage** -- to the target and any shields that were hit.
 
 ### Dancing Weapons
 
-<!-- p.64 -->
+Some magic items (Dancing Trident, Stone Birds) float around their wielder and attack nearby
+enemies independently, with no multiple-weapon penalty or fatigue. They cause harass penalty,
+cannot be repelled, but can repel attacks aimed at their owner if longer than the attacking
+weapon.
 
 ## Mounted Units
 
-<!-- p.64 -->
+Some units (cavalry, chariots) are formed from a rider and a mount combined as a single
+entity. The parts can be targeted and wounded separately; if one dies the other remains. A
+horse without a rider routs, but some monsters (e.g. the gryphon) stay and fight.
 
 ### Hitting mounted units
 
-<!-- p.64 -->
+When a mounted unit is attacked, either the rider or the mount is targeted, based on the
+difference of their sizes and the reach of the attacker (size + weapon length). Mounts much
+larger than their rider have an extra chance of being hit:
 
-### Mounted units and magic items
+| Size difference | Chance of targeting mount |
+|----------------:|--------------------------:|
+| 3 | 25% |
+| 4 | 50% |
+| 5+ | 75% |
 
-<!-- p.64 -->
+If the mount wasn't large enough or the attack didn't target it, the attack chooses a target
+as follows:
 
-### Rider skill
+- Missile attacks have a 50% chance of targeting the mount.
+- If the mount's size is 2 larger than the reach, the mount is targeted.
+- Otherwise chance of targeting the mount is 30% + 10% * mount's size - 10% * reach (minimum
+  10%).
+- All AoE attacks and Lightning target both rider and mount. Trample always targets the mount.
 
-<!-- p.64 -->
+### Mounts, items, and morale
 
-### Mounted units and morale
+A single magic saddle or barding can be put on a commander's mount. Some of the rider's items
+also bestow effects on the mount (indicated in the item info). Using two-handed weapons while
+mounted gives a -3 attack penalty. The **Skilled Rider** ability increases the Morale and
+Defence Skill of the mount (the defence increase is reduced by the mount's armor encumbrance).
 
-<!-- p.64 -->
+Unnatural fear effects usually target both rider and mount. If the rider is routed he leaves
+with his mount. If only the mount is broken, the rider is thrown to the ground (and the mount
+routs) but fights on. Falling off a mount deals a size-difference open-ended roll of armor
+negating damage (falling off a chariot does no fall damage). Normal rout checks affecting the
+squad only affect the rider.
 
-### Rerecruiting mounted units
+### Re-recruiting mounted units
 
-<!-- p.65 -->
+When a rider loses his mount he claims a riderless surviving mount of the appropriate type, or
+else leaves the army and returns to his home province (rolling morale checks every turn; a
+failed check means desertion or death). If he arrives home, a new mounted unit can be recruited
+at half cost, retaining his identity, experience, and afflictions (shown by a small blue number
+in the recruitment screen). Normal mounts don't return home, but **Smart Mounts** do. Mounted
+commanders left without a mount don't return home; they claim a regular unit's mount or use the
+**Reclaim Mount** order.
 
 ## Missile combat
 
-<!-- p.65 -->
+Missile combat does not use defense values. Instead, the game determines which square a missile
+hits, depending on the unit's Precision and the range. Missiles can't distinguish friend from
+foe. If the range from attacker to target is greater than Precision/2 - 2, the missile
+deviates; the amount of deviation is range x 1.25 / Precision. The distribution is a bell
+curve.
+
+Once the game decides where a missile lands, any unit in that square may be targeted, weighted
+by relative size (a giant of size 6 sharing a square with a human of size 3 is struck two times
+out of three). The hit calculation uses:
+
+- **Attacker:** DRN + (Size points in the square)/2 + 2 if magic weapon
+- **Defender:** DRN + (shield parry value x2) - (Fatigue / 20)
+
+If the attacker's roll is greater, a hit is achieved. Damage is calculated as in melee. Most
+missile weapons add one-half of the unit's Strength to the weapon damage value. Crossbows and
+some weapons are armor-piercing (only half the defender's Protection used); some spells are
+armor-negating (armor affords no protection). Lightning spells are armor-negating; fire spells
+are armor-piercing. Precision values greater than 10 count double for the amount above 10 (so
+Precision 12 is calculated as 14).
 
 ## Special damage
 
-<!-- p.66 -->
+Some types of damage cause additional damage, inflict damage gradually, or increase fatigue
+instead of reducing hit points: fire, cold, poison, fatigue, paralysis, and drain.
+**Resistances** work like protection, but damage is also reduced by a percentage after the
+resistance is deducted (the reduction is twice the resistance value, so fire resistance 50 is
+complete immunity).
+
+> **Example:** A Pillar of Fire spell with 35 fire damage hits an unarmored unit with 15 fire
+> resistance and protection 10 armor. The damage DRN is 11, total 46 fire damage. Pillar of
+> Fire is armor-piercing so armor gives protection 5, but fire resistance gives its full 15.
+> The protection DRN is 6, total protection 26. The difference is 20, reduced by 30% (twice the
+> fire resistance), so the target suffers 14 points of damage.
+
+Elemental resistances give double protection against fatigue-causing attacks (Shock Resistance
+5 reduces thunder fatigue by 10).
 
 ### Fire damage
 
-<!-- p.66 -->
+Fire is generally armor-piercing. A unit may catch fire and burn until it goes out (fire
+fatigue damage only counts as 1/3 toward catching fire).
+
+- **Chance of catching fire:** Fire damage before protection x 4%
+- A burning unit takes (1d(size))/2 damage each turn (halved for units with 5+ Fire
+  Resistance).
+- **Chance of putting out fire:** 25% + (fire resistance) + (cold scale x5) + (100% if
+  raining), minimum 1%.
+
+Fire vulnerability counts as negative fire resistance. Units with 10+ fire resistance, chill
+auras, mistform, or ethereal units cannot burn. Heat scales count as negative cold.
 
 ### Cold damage
 
-<!-- p.66 -->
+A unit suffering cold damage may freeze, taking additional fatigue until it thaws.
+
+- A freezing unit takes 2d6 additional fatigue per turn until it thaws.
+- **Chance of thawing:** 25% + (cold resistance) + (heat scale x5), minimum 1%.
+
+Cold vulnerability counts as negative cold resistance. Units with 10+ cold resistance, heat
+auras, or ethereal units never freeze.
 
 ### Profuse bleeding
 
-<!-- p.66 -->
+A bleeding unit suffers 10 fatigue and takes HP/20 damage each round.
+
+- **Chance to stop bleeding:** 10% + (regeneration value), halved when fighting underwater.
 
 ### Poison damage
 
-<!-- p.66 -->
+Poison damage is suffered over multiple rounds (10% of the remaining damage each round). A
+poisoned unit also has reduced attack and defence skill: 25% per dose equal to the unit's full
+HP, capped at 50%. Poison resistance only reduces the initial total damage, not the duration.
 
-### Shock damage
+> **Example:** A unit with 10 HP takes 15 points of poison: 2,2,2,1,1,1,1,1,1,1 over ten rounds.
+> Its attack and defence are reduced by 37.5% when poisoned, decreasing over time.
 
-<!-- p.67 -->
+### Shock, acid, life drain, paralysis, fatigue
 
-### Acid damage
-
-<!-- p.67 -->
-
-### Rust
-
-<!-- p.67 -->
-
-### Life Drain damage
-
-<!-- p.67 -->
-
-### Paralysis damage
-
-<!-- p.67 -->
-
-### Fatigue damage
-
-<!-- p.68 -->
+- **Shock damage** can Stun a target. **Chance of getting stunned:** 5% + (% of hit points lost
+  from this hit) / 2. Stun prevents any action for one round.
+- **Acid damage** can inflict Rust. **Chance of equipment rusting:** Acid damage before
+  protection x 4% (only iron weapons/armor). Rusty armor has a (damage before armor protection,
+  after shield) x 2% chance of being damaged when hit. Rusty weapons have a 25% chance of being
+  damaged on a hit. Damaged weapons do -2 damage (-1 for blunt).
+- **Life Drain** restores the attacker's hit points (damage / 2) and reduces fatigue (damage x
+  2). Partial life drain only treats the first 5 points of damage as drain. Life drain cannot
+  raise HP above 150% of maximum +10. Lifeless units take only 25% damage and never heal an
+  attacker.
+- **Paralysis** duration = (Damage - victim's Size) / 2. If already paralyzed, additional
+  damage = (minimum of old and new duration) / 2, never exceeding 5 points; the new duration is
+  the greater of old and new (not cumulative).
+- **Fatigue damage** adds to fatigue rather than subtracting hit points. No unit can exceed 200
+  fatigue; each 50 fatigue points inflicted past 200 inflicts 1 hit point of damage. Below 50,
+  the chance of 1 hit point of damage is (fatigue points x 2)%.
 
 ### False damage
 
-<!-- p.68 -->
+Illusions and most Glamour spells cause only false damage, kept real in the victims' minds by
+glamour magic. If all enemy glamour mages die, false damage dissipates quickly (2 points/round)
+without scars. Damage + false damage equaling total HP kills instantly. False damage never
+causes afflictions (apart from death), does not trigger Damage Reversal/Blood
+Vengeance/Blood Bond, and cannot be healed by regeneration, life drain, or healing spells. It
+is shown as light purple numbers.
 
 ## Clouds
 
-<!-- p.68 -->
+Certain beings, spells, and attacks create battlefield clouds (a Hydra's poison cloud, a
+Fireball's lingering heat cloud). Clouds dissipate quickly if not replenished (about 1 level
+per round). Multiple clouds of the same type cannot overlap; instead they spread further or
+raise a square by at most one level. **Damage from clouds is always armor negating.** All
+clouds range from level 1 to 7. Monsters that spread clouds spread level 1 clouds (accumulating
+to at most level 2); spells and items can create higher levels. Heat Clouds and Frost Clouds
+cancel each other out.
+
+| Cloud | Effects by level |
+|-------|------------------|
+| Frost Cloud | L1: 2 fatigue; L2: 3 fatigue; L3: 4 fatigue, 1 damage; L4: 5 fatigue, 2 damage; L5+: 6+ fatigue, 3+ damage (damage capped to 1 unless frozen) |
+| Heat Cloud | L1: 2 fatigue; L2: 3 fatigue; L3: 4 fatigue, 1 damage; L4: 5 fatigue, 2 damage; L5+: 6+ fatigue, 3+ damage |
+| Poison Cloud | L1: 1 poison; L2: 2 poison; L3+: 3+ poison |
+| Disease Cloud | L1-2: disease (easy MR); L3+: disease (MR) |
+| Sulphur Cloud | L1-2: 1 fire fatigue + 1 poison; L3: 2 fire fatigue + 1 poison; L4: 2 + 2 poison; L5: 3 + 2 poison; L6: 3 + 3 poison; L7: 4 + 3 poison (poison capped to 1 damage) |
+| Rust Cloud | all levels: armor rusts |
+| Death Cloud | L1: 1 damage (MR); L2: 2 damage (MR); L3+: 3+ damage (MR) |
+| Shimmering Light Cloud | L1: 1 capped false damage (easy MR); L2: 1 capped false damage (MR); L3: 2 false damage (MR); L4+: 3+ false damage (MR) |
+| Leeching Cloud | L1: weakness (easy MR); L2: weakness + 1 damage (easy MR); L3: weakness (MR) + 1 damage (easy MR); L4+: weakness (MR) + 1 damage (MR) -- weakness decreases Str by 1 permanently, damage capped to 1 |
+| Sleep Cloud | L1: sleep (easy MR); L2+: sleep (MR) |
+
+: Cloud effects
 
 ## Morale and rout
 
-<!-- p.69 -->
+Morale measures how likely a squad is to keep fighting after taking casualties. Each squad has
+a morale level, which is the average of all the morale ratings of its members.
 
-### Morale
+A unit can gain morale bonuses:
 
-<!-- p.69 -->
+- +1 for fighting in friendly dominion
+- +1 for fighting in a unit's home province
+- +x for a commander's leadership bonus (modified by formation, number of squads, etc.)
+- +1 for every level of the Inspirational ability the squad's commander has (can be negative)
+- +x for a unit with the Standard ability in the squad (x is the highest Standard bonus)
 
-### Morale bonuses
-
-<!-- p.69 -->
-
-#### Morale, magic bonus
-
-<!-- p.69 -->
+**Morale magic bonus:** many magic effects modify a unit's magic bonus to morale (-10 to +1).
+Fear lowers it; priests raise it with Sermon of Courage and Fanaticism. A negative bonus
+increases by 1 about every 2 rounds; a positive bonus lasts the entire battle.
 
 ### Rout
 
-<!-- p.69 -->
+A squad which fails its morale check routs (the entire squad). A squad checks morale if:
 
-#### Army rout
+- It has suffered "heavy losses" since the last check, and its overall casualties are at least
+  20%.
+- It has four or fewer units left and at least one took damage this round.
+- It is near a monster causing Fear (e.g. an Abomination).
+- It has been subjected to a spell causing Fear (e.g. Terror). Spells causing Frighten do not
+  apply.
+- The entire army has taken 50% or more of its total hit point value in casualties (then morale
+  is checked every turn).
 
-<!-- p.70 -->
+"Heavy losses" is one wound for every two members of the squad. A "wound" is 1+ hit points of
+damage that reduces a unit to 80% or less of its normal hit points. A squad cannot have its
+morale checked more than once a turn.
 
-#### Morale check
+**Army rout:** once an army has taken 75% of its total hit point value in casualties, it
+automatically routs. Mounts, Province Defence units count only 25% of their HP toward the
+army's total; slaves count 50%.
 
-<!-- p.70 -->
+**Morale check:** consists of a morale roll and a fear roll. If the fear roll is greater, the
+squad routs.
 
-#### Rout effects
+- **Morale roll:** squad morale + DRN + survivor bonus
+- **Fear roll:** 14 + DRN
 
-<!-- p.70 -->
+The survivor bonus ranges from 0-5 depending on how many of the squad's original members are
+alive (an intact squad gets 5; one almost wiped out gets 0).
 
-#### Mindless units
+**Rout effects:** a routed unit uses all its action points each turn to move toward its own map
+edge, suffering a -4 defense penalty. Once it reaches the edge it is safe and appears in an
+adjacent province after the battle. If a unit retreats to an enemy province, it is destroyed.
+Routed units suffering bleeding, poison, burning, or decay have the remainder of that damage
+applied once off the map and may not survive.
 
-<!-- p.70 -->
+**Mindless units** need a commander. If all eligible commanders are killed or routed, mindless
+beings become immobile and have a 33% chance each turn of dissolving and vanishing (they still
+attack adjacent units). **Magic beings and undead** rout if on the battlefield without proper
+leadership.
 
-#### Magic beings and undead
+**Magic fear effects:** there are two types. **Fear** (the most severe and common) can decrease
+morale by up to 10 points and forces the squad to make a morale check at the end of the round;
+units may also break individually if they fail an easy morale check. **Frighten** is much less
+severe (up to 5 points) and forces no automatic morale checks.
 
-<!-- p.70 -->
+## Long lasting battles and Twilight
 
-#### Magic fear effects
+If a battle goes on too long the sun sets, with profound effects: battle enchantments end,
+berserking ends, and the battlefield is affected by Twilight.
 
-<!-- p.70 -->
+| Turn | Effects |
+|-----:|---------|
+| 100 | Twilight: all enchantments, temporary magic effects and berserking end. Twilight effect (-2 prec, +1 glamour magic). |
+| 150 | Nightfall/Daybreak: attacking units rout. Darkness effect (-3 att/def/prec), or return to daylight in a night-time battle. |
+| 170 | Defending units rout. |
+| 200 | Any units left on the battlefield are killed. |
 
-#### Long lasting battles and Twilight
-
-<!-- p.71 -->
+Mindless units cannot rout and will dissolve instead.
 
 ## Afflictions
 
-<!-- p.71 -->
+Whenever a unit is struck in battle, it may suffer an affliction. The chance is the % of hit
+points lost in the blow. It is possible to get more than one if the damage exceeds 100%. There
+are major and minor afflictions; the chance of an affliction being major is affliction chance /
+1.5, or at most 33%. Where the hit occurs determines which kind may be inflicted.
+
+| Body Part | Minor Affliction | Major Affliction |
+|-----------|------------------|------------------|
+| Any | Battle Fright | Profuse Bleeding |
+| Head | Eye Loss, Dementia, Mute | Feeblemindedness, Blindness |
+| Chest | Chest Wound | Diseased, Never-Healing Wound |
+| Arm | Weakened | Lost an arm |
+| Leg | Limp | Crippled |
+
+Profuse Bleeding is the only non-permanent affliction (it disappears during or after battle).
+While bleeding, a unit loses 5% of its hit points and gains 10 fatigue per round, with a 10%
+chance of stopping per round (halved underwater, increased by regeneration).
+
+- **Limp** gives commanders a -4 map movement penalty. Non-commander units have a 25% chance of
+  becoming crippled whenever their army marches more than one province in a month.
+- **Cripple** makes commanders lose 75% of their map movement. Non-commander units have a 35%
+  chance of dying when their army marches (70% if marching more than one province).
 
 ## Sieges
 
-<!-- p.71 -->
+Fortresses must be reduced before they can be stormed: the Defense value must be reduced to
+zero. Each turn, the total reduction strength of the besiegers is compared to the total repair
+strength of the defenders.
 
-### Supply during sieges
+- **Reduction strength** = unit strength squared (flying units doubled)
+- **Repair strength** = unit strength squared / 2 (flying units doubled; mindless units worth
+  1/8; animals (not monkeys) halved; undisciplined units halved)
 
-<!-- p.72 -->
+The difference is subtracted from the fortress defense value if reduction is greater. If repair
+is greater, the difference is added back (up to the original value). Fortresses which are
+damaged but not besieged are automatically fully repaired.
 
-## Storming a castle
+**Supply during sieges:** a besieged fortress provides its supply value divided by the number
+of turns of the siege (300, then 150, 100, 75, 60...). Unsupplied units suffer starvation and
+may become diseased after two consecutive turns.
 
-<!-- p.72 -->
+**Storming a castle:** when the wall integrity is reduced to zero, besieging commanders can
+choose `Storm Castle` or `Maintain Siege`. Storming initiates a battle at the gates: defenders
+inside the walls, storming commanders and their units outside. The storming takes place after
+any other battle in the province, so a relieving army can fight off the besiegers first. All
+forts have additional defending units (Castle Guards and Wall Defenders).
 
 ## Weather
 
-<!-- p.72 -->
+Land battles are usually clear and during the day, but can be rainy or snowy at random (unless
+in a wasteland or cave). Snowfall requires cold scale 1+; rain requires heat 0 or greater.
+
+- **Snowfall chance:** Cold scale * 15%
+- **Rainfall chance:** Growth scale * 10% + 10%
+
+Global enchantments can affect the weather. Assassination battles are special, often indoors
+(no weather) with about a 50% chance of occurring at night.
 
 ## Retreats
 
-<!-- p.72 -->
+If units retreat from a battle, they go to an adjacent province, or a friendly castle in the
+same province. Each commander has a 75% chance of making a "smart" retreat (with a second 50%
+chance in native terrain).
 
-### Retreating when besieged
+- A **smart leader** retreats into a fort in the same province if there is one, or moves to a
+  random friendly-controlled adjacent province.
+- A **not-so-smart leader** moves into a random adjacent province, even if not friendly
+  controlled.
 
-<!-- p.73 -->
-
-## Battle Summary
-
-<!-- p.73 -->
-
-
-::: callout-note
-Transcription pending.
-:::
+Troops follow a leader when they retreat if they pass a morale check (the squad morale bonus
+counts double; undisciplined units suffer -3; the skirmish formation penalty applies). Troops
+that lose their leader or fail the check individually check for being smart (50% chance) and
+retreat on their own.

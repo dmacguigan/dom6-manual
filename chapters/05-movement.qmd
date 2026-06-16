@@ -453,3 +453,19 @@ the game resolves orders in the following order:
 49. **Insanity** -- units may go insane from certain dominion or other effects.
 50. **Mercenaries** -- mercenaries are bought or maintained.
 51. **New random heroes** -- heroes may appear at a nation's capital gates.
+52. **Kill lone units** -- lone non-commander units in enemy provinces are killed to prevent
+    pointless attacks.
+53. **Reclaim provinces** -- if a fort does not own the province it is in and it is not under
+    siege, it takes ownership (relevant in team games), resolved in favor of the fort owner.
+54. **Conscription** -- Province Defence is raised to a minimum of one and Dominion/Commander
+    effects that raise PD take effect.
+55. **Scouting** -- new scouting reports are generated for each player.
+56. **Elimination** -- players without any provinces or dominion are eliminated.
+57. **Victory** -- if a victory condition is fulfilled, the game declares a winner and ends.
+58. **Update stats** -- Hall of Fame and scoregraphs are updated.
+59. **Heroic abilities** -- units gain and improve heroic abilities.
+60. **Reform Immortals** -- immortals due to return reform their bodies.
+61. **Reduce PD** -- province defense is reduced if the population cannot support the current
+    level (at least 10 population per point of PD).
+62. **Yearning artifacts** -- if any new artifacts become yearning, it happens now.
+63. **Aftermath** -- the game validates orders and items, changes shapes if necessary, etc.
