@@ -1,27 +1,10 @@
-/*-- scss:defaults --*/
-// Dominions-ish dark parchment palette
-$body-bg: #16130f;
-$body-color: #e8e0d0;
-$link-color: #c9a23f;
-$link-hover-color: #e6c463;
-$font-family-sans-serif: "Inter", "Helvetica Neue", Arial, sans-serif;
-
 /*-- scss:rules --*/
-h1, h2, h3, h4 {
-  color: #d9b85a;
-  font-weight: 600;
-}
+// Layered on top of the Superhero base theme. Keep this minimal so the base
+// theme drives the palette; only readability tweaks live here.
 
 // stat tables: compact, readable
 table {
   font-size: 0.9rem;
-}
-thead {
-  background: rgba(201, 162, 63, 0.15);
-}
-
-blockquote, .callout {
-  border-left-color: #c9a23f;
 }
 
 img {

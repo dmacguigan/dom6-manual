@@ -10,7 +10,7 @@ book:
   page-navigation: true
   sidebar:
     style: docked
-    collapse-level: 1
+    collapse-level: 999
   chapters:
     - index.qmd
     - part: "Core Rules"
@@ -44,7 +44,7 @@ book:
 format:
   html:
     theme:
-      - cosmo
+      - superhero
       - assets/css/custom.scss
     toc: true
     toc-depth: 3
