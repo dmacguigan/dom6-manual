@@ -1,7 +1,12 @@
-/*-- scss:rules --*/
-// Layered on top of the Superhero base theme. Keep this minimal so the base
-// theme drives the palette; only readability tweaks live here.
+/*-- scss:defaults --*/
+// Layered on top of the Superhero base theme (body bg #0f2537).
 
+// Readable code: dark background, light warm text (was light grey, low contrast).
+$code-bg: #0a1925;
+$code-color: #f3a96a;
+$code-block-bg: #0a1925;
+
+/*-- scss:rules --*/
 // stat tables: compact, readable
 table {
   font-size: 0.9rem;
@@ -10,4 +15,22 @@ table {
 img {
   max-width: 100%;
   height: auto;
+}
+
+// Sidebar: same hue as the main page, slightly darker.
+#quarto-sidebar,
+.sidebar-navigation,
+.sidebar.sidebar-navigation {
+  background-color: #0b1c29;
+}
+
+// Code blocks were rendering on a translucent light-grey panel; force the dark bg.
+div.sourceCode,
+pre.sourceCode,
+pre {
+  background-color: $code-block-bg !important;
+}
+
+code {
+  color: $code-color;
 }
