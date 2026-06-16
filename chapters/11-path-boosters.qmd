@@ -1,8 +1,74 @@
 # Path Boosters
 
-<!-- source: PDF p.116 -->
+These are the magic items that can increase the path levels of magic users. The **Boosts**
+column lists which magic paths each item raises and by how much; **Requires** is the path
+skill needed to forge it, and **Research** is the Construction research level.
 
+## Path Boosting Magic Items
 
-::: callout-note
-Transcription pending.
-:::
+| Name | Boosts | Requires | Research |
+|------|--------|----------|---------:|
+| Skull Staff | +1 Death | D2 | 5 |
+| Thistle Mace | +1 Nature | N2 | 5 |
+| Flame Helmet | +1 Fire | F4 | 5 |
+| Winged Helmet | +1 Air | A4 | 5 |
+| Gossamer Veil | +1 Glamour | G3 | 5 |
+| Robe of the Sea | +1 Water | W3 | 5 |
+| Armor of Souls | +1 Blood | B5 | 5 |
+| Armor of Twisting Thorns | +1 Nature, +1 Blood | B3N2 | 5 |
+| Earth Boots | +1 Earth | E2 | 5 |
+| Horn of Storms | +1 Air | A5 | 5 |
+| Coin of Meteoritic Iron | +1 Astral | S2E2 | 5 |
+| Brazen Vessel | +1 Blood | B5 | 5 |
+| Blood Stone | +1 Earth | B3E2 | 5 |
+| Staff of Elemental Mastery | +1 Fire, +1 Air, +1 Water, +1 Earth | F4W4 | 7 |
+| Staff of Elemental Mastery | +1 Fire, +1 Air, +1 Water, +1 Earth | A4E4 | 7 |
+| Treelord's Staff | +2 Nature | N5 | 7 |
+| Blood Thorn | +1 Blood | B3 | 7 |
+| Starshine Skullcap | +1 Astral | S2 | 7 |
+| Skullface | +1 Death | D5 | 7 |
+| Robe of the Magi | +1 Fire, +1 Air, +1 Water, +1 Earth, +1 Astral, +1 Death, +1 Nature, +1 Glamour, +1 Blood | A5B5 | 7 |
+| Skull of Fire | +1 Fire | F1D1 | 7 |
+| Water Bracelet | +1 Water | W1 | 7 |
+| Ring of Wizardry | +1 Fire, +1 Air, +1 Water, +1 Earth, +1 Astral, +1 Death, +1 Nature, +1 Glamour, +1 Blood | S7 | 7 |
+| Ring of Sorcery | +1 Astral, +1 Death, +1 Nature, +1 Glamour | S6 | 7 |
+| Moonvine Bracelet | +1 Nature | N3S1 | 7 |
+| Mirage Crystal | +1 Glamour | G3E2 | 7 |
+| Ring of the False Prophet | +1 Holy | G4F2 | 7 |
+
+## Path Boosting Magic Artifacts
+
+| Name | Boosts | Requires | Research |
+|------|--------|----------|---------:|
+| Sword of Justice | +1 Holy | F3S3 | 9 |
+| Trident from Beyond | +1 Water | W3S2 | 9 |
+| The Sword of Many Colors | +1 Glamour | G4F2 | 9 |
+| The Oath Rod of Kurgi | +1 Astral, +1 Blood | S3B3 | 9 |
+| The Flailing Hands | +1 Death | D2 | 9 |
+| Sceptre of Dark Regency | +2 Death | D6 | 9 |
+| Sword of Injustice | +1 Holy | D4 | 9 |
+| Sun Slayer | +1 Death | D6 | 9 |
+| Dimensional Rod | +1 Astral | S3 | 9 |
+| The Staff from the Sun | +1 Fire | S5F1 | 9 |
+| Immaculate Shield | +1 Holy | F3S2 | 9 |
+| Crown of the Elements | +1 Fire, +1 Air, +1 Water, +1 Earth | F4W4 | 9 |
+| Flesh Ward | +1 Blood | B4 | 9 |
+| Pebble Skin Suit | +1 Earth | B4E1 | 9 |
+| Boots of Antaeus | +1 Earth | E4N1 | 9 |
+| The Ruby Eye | +1 Fire | F3 | 9 |
+| Tome of High Power | +1 Air, +1 Astral | A2S2 | 9 |
+| Atlas of Creation | +1 Earth, +1 Astral, +1 Nature | E5S5 | 9 |
+| Orb of Atlantis | +1 Water | W4E1 | 9 |
+| The Forbidden Light | +2 Fire, +2 Astral | S5F5 | 9 |
+| The Black Mirror | +1 Glamour | S4B2 | 9 |
+| Tome of the Lower Planes | +1 Blood | S3B2 | 9 |
+| The Black Book of Secrets | +1 Death, +1 Blood | D2B2 | 9 |
+| The Tome of Gaia | +1 Earth, +1 Nature | N2E2 | 9 |
+| Tome of Legends | +2 Glamour | G5 | 9 |
+| The Trapped Dreams of Hruvur | +1 Astral, +1 Glamour, +1 Blood | G4S4 | 9 |
+| Orb of Elemental Fire | +1 Fire | F4 | 9 |
+| Orb of Elemental Air | +1 Air | A4 | 9 |
+| Orb of Elemental Water | +1 Water | W4 | 9 |
+| Orb of Elemental Earth | +1 Earth | E4 | 9 |
+| The Void Sphere | +2 Astral | S6B1 | 9 |
+
