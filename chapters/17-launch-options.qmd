@@ -1,8 +1,245 @@
 # Launch Options
 
-<!-- source: PDF p.430 -->
+The following launch options (command line options) can be used to modify the behavior of the
+game before it starts up. Most players will not need to use this feature, but it can be used to
+automate things or help if the game doesn't start properly.
+
+The short options can be combined, e.g. `-sw` will start without sound and in a window.
+
+## General Options
+
+```text
+-v   --version        Print version number and exit
+-d                    Increase debug level
+-g   --host           Generate new turn and exit
+     --verify         Verify all 2h-files and exit (creates .chk files)
+     --statfile       Create a player info file after each turn (stats.txt)
+     --scoredump      Create a score file after each turn (scores.html)
+     --finalhost      Generate new turn, send out final score msg and exit
+-c   --nocredits      Disables the end credits
+     --noedgescroll   Disables edge scrolling
+     --edgescroll     Enables edge scrolling in fullscreen mode
+     --winedgescroll Enables edge scrolling always
+     --askifplayed    Will ask if you want to redo turn if possible
+     --noshowscouts   Do not show allied scouts on map
+     --autoorder      Put new mages on research by default
+     --multimove      Enable multiple turn movement
+     --maxunits X     Sets max nbr of units in a game (default and max 600000)
+     --listnations    Prints a list of all nation numbers
+     --multiai X      Create up to X processes for AI computations (0=off) (Linux only)
+     --nothread       Don't use multithreading
+     --nomappopups    Don't show popups on the main map
+     --nosteam        Do not connect to steam (workshop will be unavailable)
+     --nocrashbox     Don't show a dialogue box with crash message on (Windows only)
+     --useolddata     Try to preserve battle replays after upgrading
+     --gamepad        Enable gamepad/joystick inputs
+     --nogamepad      Disable gamepad/joystick inputs
+     --backup         Create a tar archive of save before hosting (Linux only)
+```
+
+## Network Options
+
+```text
+     --lobby          Enter game lobby
+     --lgpasswd XXX   Password for lobby game
+-C   --tcpclient      Connect to a Dominions multiplayer server
+-S   --tcpserver      Start a Dominions multiplayer server
+     --tcpquery       Query Dominions server about game status and exit
+     --ipadr XXX      Use this IP-adr when connecting to server
+     --port X         Use this port nbr
+     --preexec CMD    Execute this command before each new turn
+     --postexec CMD   Execute this command after each new turn
+-t   --hosttime X Y   Host on day X (0=sunday) hour Y (0-23)
+     --minutes X      Set host interval in minutes
+     --hours X        Set host interval in hours
+     --pauseday X     Stop timer on this day (0=sunday)
+     --timeleft X     Hours until first host (default = full host interval)
+     --noquickhost    Don't host just because all turns are done
+     --maxholdups X   Quickhost disregards players that have stalled last X turns
+-n   --nonationsel    No nation selection when resuming a network game
+-o   --onserver       I'm playing on the server, don't ask
+     --noclientstart Clients cannot start the game during Choose Participants
 
 
-::: callout-note
-Transcription pending.
-:::
+
+     --uploadtime X   Game is created after this many minutes.
+     --uploadmaxp X   Game is created if this many players join.
+     --closed X       Nation closed X=nation number (5-499)
+     --easyai X       Nation ai controlled X=nation number (5-499)
+     --normai X       Nation ai controlled X=nation number (5-499)
+     --diffai X       Nation ai controlled X=nation number (5-499)
+     --mightyai X     Nation ai controlled X=nation number (5-499)
+     --masterai X     Nation ai controlled X=nation number (5-499)
+     --impai X        Nation ai controlled X=nation number (5-499)
+     --team X Y Z     X=nation, Y=team, Z=type (type: 1=pretender, 2=disciple)
+     --statuspage XX Create html page that shows who needs to play their turn
+     --statusdump     Continuously create info on players in a parsable format
+     --nodownlmods    Don't download mods from game server automatically
+     --nomaster       Disallow download/upload turns using the master password
+     --timerwarn X    Warning sound when less than X seconds left (0=disable)
+```
+
+## New Game Options
+
+```text
+     --mapfile XXX    Filename of map. E.g. eye.map
+     --randmap X      Make and use a random map with X prov per player (10,15,20)
+     --research X     Research difficulty 0 to 4 (default 2)
+     --norandres      No random start research
+     --hofsize X      Size of Hall of Fame 5-15 (default 10)
+     --mercsize X     Maximum number of Mercs 0-10 (default 5)
+     --globals X      Global Enchantment slots 3-9 (default 5)
+     --yearning X     Yearning chance for artifacts (default 50)
+     --indepstr X     Strength of Independents 0-9 (default 5)
+     --magicsites X   Magic site frequency 0-75 (default 40)
+     --eventrarity X Random event rarity 1-2, 1=common 2=rare
+     --richness X     Money multiple 50-300 (default 100)
+     --resources X    Resource multiple 50-300 (default 100)
+     --recruitment X Unit recruitment point multiple 50-300 (default 100)
+     --supplies X     Supply multiple 50-300 (default 100)
+     --masterpass XX Master password. E.g. masterblaster
+     --startprov X    Number of starting provinces (1-9)
+     --renaming       Enable commander renaming
+     --scoregraphs    Enable score graphs during play
+     --nonationinfo   No info at all on other nations
+     --weakdiplo      Formal dimplomacy is non-binding
+     --nodiplo        No formal dimplomacy
+     --nocheatdet     Turns off cheat detection
+     --era X          New game created in this era (1-3)
+     --nomods         Disable all mods
+-M   --enablemod XXX Enable the mod with filename XXX
+     --noartrest      Players can create more than one artifact per turn
+     --nolvl9rest     Players research lvl 9 spells as fast as any other spells
+     --teamgame       Disciple game, multiple players on same team
+     --clustered      Clustered start positions for team game
+     --edgestart      Edge start positions for team game
+     --nostoryevents Disable all story events
+     --storyevents    Enable some story events
+     --allstoryevents Enable all story events
+     --newgame        Create a new game and exit (for scripted game creation)
+     --newailvl X     AI level for human players who quit (1-6, def 2)
+
+
+
+     --nonewai        Disable become AI controlled
+```
+
+## New Game Victory Condition
+
+```text
+     --conqall         Win by eliminating all opponents only
+     --thrones X Y Z Number of thrones of level 1, 2 and 3
+     --requiredap X    Ascension points required for victory (def total-1)
+     --cataclysm X     Cataclysm will occur on turn X (def off)
+```
+
+## Random Map Options
+
+```text
+     --makemap XXX     Generate a random map with filename XXX and exit
+     --tgapreview      Also make a tga preview for the random map
+     --blueprint XXX Use this TGA/PNG file as blueprint for random map
+     --blueacc X       0-9, the blueprint accuracy (default 2)
+     --noundercaves    Don't create a underworld plane with caves
+     --riverpart X     0-1000, 0=no rivers (default 100)
+     --bridges X       Bridge chance 0-100, 0=no bridges (default 60)
+     --extraislands X Chance of extra islands 0-100, (default 0)
+     --seapart X       Percent of map that is below water level (default 45)
+     --cavepart X      Percent of under caves plane that is caves (default 20)
+     --mountpart X     Percent of map that is mountains (default 20)
+     --forestpart X    Percent of lands that are forests (default 20)
+     --farmpart X      Percent of lands that are farm lands (default 15)
+     --wastepart X     Percent of lands that are wastes (default 10)
+     --swamppart X     Percent of lands that are swamps (default 10)
+     --kelppart X      Percent of seas that are kelp forests (default 25)
+     --gorgepart X     Percent of deeps seas that are gorges (default 25)
+     --mapsize W H     Set width and height of random map (default 3000 2000)
+     --mapprov X       Set number of provinces (default 150)
+     --mapscol R G B A    Sea color 0-255 (default 54 54 130 255)
+     --mapdscol R G B A Deep Sea color 0-255 (default depending on mapscol)
+     --mapccol R G B A    Coast color 0-255 (default depending on mapscol)
+     --mapbcol R G B A    Ground border color 0-255
+     --mapsbcol R G B A Sea border color 0-255
+     --mapbtopcol R G B A    Top border color 0-255
+     --mapnoise X      Ground color noise 0-255 (default 15)
+     --mapdirt X       Amount of dirt blobs (default 100)
+     --mapdirtcol X    Color variance of dirt blobs (default 5)
+     --mapdirtsize X Size of dirt blobs (default 100)
+     --borderwidth X Border width 0-500 (default 100)
+     --hills X         Number of Hills/Craters (default 150)
+     --rugedness X     Rugedness 0-100 (default 30)
+     --seasize X       Sea size, 100=normal land size (default 350)
+     --mapnospr        Don't draw any sprites on the map
+     --nowaterprov     Don't put any capitals in the water areas
+     --vwrap           Make map wrap north/south
+     --nohwrap         Make map not wrap east/west
+     --mapbunch X      When making a bunch, make this many maps (default 12)
+     --quiet           Don't print stuff
+```
+
+## Graphics Options
+
+```text
+-w   --window         Run Dominions 6 in a window
+-u   --fullscreen     Use the entire screen
+     --borderless     Use a borderless fullscreen window
+
+
+
+     --bitplanes X    Try to use a color depth of X bits per pixel
+     --zbuffer X      Try to use a depth buffer of X bits per pixel (default 24)
+-T   --textonly       Use this with --tcpserver to get graphicless server
+     --gamma X        Set gamma function (brightness) 0.1 - 5.0 (default 1.0)
+     --opacity X      Set gui opacity 0 - 100
+-r   --res X Y        Set screen resolution / window size
+     --animback       Use animated backgrounds
+-a   --noanimback     Don't use animated backgrounds
+     --fade           Use fade effects
+-f   --nofade         No fade effects
+     --nopopups       No helpful popups
+     --maxfps X       Maximum nbr of frames per second (default 60)
+     --filtering X    Quality of OpenGL filtering 0-3 (default 2)
+     --maxtexsize X   Max texture size in pixels 8-4096 (default unlimited)
+     --texqual X      Texture quality 1-5 (default 3)
+     --notracers      Visual aid, puts a particle trace after arrows
+     --nomapcolrit    Don't color map remote ritual dots per path
+     --nolightfx      No light effects in battles
+     --partamount X   Max nbr of particles 0-9 (0=none, 4=default, 9=max)
+     --noarcade       Don't draw floating damage numbers
+     --batflash       Flash units green/magenta when receiving buffs/debuffs
+     --nonetinfo      Don't draw timer and flags during network play
+     --glfinish       Flush the graphics pipeline each frame
+     --noglfinish     Don't flush the graphics pipeline each frame
+     --noglext        Don't use any OpenGL extensions
+-x   --fastgrx        Faster and simpler graphics
+     --simpgui        Use a simple GUI without any background textures
+     --gfxlevel X     Graphics level 1-20 (default 10, 14 = very high)
+     --multisample X Use multisampling, X=number of samples (0-16)
+     --renderpath X   Use a different rendering method 0-3 (default 2)
+     --benchmark      Run a graphics benchmark and exit
+     --softmouse      Draw a mouse cursor instead of using the standard OS one
+     --textsize X     Set size of text in percent (small 90, std 100, huge 120)
+     --battextsize X Set size of floating texts in battles (std 100)
+     --nowarnings     Disable warnings for bad graphics drivers
+```
+
+## Audio Options
+
+```text
+-s   --nosound        No sound effects or music
+-m   --nomusic        No music
+     --musicvol X     Set music volume, 0-100 (default 100)
+     --fxvol X        Set sound effect volume, 0-100 (default 100)
+     --clickvol X     Set mouse click volume, 0-100 (default 25)
+     --randpitch X    Set max sound effect pitch randomness (default 3)
+     --noturnsound    Don't play a sound when a new turn arrives (network only)
+     --jack           Route sound through JACK sound server (Linux)
+     --pulseaudio     Route sound through pulse audio (Linux)
+     --alsa           Use direct alsa sound output (Linux)
+     --oss            Use direct oss sound output (Linux)
+     --portaudio      Use portaudio for sound (Linux & OSX)
+     --directsound    Use direct sound (Windows)
+     --waveout        Use waveout for sound (Windows)
+     --sdlsound       Force usage of default sdl sound device (Windows)
+```
+
