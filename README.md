@@ -3,6 +3,8 @@
 An unofficial, searchable web edition of the [Dominions 6 manual](https://www.illwinter.com/dom6/dom6manual.pdf),
 built as a [Quarto](https://quarto.org) book and deployed to GitHub Pages.
 
+Access the manual website [here](https://dmacguigan.github.io/dom6-manual/).
+
 > Dominions 6 and its manual are the property of **Illwinter Game Design**. This is a
 > fan-made reformatting and is not affiliated with or endorsed by Illwinter.
 
@@ -47,8 +49,3 @@ manual, with `<!-- p.NN -->` comments pointing at the source page. To transcribe
 The DRN section in `chapters/02-the-basics.qmd` is a worked example of the prose+table
 pattern.
 
-## Deploy
-
-Pushing to `main` triggers `.github/workflows/publish.yml`, which renders the book and
-publishes it to GitHub Pages. Enable Pages once (Settings -> Pages -> Source: **GitHub
-Actions**).
