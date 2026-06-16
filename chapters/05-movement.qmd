@@ -1,148 +1,455 @@
 # Movement
 
-<!-- source: PDF p.47 -->
+Dominions 6 is a game of provinces. Movement consists of going from one province to another,
+and depends on several things: the movement speed of the unit(s), the terrain in the
+province, and whether or not the province is friendly or enemy. In general, you can only move
+from one province to another if they are connected. To see a province's connections, hit the
+`Ctrl-8` key. These connections will be color-coded. It is possible to move through multiple
+provinces of enemy territory if your movement allowance is high enough.
+
+The basic concepts regarding movement are as follows:
+
+- Movement takes place as a series of "half-steps": you move out of one province and into
+  another.
+- When you do this, you pay movement costs for each half-step according to the Movement Cost
+  Table.
+- Stopping in an enemy province triggers combat, unless all entering units are Stealthy (like
+  scouts).
+- Armies with multiple units move at the speed of the slowest unit.
+- Only commanders may move. Armies may not move if they are not led by a commander.
+- Movement into or out of difficult terrain (forest, mountains, swamp) is affected by units'
+  survival abilities.
 
 ## General rules governing movement
 
-<!-- p.47 -->
+Movement is determined by a unit's map movement factor. If you right-click on any unit, you
+will see this factor next to the word "Map Move." A unit with "Map Move 12" has 12 movement
+points for moving on the strategic map. Movement is calculated in "half-steps" which must be
+made to calculate the cost to leave, and then enter, each province. Each terrain has an
+associated movement cost.
 
-## Initiation of combat.
+| Terrain | Cost |
+|---------|-----:|
+| Plains | 3 |
+| Forest | 5 |
+| Waste | 5 |
+| Highlands | 6 |
+| Swamp | 7 |
+| Sea | 5 |
+| Cave | 4 |
+| Cave Forest | 6 |
+| Crystal Cave | 6 |
+| Drip Cave | 7 |
 
-<!-- p.49 -->
+: Half step move cost for ground units
+
+These are modified as follows:
+
+- Enemy province (moving unit does not have stealth): +4
+- Enemy province (moving unit has stealth): +3
+- Snow: +1
+- Roads: -2 (min. 2)
+
+Roads are not present on the random maps, but they can be added to custom maps by map
+creators. Flying units have different movement costs entirely:
+
+| Terrain | Cost |
+|---------|-----:|
+| Most terrain | 3 |
+| Cave | 5 |
+| Enemy province | +1 |
+
+: Half step move cost for fliers
+
+If a unit has a survival ability, such as forest, swamp, waste, or mountains, it moves
+through that terrain with a -2 cost. Forest survival also helps when traversing fungus caves,
+mountain survival helps when traversing crystal caves and swamp survival helps when
+traversing drip caves.
+
+Movement points for troops are based on the following general parameters (each unit has a
+specific allowance, but these are typical):
+
+| Unit type | Map Move |
+|-----------|---------:|
+| Heavy infantry | 8 |
+| Light infantry | 14 |
+| Light cavalry | 20 |
+| Unicorn | 26 |
+| Slow flier | 14 |
+| Flier | 20 |
+| Fast flier | 26 |
+| All commanders | +2 |
+
+There are two special terrain types which are properties of the borders between provinces
+rather than the provinces themselves: rivers and mountain passes.
+
+- **Rivers** may not be crossed unless the Cold scales in the provinces on both sides of that
+  river border are +1 or greater (the river is frozen). Flying, floating, and swimming units
+  may cross rivers without penalty regardless of scales, as may units with the ability to
+  enter water.
+- **Mountain passes** may be crossed if the Heat scales in the provinces on both sides of
+  that mountain border are +1 or greater (the passes are open). Flying and floating units may
+  cross without penalty regardless of scales, as may units with the Mountain Survival ability.
+
+Additional details:
+
+- Unless a unit is amphibious or aquatic it cannot enter an underwater province. (Poor
+  amphibians are included, but differ from amphibians in combat. Amphibians, poor or
+  otherwise, may cross rivers without penalty.)
+- Aquatic units cannot enter land.
+- A unit with the sailing ability may cross water provinces, but may not remain in such a
+  province at the end of the turn. This ability does not in itself allow units to cross
+  rivers.
+
+All units (both the commander and his troops) must have the abilities listed above in order
+to take advantage of them. Just because a commander can fly doesn't mean his troops can.
+(Exception: some commanders can give their troops water-breathing abilities, and commanders
+with sailing can transport non-sailing units.)
+
+Armies move at the speed of the slowest unit in the army. If you want to quickly remove slow
+units from a squad you can mouse-over the squad and hit the `m` key to select the slowest
+units in that squad.
+
+> **Example of movement:** Aethelwald the Knight Commander of Avalon is leading his troop of
+> knights on a raid from the Canese Plain. He wants to strike into the Atlantian province of
+> Ard. He has a map move of 22. Moving from Canese Plain to Trisia costs 3 to leave (reduced
+> to 2 by the road), and 3 to enter (reduced to 2). So far he has spent 4. Moving from Trisia
+> to Sottera costs 3 to exit (total 7), then 3 for the plains plus 4 because Sottera is an
+> enemy province = 7 to enter, total 14. To get to Ard he would have to spend 3 to leave plus
+> 4 (enemy), then 3 to enter Ard plus 4 (enemy) = 28 points, and he only has 22. He stops in
+> Sottera and will fight the forces of Agartha.
+
+### Stealthy units
+
+Units with the Stealth ability can move unseen from province to province. All movement
+restrictions apply normally. Stealthy units ordered to sneak (the default order) move as
+normal but do not join in combat if they enter an enemy province that turn. Units already
+hiding in an enemy province can be given orders to attack that province in that turn. Certain
+special stealthy units can perform other tasks while in an enemy province, such as Instill
+Uprising or Assassinate Commander.
+
+Units moving with Stealthy commanders must also be stealthy or the commander loses his
+ability to sneak while with them. Stealthy units can be ordered to move normally by issuing
+the movement order while holding down `Ctrl`.
+
+Stealthy priests may preach the faith of their pretenders. A preaching stealthy unit gets a
+bonus to its stealth dependent on the population of the province (it is easier to hide in a
+densely populated province). This stealth bonus is only available while performing the Preach
+order.
+
+### Glamour and Darkvision
+
+**Glamour** units cannot be seen at all when in a friendly province. Glamour also gives units
+the Mirror Image ability in combat.
+
+**Darkvision** units are less affected by darkness, depending on the level of their
+Darkvision attribute. Penalties for darkness affect a unit's Attack, Defense, and Precision.
+For normal units these are reduced as follows: night -3, Utterdark -6, blind -9. Darkvision
+does not help you if you are blind.
+
+## Initiation of combat
+
+Combat in Dominions 6 is resolved between any mutually discovered enemy forces in a province
+where neither side has the benefit of a fortress. This means you can have a scout or spy in a
+province with the enemy, but if he remains undiscovered, combat is not initiated. If one side
+is in a fortress, it cannot be assailed until the fortress is besieged and broken (see
+[Sieges](06-combat.qmd)), or the defending force chooses to sortie (Break Siege).
+
+**More than two enemies in combat.** If forces from different sides occupy the same province
+at the end of a turn (and neither one is in a fortress), they fight. If three or more sides
+have forces in a province, the game determines in which order they entered, and fights the
+battles sequentially, with the survivors of each battle being the defenders in the next.
+There will never be more than two sides in a single battle.
+
+> **Example:** Jotunheim, Marignon, and Pythium all enter Robber Home in the same turn. The
+> game determines that Marignon got there first, followed by Pythium and Jotunheim. The first
+> battle is Pythium attacking Marignon. Whichever side wins then defends against Jotunheim,
+> but only with those units that survived the first battle.
+
+Armies which are allied can occupy the same province. If allied armies are attacked, the
+attacker fights each defender sequentially in random order.
 
 ## Orders
 
-<!-- p.50 -->
+Units can be given a variety of orders. A movement order is given by left-clicking on the
+commander's icon, then left-clicking on the destination province. This arrow is
+point-to-point and does not mean the moving unit will enter each province the arrow crosses.
+If the move is illegal, no arrow is displayed. If the move order is legal but becomes illegal
+before hosting (e.g. removing Flying Boots from a commander crossing difficult terrain), the
+arrow remains but the commander will not move, because the move order is validated during turn
+hosting.
 
-### Move
+**Move**
+: Move to another province. If it is an enemy province, combat will occur. A commander given
+an order to move to a province containing a fort will enter the fort (contrast with Move and
+Patrol).
 
-<!-- p.50 -->
+**Sneak**
+: Movement into enemy provinces without being detected. Only Stealthy units can attempt such
+moves. Their chance of success depends on their Stealth rating, the number of units trying to
+hide, and the number of units looking for them. Combat will not occur unless the unit is
+discovered. To give a stealthy commander the order to move normally (and thus attack the
+province it enters), hold down `Ctrl` while left-clicking. A stealthy commander will not
+sneak unless all units under his command are stealthy.
 
-### Sneak
+**Patrol**
+: Patrolling a province both reduces unrest and has a chance to discover hidden units. For
+each point of unrest eliminated by patrollers, the population is reduced by 10. If an enemy is
+discovered by a patrol, the entire defending force of the province will engage it. If there
+is a castle, those inside without a patrol order will not participate. Patrol Strength is
+affected by unrest:
+  - **Stealth strength:** Stealth value of leader -1 per stealthy unit in his army (or -0.5
+    if unit has >=+50 in stealth).
+  - **Patrol Strength:** Sum of Patrol strength of all patrolling units - unrest/2 (capped at
+    unrest 100) + (province defence -14 if province defence is 15 or greater).
+  - The stealthy units are found if Patrol Strength + 2d25 (open-ended) > Stealth strength +
+    2d25 (open-ended).
+  - The individual Patrol Strength of a unit = (Precision + (Map Move, or 30 if flying)) / 20.
+    Units with a Patrol bonus add it. Commanders have their value doubled; undisciplined and
+    mindless units count as half.
 
-<!-- p.50 -->
+**Defend**
+: Exactly the same as Patrol except there is no patrolling. Units enter combat against any
+non-Stealthy units entering the province. Unrest is not reduced, but the province is still
+defended. This is the default order. Units ordered to defend in a province with a fort will
+not fight an enemy force entering the province; instead they become besieged. (The difference
+between Patrol and Defend in a province with a fort: patrollers engage in combat outside the
+fort, while defenders concede the province and become besieged.)
 
-### Patrol
+Movement is carried out in two steps: first, all units moving to a friendly province do so;
+afterward, movement takes place in which units are moving to an enemy province. Thus, if you
+are moving an army to one of your provinces and an enemy is moving to that same province, your
+army will get there first.
 
-<!-- p.50 -->
+> **Important:** If you order a force into a friendly province containing a fortress, it will
+> automatically "enter" the fortress and behave as though it has the order "Defend Castle."
+> If you want a second army to battle in the province itself rather than going into the
+> fortress, you must use **Move and Patrol**.
 
-### Defend
+**Move and Patrol**
+: Becomes available once a unit has been given an order to move into a friendly province with
+a fortress. It instructs the commander to move to the province and then patrol outside the
+fortress. Enemy units entering will be engaged in combat. You can also hold `shift`+`ctrl`
+when selecting the destination. Next turn the order is replaced by a regular Patrol order.
 
-<!-- p.51 -->
+**Blood Hunt**
+: How blood slaves are collected for blood magic sacrifices. A blood hunter must pass three
+successive checks:
+  - A level check: % chance of success = 10 + (blood level x 30)
+  - A population check: % chance of success = province's population / 75
+  - An unrest check: % chance of failure = province unrest / 4
 
-### Move and Patrol
+  If all succeed, the number of slaves found is d6 + blood level and unrest increases by
+  d(slaves x 3 + 4). If any check fails, no slaves are found and unrest increases by d6 - 1.
+  Magic site frequency other than 50% also affects the number found (every 5% adds or
+  subtracts on average 0.5 slaves). Beware: some people may refuse to give up their daughters,
+  which can cause a fight. A strong dominion convinces commoners it is an honor to be
+  sacrificed; at dominion strength 10 almost no one refuses.
 
-<!-- p.51 -->
+**Break Siege**
+: Orders units besieged in a fortress to fight a battle against the enemy units in that
+province. Units which retreat flee back into the castle, or into a neighboring friendly
+province (50/50 if both are possible).
 
-### Blood Hunt
+**Maintain Siege**
+: The default order for any units besieging a fortress. Only units with this order contribute
+to siege strength.
 
-<!-- p.51 -->
+**Storm Castle**
+: Only available if you have reduced a castle's defenses to zero. On the next turn you may
+storm the castle, initiating a battle in which the defenders begin behind their own walls.
+Because castle storming occurs after movement, a besieging force may be forced to fight an
+enemy relieving force first.
 
-### Break Siege
+**Assassinate**
+: A random enemy commander in that province is targeted. The assassin fights a battle with
+the commander, plus any guards or townsfolk nearby. Bodyguards explicitly assigned to the
+victim have a 50% chance each of being present (increased by the Bodyguard ability, decreased
+by the Assassin's patience value). The target is considered unprepared and will not follow
+scripted orders. Assassinations occur at random locations based on the buildings present and
+who the victim is (e.g. a priest in the temple, a normal commander at the tavern).
 
-<!-- p.52 -->
+**Scale Walls**
+: Assassins can usually operate in all provinces they are sneaking in, even provinces with
+forts. But if the fort is under siege, it is not possible to assassinate into or out of the
+castle. The Scale Walls ability negates this protection. Flying and teleporting units can
+likewise ignore walls. The same restriction applies to Seduction, Lure, Infiltration, etc.
 
-### Maintain Siege
+**Seduction**
+: Some units (Nagini, dryads) can seduce enemy commanders of the opposite gender to switch
+sides. The victim must succeed at a morale check or become seduced. The seducer must be
+adjacent to a friendly province into which the target is taken (a flying seducer need not be
+adjacent). Items that grant beauty make seduction harder to resist. A failed seduction may
+result in an assassination battle.
 
-<!-- p.52 -->
+**Dream Seduction**
+: Like seduction, but with a difficult magic resistance roll and usually a higher morale
+check difficulty. Succubi have this power and benefit from items boosting beauty (vs morale)
+and penetration (vs magic resistance).
 
-### Storm Castle
+**Corruption**
+: Some units can corrupt enemy commanders to switch sides. Works like seduction, but beauty
+items have no effect.
 
-<!-- p.52 -->
+**Lure of the sirens**
+: A difficult magic resistance check followed by a morale check against the lure ability (10).
+Usable only in coastal provinces. Failure doesn't cause an assassination battle, making it
+rather safe. If successful, the target drowns himself, or enters the sea and attacks the
+siren if able to breathe underwater.
 
-### Assassinate
+**Preach**
+: Allows priests to increase dominion in a province (see the [Dominion chapter](08-dominion.qmd)).
 
-<!-- p.52 -->
+**Pillage**
+: Increases unrest and kills population, decreases the province's supplies, and gains gold and
+food for the pillaging army. Fast and large units are better; barbarians and units with Fear
+are exceptionally good. The supplies gained last only one month.
 
-#### Scale Walls
+**Raid**
+: A move that can only be performed by a commander with the Pillager ability if his army has a
+map move of 20 or more. It does a movement followed by a pillage (at reduced strength: only
+units with the pillager ability contribute, and their pillage strength is divided by 2). A
+raid will often result in a fight, which must be won for any pillaging to take effect.
 
-<!-- p.52 -->
+**Reanimate**
+: Available to many undead priests, some nations (Ermor, Lemuria), and some units (Carrion
+Lords and their servants). Most reanimator priests can choose what kind of undead they
+reanimate. Ghouls are living humans transformed by vile rites (reduces population). Soulless
+are reanimated corpses of the newly dead (requires unburied corpses; reduces them). Longdead
+are reanimated skeletal warriors (no limit). The table below lists the reanimation rate for
+Ermor - Ashen Empire.
 
-#### Mounts
+| Priest level | Ghouls | Soulless | Longdead | Longdead horsemen | Lictors |
+|-------------:|-------:|---------:|---------:|------------------:|--------:|
+| 1 | 6 | 8 | 3 | 0 | 0 |
+| 2 | 7 | 16 | 5 | 1 | 0 |
+| 3 | 8 | 24 | 7 | 2 | 1 |
+| 4 | 9 | 32 | 9 | 3 | 2 |
+| 5 | 10 | 40 | 11 | 4 | 3 |
 
-<!-- p.52 -->
+: Reanimation table (Ermor - Ashen Empire)
 
-### Seduction
+**Manikin Reanimation**
+: Asphodel gets manikins and different carrion beasts instead of normal undead. If there are
+still human inhabitants or dead human corpses in the province, there is a chance for manikins
+and mandragoras to appear; otherwise carrion beasts (based on animals) are reanimated.
+Reanimate Manikins is much less effective in an enemy dominion.
 
-<!-- p.53 -->
+**Contact Allies**
+: Some commanders (e.g. Draconians) are able to gather more troops by spending the month
+gathering them.
 
-#### Dream Seduction
+**Perform Blood Sacrifice**
+: May only be performed in a province with a temple, by a nation which has the ability because
+it has been part of their history:
+  - *Early age:* Mictlan, Xibalba, Marverni, Sauromatia, Abysia, Pangaea, Vanheim, Hinnom,
+    Berytos
+  - *Middle age:* Abysia, Vanheim, Pyrene, Vanarus, Nidavangr
+  - *Late age:* Marignon, Mictlan, Xibalba, Abysia, Midgard, Gath
 
-<!-- p.53 -->
+**Capture Slaves**
+: Available to Mictlan and Nazca. A 1d6 + 5 number of slaves are rounded up and forced to join
+the army. They are weak and cowardly soldiers but are free to recruit.
 
-#### Corruption
+**Become Prophet**
+: Designates the unit as the one and only prophet of the nation's pretender god. The unit's
+priest level is increased by 1 or to 3, whichever is higher, and the prophet starts spreading
+dominion like a temple. If a prophet is killed, the nation must wait half a year (6 turns)
+before designating a new one.
 
-<!-- p.53 -->
+**Instill Uprising**
+: Available to units with the spy ability (spies, bards). Increases the level of unrest in the
+enemy province they occupy.
 
-#### Lure of the sirens
+**Infiltrate**
+: Infiltrate the enemy capital to access records and find out as much as possible about the
+nation. Only in the capital of an enemy nation. If successful it reveals the mundane score
+graphs (plus magic graphs if the spy is a caster, plus the dominion graph if a priest). The
+attempt has about 50% chance to fail, after which the enemy learns someone attempted to
+infiltrate.
 
-<!-- p.53 -->
+**Hide**
+: The default order for stealthy units who are not moving. A hiding unit will not participate
+in any combat in that province unless discovered, in which case a separate battle is fought.
 
-### Preach
+**Attack Current Province**
+: Available to Stealthy units hiding in an enemy province. The unit joins friendly units
+attacking the province. Treated as a movement order of distance zero.
 
-<!-- p.53 -->
+**Construct Building**
+: In any friendly province, three types of buildings can be constructed: a fort (anyone), a
+temple (requires a sacred commander), and a lab (requires a mage).
 
-### Pillage
-
-<!-- p.53 -->
-
-### Raid
-
-<!-- p.53 -->
-
-### Reanimate
-
-<!-- p.53 -->
-
-#### Manikin Reanimation
-
-<!-- p.54 -->
-
-### Contact Allies
-
-<!-- p.54 -->
-
-### Perform Blood Sacrifice
-
-<!-- p.54 -->
-
-### Capture Slaves
-
-<!-- p.54 -->
-
-### Become Prophet
-
-<!-- p.54 -->
-
-### Instill Uprising
-
-<!-- p.54 -->
-
-### Infiltrate
-
-<!-- p.54 -->
-
-### Hide
-
-<!-- p.54 -->
-
-### Attack Current Province
-
-<!-- p.55 -->
-
-### Construct Building
-
-<!-- p.55 -->
-
-### Demolish Building
-
-<!-- p.55 -->
+**Demolish Building**
+: Can be done by anyone and takes one month, whether a fort or a lab. Temples cannot be
+demolished (but enemy temples are destroyed automatically when conquered). A fort cannot be
+demolished if it is under siege.
 
 ## Turn resolution sequence
 
-<!-- p.55 -->
+All players' turn orders are resolved simultaneously when a turn is hosted. During hosting,
+the game resolves orders in the following order:
 
-
-::: callout-note
-Transcription pending.
-:::
+1. **Send messages** -- gold, gems, and items are dispatched (always, since everything that
+   could stop this occurs later).
+2. **Research** -- mages perform research. Even if a mage is later killed, he contributes his
+   research points that turn.
+3. **Recruitment** -- new units and commanders are recruited.
+4. **Empowerment** -- increased magic paths due to Empowerment are conferred.
+5. **Forge items** -- new items are forged into the national inventory.
+6. **Preach** -- priests preach and dominion is adjusted.
+7. **Heretic preaching** -- heretics, insane commanders and commanders with shattered soul
+   preach.
+8. **Claim thrones** -- Thrones of Ascension are claimed.
+9. **Quick special orders** -- a few special orders are quicker (Enter Site to Scry, Cultivate
+   Pearls).
+10. **Magic rituals** -- all mages cast their rituals in random order.
+11. **Remote attacks** -- rituals that strike enemy armies in remote provinces (e.g. Fires
+    from Afar).
+12. **Magic battles** -- battles caused by magic (e.g. Wind Ride, teleporting).
+13. **Lost in other planes** -- units lost in another plane, including battles fought there.
+14. **Site searches** -- magic site searches are resolved.
+15. **Prophets** -- prophets are declared.
+16. **Call God** -- priests call their banished gods.
+17. **Awakening** -- pretenders awaken (dormant or imprisoned).
+18. **Blood hunting** -- the hunt for blood slaves takes place.
+19. **Horrors** -- units are visited by Horrors, if such a misfortune befalls them.
+20. **Assassinations** -- assassination attempts (including all seduction and spy abilities).
+21. **Relinquish province** -- relinquish to a non-stealthed allied commander present.
+22. **Claim mounts** -- commanders without mounts can claim new ones.
+23. **Lone mounts** -- riders without mounts or smart mounts without riders try to make their
+    way home or disperse.
+24. **Friendly movement** -- all movement ending in a friendly province.
+25. **Other movement** -- all other movement, including Break Siege.
+26. **Resolve battles** -- battle resolution from movement.
+27. **Castle storming** -- castles are stormed and battles resolved.
+28. **Global enchantments** -- take effect (casting itself happened in step 10).
+29. **Random events** -- Fortune/Misfortune events.
+30. **Resolve battles** -- battles caused by events.
+31. **Magic items/monsters** -- special effects from magic items or monsters.
+32. **Resolve battles** -- battles caused by the previous.
+33. **Sneak discovery** -- discovered stealthy units fight for their lives.
+34. **Change besieger** -- if two allies besiege the same castle, the besieger is decided
+    (larger armies take precedence).
+35. **Building construction** -- fortresses, temples, and labs are built or demolished.
+36. **Special orders** -- Reanimate, Summon Allies, etc. (allies summoned this turn are not
+    available for this turn's battles).
+37. **Pillage** -- increases unrest and kills population.
+38. **Income** -- nations collect income (after Pillage, so pillaging a conquered province
+    yields reduced or no income).
+39. **Unrest alterations** -- changes from dominion, scales, and patrolling.
+40. **Starvation** -- units without supplies suffer starvation (after battles, so the first
+    turn without supplies an army fights without starvation effects).
+41. **Upkeep / Desertion** -- upkeep is paid (after income) and desertion happens.
+42. **Dominion spread** -- all dominion spread is conducted.
+43. **Dominion effects** -- population death, insanity, spreading heat or cold, etc.
+44. **Site effects** -- magic sites spread disease, unrest, and the like.
+45. **Overpopulation** -- if close to the limit of 600,000 units or 50,000 commanders, the
+    most numerous are culled.
+46. **Aging** -- only during midwinter. Units age one year and may get an affliction.
+47. **Resolve battles** -- leftover battles from previous events.
+48. **Heal / Disease** -- units regain lost hit points unless diseased, in which case they
+    suffer more damage.
+49. **Insanity** -- units may go insane from certain dominion or other effects.
+50. **Mercenaries** -- mercenaries are bought or maintained.
+51. **New random heroes** -- heroes may appear at a nation's capital gates.
