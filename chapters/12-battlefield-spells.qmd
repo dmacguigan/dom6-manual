@@ -50,978 +50,1303 @@ the code is the research level.
 
 ## Fire Spells
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Evo 0 | Fire Flies | F1 | 20 | 30+ | 0 | -1 | 8 | 6 | AP, NUW |
-| Evo 1 | Burning Hands | F1 | 5 | 1 | 1 | 0 | 15+ | 1 | AP, NUW |
-| Evo 1 | Fire Darts | F1 | 20 | 30+ | 0 | 1 | 10 | 4+ | AP, NUW |
-| Alt 2 | Burn | F1 | 10 | 30 | 0 | 100 | 0 | 1 | NUW |
-| Alt 2 | Resist Cold | F1 | 10 | 0 | 0 | 0 | 0 | 1 |  |
-| Alt 4 | Combustion | F1 | 20 | 30 | 1 | 100 | 0 | 1 | NUW |
-| Alt 6 | Blindness | F1 | 20 | 20 | 0 | 100 | 0 | 1 | MR |
-| Conj 3 | Summon Lesser Fire | F1 | 100 | 1 | 0 | 0 | 0 | 1 | NUW Elemental Summons Fire Elemental x1: HP 25, Prot 0, MR 13, Mor 50, Str 12, Att 10, Def 8, Prec 5, Enc 0, CS 7, MM 16, Eth, Spi, Inanim, Magic, Mind, NNEat, Aff Res 99, Heat pow 1, FR +50, CR -5, PR +25, SpSi, Heat 4, Fire Shield 10 AP dmg, Wpn: Flame Strike |
-| Conj 5 | Will o' the Wisp | F1 | 100 | 0 | 0 | 0 | 0 | 2 | NUW Summons Will o' the Wisp x2: HP 3, Prot 0, MR 12, Mor 50, Str 3, Att 20, Def 20, Prec 5, Enc 0, CS 22, MM 22, SS, Float, Eth, Spi, Magic, Mind, NNEat, FR +15, PR +15, SpSi, Wpn: Flame Burst |
-| Ench 1 | Protection from Fire | F1 | 5 | 0 | 0 | 0 | 0 | 1 |  |
-| Ench 3 | Fire Shield | F1 | 20 | 0 | 0 | 0 | 0 | 1 | NUW |
-| Thau 2 | Bonds of Fire | F1 | 20 | 20 | 0 | 3 | 0 | 1 | NUW |
-| Evo 1 | Flame Bolt | F2 | 20 | 45+ | 1 | 2 | 15+ | 1 | AP, NUW |
-| Evo 2 | Fire Blast | F2 | 20 | 7+ | 3 | 0 | 15+ | 1 | AP, NUW |
-| Evo 2 | Sulphur Haze | F2A1 | 20 | 30 | 4+ | 0 | 104+ | 1 | AN, NUW |
-| Evo 3 | Fireball | F2 | 20 | 35+ | 1 | 1 | 16+ | 1 | AP, NUW |
-| Evo 6 | Flame Eruption | F2 | 30 | 7+ | 15 | 0 | 13+ | 1 | AP, NUW |
-| Evo 8 | Pillar of Fire | F2 | 20 | 100 | 1 | 0 | 35+ | 1 | AP, NUW |
-| Alt 3 | Immolation | F2 | 20 | 0 | 7 | 0 | 12+ | 1 | AP, NUW |
-| Alt 3 | Cold Resistance | F2 | 20 | 15 | 1 | 0 | 0 | 1 |  |
-| Alt 7 | Phoenix Pyre | F2 | 20 | 0 | 0 | 0 | 0 | 1 | NUW |
-| Alt 8 | Conflagration | F2 | 20 | 30 | 10 | 100 | 0 | 1 | NUW |
-| Conj 3 | Phoenix Power | F2 | 20 | 0 | 0 | 0 | 0 | 1 | NUW |
-| Conj 4 | Nest of Salamanders | F2 | 100 | 0 | 0 | 0 | 0 | 10+ | NUW Summons Salamander Asp x10+: HP 2, Prot 1, MR 12, Mor 50, Str 2, Att 12, Def 10, Prec 5, Enc 2, CS 6, MM 10, SS, Magic, Mind, NNEat, Stealth 40, Heat pow 1, FR +25, Fire Shield 3 AP dmg, Wpn: Flame Poison Bite |
-| Ench 2 | Ignite Arrows | F2 | 20 | 10 | 1 | 0 | 0 | 1 | NUW |
-| Ench 3 | Lesser Flame Ward | F2 | 20 | 15 | 1 | 0 | 0 | 1 |  |
-| Ench 5 | Flame Ward | F2 | 100 | 15 | 20+ | 0 | 0 | 1 |  |
-| Thau 2 | Battle Fury | F2 | 20 | 10 | 1 | 2 | 0 | 1 | AnimIm, MindIm |
-| Thau 3 | Rage | F2 | 20 | 30 | 0 | 100 | 0 | 1 | MR, MindIm |
-| Thau 4 | Furious Warriors | F2 | 40 | 15 | 3+ | 2 | 0 | 1 | AnimIm, MindIm |
-| Thau 8 | Hydrophobia | F2 | 100 | 30 | 5 | 100 | 0 | 1 | MR, UndIm, InanimIm, MindIm |
-| Evo 2 | Flare | F3 | 50 | 45+ | 1 | 1 | 22+ | 1 | AP, NUW |
-| Evo 4 | Fire Cloud | F3A1 | 20 | 30 | 8+ | 1 | 8 | 1 | AP, NUW |
-| Evo 5 | Falling Fires | F3 | 20 | 50 | 6+ | -3 | 15 | 1 | AP, NUW |
-| Evo 5 | Hidden Flame | F3S1 | 20 | 40+ | 1 | 0 | 25+ | 1 | AN, NUW |
-| Alt 5 | Cold Resistant Warriors | F3 | 100 | 15 | 20+ | 0 | 0 | 1 |  |
-| Alt 5 | Incinerate | F3 | 20 | 30 | 0 | 100 | 18+ | 1 | AN |
-| Alt 5 | Solar Eclipse | F3S1 | 100 | 0 | 0 | 0 | 0 | 1 | BE, NUW |
-| Alt 6 | Boil | F3W1 | 20 | 30 | 1 | 100 | 9+ | 1 | AN, UW |
-| Conj 5 | Summon Fire Elemental | F3 | 100 | 1 | 0 | 0 | 0 | 1 | NUW Summons Fire Elemental x1: HP 70, Prot 0, MR 16, Mor 50, Str 18, Att 10, Def 8, Prec 5, Enc 0, CS 10, MM 16, Eth, Spi, Inanim, Magic, Mind, NNEat, Aff Res 99, Heat pow 1, FR +50, CR -5, PR +25, SpSi, Heat 7, Fire Shield 13 AP dmg, Wpn: Flame Strike |
-| Ench 5 | Flaming Arrows | F3 | 100 | 15 | 20+ | 0 | 0 | 1 | NUW |
-| Thau 4 | Prison of Fire | F3 | 30 | 30 | 3+ | 2 | 0 | 1 | NUW |
-| Thau 5 | Gift of the Furies | F3 | 100 | 15 | 20+ | 2 | 0 | 1 | AnimIm, MindIm |
-| Alt 8 | Flameflesh Army | F4 | 200 | 0 | BF | 0 | 0 | 1 |  |
-| Conj 7 | Living Fire | F4 | 200 | 1 | 0 | 0 | 0 | 4+ | NUW Summons Fire Elemental x4+: HP 53, Prot 0, MR 15, Mor 50, Str 16, Att 10, Def 8, Prec 5, Enc 0, CS 9, MM 16, Eth, Spi, Inanim, Magic, Mind, NNEat, Aff Res 99, Heat pow 1, FR +50, CR -5, PR +25, SpSi, Heat 6, Fire Shield 12 AP dmg, Wpn: Flame Strike |
-| Ench 6 | Heat from Hell | F4 | 200 | 0 | 0 | 0 | 0 | 1 | BE, NUW |
-| Ench 7 | Hail of Burning Embers | F4 | 200 | 0 | BF | 0 | 0 | 1 | NUW |
-| Ench 8 | Fire Fend | F4 | 100 | 0 | BF | 0 | 0 | 1 |  |
-| Evo 7 | Fire Storm | F5 | 300 | 0 | 0 | 0 | 0 | 1 | BE, NUW |
-| Evo 9 | Flame Storm | F5 | 100 | 40+ | 50 | 0 | 15+ | 1 | AP, NUW |
-| Alt 8 | All-consuming Pyre | F5 | 100 | 0 | 40 | 0 | 20+ | 1 | AP, NUW |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Evo 0</td><td>Fire Flies</td><td>F1</td><td>20</td><td>30+</td><td>0</td><td>-1</td><td>8</td><td>6</td><td>AP, NUW</td></tr>
+<tr><td>Evo 1</td><td>Burning Hands</td><td>F1</td><td>5</td><td>1</td><td>1</td><td>0</td><td>15+</td><td>1</td><td>AP, NUW</td></tr>
+<tr><td>Evo 1</td><td>Fire Darts</td><td>F1</td><td>20</td><td>30+</td><td>0</td><td>1</td><td>10</td><td>4+</td><td>AP, NUW</td></tr>
+<tr><td>Alt 2</td><td>Burn</td><td>F1</td><td>10</td><td>30</td><td>0</td><td>100</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr><td>Alt 2</td><td>Resist Cold</td><td>F1</td><td>10</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Alt 4</td><td>Combustion</td><td>F1</td><td>20</td><td>30</td><td>1</td><td>100</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr><td>Alt 6</td><td>Blindness</td><td>F1</td><td>20</td><td>20</td><td>0</td><td>100</td><td>0</td><td>1</td><td>MR</td></tr>
+<tr><td>Conj 3</td><td>Summon Lesser Fire</td><td>F1</td><td>100</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>NUW Elemental</td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Fire Elemental x1: HP 25, Prot 0, MR 13, Mor 50, Str 12, Att 10, Def 8, Prec 5, Enc 0, CS 7, MM 16, Eth, Spi, Inanim, Magic, Mind, NNEat, Aff Res 99, Heat pow 1, FR +50, CR -5, PR +25, SpSi, Heat 4, Fire Shield 10 AP dmg, Wpn: Flame Strike</td></tr>
+<tr><td>Conj 5</td><td>Will o&#x27; the Wisp</td><td>F1</td><td>100</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td>NUW</td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Will o&#x27; the Wisp x2: HP 3, Prot 0, MR 12, Mor 50, Str 3, Att 20, Def 20, Prec 5, Enc 0, CS 22, MM 22, SS, Float, Eth, Spi, Magic, Mind, NNEat, FR +15, PR +15, SpSi, Wpn: Flame Burst</td></tr>
+<tr><td>Ench 1</td><td>Protection from Fire</td><td>F1</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Ench 3</td><td>Fire Shield</td><td>F1</td><td>20</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr><td>Thau 2</td><td>Bonds of Fire</td><td>F1</td><td>20</td><td>20</td><td>0</td><td>3</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr><td>Evo 1</td><td>Flame Bolt</td><td>F2</td><td>20</td><td>45+</td><td>1</td><td>2</td><td>15+</td><td>1</td><td>AP, NUW</td></tr>
+<tr><td>Evo 2</td><td>Fire Blast</td><td>F2</td><td>20</td><td>7+</td><td>3</td><td>0</td><td>15+</td><td>1</td><td>AP, NUW</td></tr>
+<tr><td>Evo 2</td><td>Sulphur Haze</td><td>F2A1</td><td>20</td><td>30</td><td>4+</td><td>0</td><td>104+</td><td>1</td><td>AN, NUW</td></tr>
+<tr><td>Evo 3</td><td>Fireball</td><td>F2</td><td>20</td><td>35+</td><td>1</td><td>1</td><td>16+</td><td>1</td><td>AP, NUW</td></tr>
+<tr><td>Evo 6</td><td>Flame Eruption</td><td>F2</td><td>30</td><td>7+</td><td>15</td><td>0</td><td>13+</td><td>1</td><td>AP, NUW</td></tr>
+<tr><td>Evo 8</td><td>Pillar of Fire</td><td>F2</td><td>20</td><td>100</td><td>1</td><td>0</td><td>35+</td><td>1</td><td>AP, NUW</td></tr>
+<tr><td>Alt 3</td><td>Immolation</td><td>F2</td><td>20</td><td>0</td><td>7</td><td>0</td><td>12+</td><td>1</td><td>AP, NUW</td></tr>
+<tr><td>Alt 3</td><td>Cold Resistance</td><td>F2</td><td>20</td><td>15</td><td>1</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Alt 7</td><td>Phoenix Pyre</td><td>F2</td><td>20</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr><td>Alt 8</td><td>Conflagration</td><td>F2</td><td>20</td><td>30</td><td>10</td><td>100</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr><td>Conj 3</td><td>Phoenix Power</td><td>F2</td><td>20</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr><td>Conj 4</td><td>Nest of Salamanders</td><td>F2</td><td>100</td><td>0</td><td>0</td><td>0</td><td>0</td><td>10+</td><td>NUW</td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Salamander Asp x10+: HP 2, Prot 1, MR 12, Mor 50, Str 2, Att 12, Def 10, Prec 5, Enc 2, CS 6, MM 10, SS, Magic, Mind, NNEat, Stealth 40, Heat pow 1, FR +25, Fire Shield 3 AP dmg, Wpn: Flame Poison Bite</td></tr>
+<tr><td>Ench 2</td><td>Ignite Arrows</td><td>F2</td><td>20</td><td>10</td><td>1</td><td>0</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr><td>Ench 3</td><td>Lesser Flame Ward</td><td>F2</td><td>20</td><td>15</td><td>1</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Ench 5</td><td>Flame Ward</td><td>F2</td><td>100</td><td>15</td><td>20+</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Thau 2</td><td>Battle Fury</td><td>F2</td><td>20</td><td>10</td><td>1</td><td>2</td><td>0</td><td>1</td><td>AnimIm, MindIm</td></tr>
+<tr><td>Thau 3</td><td>Rage</td><td>F2</td><td>20</td><td>30</td><td>0</td><td>100</td><td>0</td><td>1</td><td>MR, MindIm</td></tr>
+<tr><td>Thau 4</td><td>Furious Warriors</td><td>F2</td><td>40</td><td>15</td><td>3+</td><td>2</td><td>0</td><td>1</td><td>AnimIm, MindIm</td></tr>
+<tr><td>Thau 8</td><td>Hydrophobia</td><td>F2</td><td>100</td><td>30</td><td>5</td><td>100</td><td>0</td><td>1</td><td>MR, UndIm, InanimIm, MindIm</td></tr>
+<tr><td>Evo 2</td><td>Flare</td><td>F3</td><td>50</td><td>45+</td><td>1</td><td>1</td><td>22+</td><td>1</td><td>AP, NUW</td></tr>
+<tr><td>Evo 4</td><td>Fire Cloud</td><td>F3A1</td><td>20</td><td>30</td><td>8+</td><td>1</td><td>8</td><td>1</td><td>AP, NUW</td></tr>
+<tr><td>Evo 5</td><td>Falling Fires</td><td>F3</td><td>20</td><td>50</td><td>6+</td><td>-3</td><td>15</td><td>1</td><td>AP, NUW</td></tr>
+<tr><td>Evo 5</td><td>Hidden Flame</td><td>F3S1</td><td>20</td><td>40+</td><td>1</td><td>0</td><td>25+</td><td>1</td><td>AN, NUW</td></tr>
+<tr><td>Alt 5</td><td>Cold Resistant Warriors</td><td>F3</td><td>100</td><td>15</td><td>20+</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Alt 5</td><td>Incinerate</td><td>F3</td><td>20</td><td>30</td><td>0</td><td>100</td><td>18+</td><td>1</td><td>AN</td></tr>
+<tr><td>Alt 5</td><td>Solar Eclipse</td><td>F3S1</td><td>100</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>BE, NUW</td></tr>
+<tr><td>Alt 6</td><td>Boil</td><td>F3W1</td><td>20</td><td>30</td><td>1</td><td>100</td><td>9+</td><td>1</td><td>AN, UW</td></tr>
+<tr><td>Conj 5</td><td>Summon Fire Elemental</td><td>F3</td><td>100</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Fire Elemental x1: HP 70, Prot 0, MR 16, Mor 50, Str 18, Att 10, Def 8, Prec 5, Enc 0, CS 10, MM 16, Eth, Spi, Inanim, Magic, Mind, NNEat, Aff Res 99, Heat pow 1, FR +50, CR -5, PR +25, SpSi, Heat 7, Fire Shield 13 AP dmg, Wpn: Flame Strike</td></tr>
+<tr><td>Ench 5</td><td>Flaming Arrows</td><td>F3</td><td>100</td><td>15</td><td>20+</td><td>0</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr><td>Thau 4</td><td>Prison of Fire</td><td>F3</td><td>30</td><td>30</td><td>3+</td><td>2</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr><td>Thau 5</td><td>Gift of the Furies</td><td>F3</td><td>100</td><td>15</td><td>20+</td><td>2</td><td>0</td><td>1</td><td>AnimIm, MindIm</td></tr>
+<tr><td>Alt 8</td><td>Flameflesh Army</td><td>F4</td><td>200</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Conj 7</td><td>Living Fire</td><td>F4</td><td>200</td><td>1</td><td>0</td><td>0</td><td>0</td><td>4+</td><td>NUW</td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Fire Elemental x4+: HP 53, Prot 0, MR 15, Mor 50, Str 16, Att 10, Def 8, Prec 5, Enc 0, CS 9, MM 16, Eth, Spi, Inanim, Magic, Mind, NNEat, Aff Res 99, Heat pow 1, FR +50, CR -5, PR +25, SpSi, Heat 6, Fire Shield 12 AP dmg, Wpn: Flame Strike</td></tr>
+<tr><td>Ench 6</td><td>Heat from Hell</td><td>F4</td><td>200</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>BE, NUW</td></tr>
+<tr><td>Ench 7</td><td>Hail of Burning Embers</td><td>F4</td><td>200</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr><td>Ench 8</td><td>Fire Fend</td><td>F4</td><td>100</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Evo 7</td><td>Fire Storm</td><td>F5</td><td>300</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>BE, NUW</td></tr>
+<tr><td>Evo 9</td><td>Flame Storm</td><td>F5</td><td>100</td><td>40+</td><td>50</td><td>0</td><td>15+</td><td>1</td><td>AP, NUW</td></tr>
+<tr><td>Alt 8</td><td>All-consuming Pyre</td><td>F5</td><td>100</td><td>0</td><td>40</td><td>0</td><td>20+</td><td>1</td><td>AP, NUW</td></tr>
+</tbody></table>
+```
 
 ## Air Spells
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Alt 0 | Air Shield | A1 | 10 | 0 | 0 | 0 | 0 | 1 | NUW |
-| Evo 1 | Shocking Grasp | A1 | 3 | 1 | 0 | 0 | 18+ | 1 | AN |
-| Evo 1 | Gust of Winds | A1 | 10 | 35+ | 2 | 2 | 15+ | 1 | Mun, NUW |
-| Alt 1 | Charge Body | A1 | 5 | 0 | 0 | 0 | 0 | 1 |  |
-| Conj 2 | Summon Hawk | A1 | 20 | 5 | 0 | 0 | 0 | 1 | NUW Summons Black Hawk x1: HP 5, Prot 0, MR 5, Mor 8, Str 5, Att 8, Def 12, Prec 8, Enc 3, CS 4, MM 22, FS, MS, Fly, Wpn: Dive attack, Talons |
-| Conj 2 | Summon Storm Power | A1 | 10 | 0 | 0 | 0 | 0 | 1 | NUW |
-| Conj 3 | Summon Lesser Air | A1 | 100 | 1 | 0 | 0 | 0 | 1 | NUW Elemental Summons Air Elemental x1: HP 15, Prot 0, MR 13, Mor 50, Str 7, Att 12, Def 12, Prec 5, Enc 0, CS 20, MM 34, Fly, Eth, Spi, Inanim, Magic, Mind, Trample, NNEat, Aff Res 99, Storm Power 2, SR +15, PR +25, SpSi, Wpn: Lightning Swarm |
-| Ench 1 | Levitate | A1 | 20 | 0 | 0 | 0 | 0 | 1 | NUW |
-| Ench 1 | Trueshot | A1 | 5 | 10 | 1 | 5 | 0 | 1 | NUW |
-| Ench 1 | Windrunner | A1 | 10 | 0 | 0 | 0 | 0 | 1 | AN |
-| Ench 1 | Protection from Lightning | A1 | 5 | 0 | 0 | 0 | 0 | 1 |  |
-| Ench 2 | Personal Flight | A1 | 20 | 0 | 0 | 0 | 0 | 1 | NUW |
-| Ench 3 | Farflight | A1 | 20 | 10 | 1 | 0 | 0 | 1 | NUW |
-| Thau 2 | Steal Breath | A1 | 20 | 30 | 0 | 5 | 40+ | 1 | AN, MR, UndIm, InanimIm, NUW |
-| Evo 2 | Lightning Bolt | A2 | 10 | 40+ | 0 | 4 | 14+ | 1 | AN |
-| Evo 2 | Shock Wave | A2 | 10 | 2 | 6 | 0 | 9+ | 1 | AN |
-| Evo 3 | Storm Wind | A2 | 10 | 40+ | 8+ | 3 | 17+ | 1 | Mun, NUW |
-| Evo 5 | Orb Lightning | A2 | 20 | 20 | 0 | 0 | 5 | 1 | AN, Chaining 7 |
-| Alt 2 | Personal Mistform | A2 | 10 | 0 | 0 | 0 | 0 | 1 |  |
-| Alt 3 | Protective Winds | A2 | 40 | 15 | 3+ | 0 | 0 | 1 | NUW |
-| Alt 4 | Lacerating Winds | A2 | 20 | 40+ | 5+ | 1 | 5+ | 1 | NUW |
-| Alt 4 | Mistform | A2 | 20 | 10 | 1 | 0 | 0 | 1 |  |
-| Ench 3 | Arrow of the Western Wind A2 | 20 | 50+ | 0 | 25 | 20+ | 1 | NUW |  |
-| Ench 3 | Gift of Flight | A2 | 20 | 10 | 1 | 0 | 0 | 1 | NUW |
-| Ench 3 | Lesser Thunder Ward | A2 | 20 | 15 | 1 | 0 | 0 | 1 |  |
-| Ench 4 | Levitate Soldiers | A2 | 40 | 15 | 3+ | 0 | 0 | 1 | AN, NUW |
-| Ench 4 | Trueshot Warriors | A2 | 100 | 15 | 20+ | 0 | 0 | 1 | NUW |
-| Ench 5 | Farflight Arrows | A2 | 100 | 15 | 20+ | 0 | 0 | 1 | NUW |
-| Ench 5 | Thunder Ward | A2 | 100 | 15 | 20+ | 0 | 0 | 1 |  |
-| Evo 4 | Thunder Strike | A3 | 50 | 100 | 1 | -2 | 26+ | 1 | AN, NUW |
-| Evo 8 | Chain Lightning | A3 | 30 | 25 | 0 | 0 | 6+ | 1 | AN, Chaining 20 |
-| Alt 3 | Mist | A3 | 100 | 0 | 0 | 0 | 0 | 1 | BE, NUW |
-| Alt 5 | Arrow Ward | A3 | 100 | 15 | 20+ | 0 | 0 | 1 | NUW |
-| Conj 5 | Summon Air Elemental | A3 | 100 | 1 | 0 | 0 | 0 | 1 | NUW Summons Air Elemental x1: HP 48, Prot 0, MR 16, Mor 50, Str 13, Att 15, Def 15, Prec 5, Enc 0, CS 26, MM 34, Fly, Eth, Spi, Inanim, Magic, Mind, Trample, NNEat, Aff Res 99, Storm Power 4, SR +15, PR +25, SpSi, Wpn: Lightning Swarm |
-| Ench 6 | Wind Guide | A3 | 100 | 0 | BF | 0 | 0 | 1 | NUW |
-| Alt 5 | Storm | A4 | 100 | 0 | 0 | 0 | 0 | 1 | BE, NUW |
-| Alt 6 | Blizzard | A4W3 | 100 | 0 | 0 | 0 | 0 | 1 | BE, NUW |
-| Alt 7 | Arrow Fend | A4 | 100 | 0 | BF | 0 | 0 | 1 | NUW |
-| Alt 7 | Fog Warriors | A4 | 100 | 15 | 20+ | 0 | 0 | 1 |  |
-| Conj 7 | Living Clouds | A4 | 200 | 1 | 0 | 0 | 0 | 4+ | NUW Summons Air Elemental x4+: HP 35, Prot 0, MR 15, Mor 50, Str 11, Att 14, Def 14, Prec 5, Enc 0, CS 24, MM 34, Fly, Eth, Spi, Inanim, Magic, Mind, Trample, NNEat, Aff Res 99, Storm Power 3, SR +15, PR +25, SpSi, Wpn: Lightning Swarm |
-| Ench 6 | Greater Farflight | A4 | 100 | 0 | BF | 0 | 0 | 1 | NUW |
-| Ench 7 | Mass Flight | A4 | 100 | 15 | 20+ | 0 | 0 | 1 | NUW |
-| Ench 8 | Thunder Fend | A4 | 100 | 0 | BF | 0 | 0 | 1 |  |
-| Evo 6 | Wrathful Skies | A5 | 200 | 0 | 0 | 0 | 0 | 1 | BE, NUW |
-| Alt 8 | Army of Mist | A5 | 300 | 0 | BF | 0 | 0 | 1 |  |
-| Ench 8 | Soaring Army | A5 | 300 | 0 | BF | 0 | 0 | 1 | NUW |
-| Evo 9 | Lightning Field | A6 | 100 | 30 | 100 | 0 | 1 | 1 | AN, Chaining 8 |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Alt 0</td><td>Air Shield</td><td>A1</td><td>10</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr><td>Evo 1</td><td>Shocking Grasp</td><td>A1</td><td>3</td><td>1</td><td>0</td><td>0</td><td>18+</td><td>1</td><td>AN</td></tr>
+<tr><td>Evo 1</td><td>Gust of Winds</td><td>A1</td><td>10</td><td>35+</td><td>2</td><td>2</td><td>15+</td><td>1</td><td>Mun, NUW</td></tr>
+<tr><td>Alt 1</td><td>Charge Body</td><td>A1</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Conj 2</td><td>Summon Hawk</td><td>A1</td><td>20</td><td>5</td><td>0</td><td>0</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Black Hawk x1: HP 5, Prot 0, MR 5, Mor 8, Str 5, Att 8, Def 12, Prec 8, Enc 3, CS 4, MM 22, FS, MS, Fly, Wpn: Dive attack, Talons</td></tr>
+<tr><td>Conj 2</td><td>Summon Storm Power</td><td>A1</td><td>10</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr><td>Conj 3</td><td>Summon Lesser Air</td><td>A1</td><td>100</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>NUW Elemental</td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Air Elemental x1: HP 15, Prot 0, MR 13, Mor 50, Str 7, Att 12, Def 12, Prec 5, Enc 0, CS 20, MM 34, Fly, Eth, Spi, Inanim, Magic, Mind, Trample, NNEat, Aff Res 99, Storm Power 2, SR +15, PR +25, SpSi, Wpn: Lightning Swarm</td></tr>
+<tr><td>Ench 1</td><td>Levitate</td><td>A1</td><td>20</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr><td>Ench 1</td><td>Trueshot</td><td>A1</td><td>5</td><td>10</td><td>1</td><td>5</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr><td>Ench 1</td><td>Windrunner</td><td>A1</td><td>10</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>AN</td></tr>
+<tr><td>Ench 1</td><td>Protection from Lightning</td><td>A1</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Ench 2</td><td>Personal Flight</td><td>A1</td><td>20</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr><td>Ench 3</td><td>Farflight</td><td>A1</td><td>20</td><td>10</td><td>1</td><td>0</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr><td>Thau 2</td><td>Steal Breath</td><td>A1</td><td>20</td><td>30</td><td>0</td><td>5</td><td>40+</td><td>1</td><td>AN, MR, UndIm, InanimIm, NUW</td></tr>
+<tr><td>Evo 2</td><td>Lightning Bolt</td><td>A2</td><td>10</td><td>40+</td><td>0</td><td>4</td><td>14+</td><td>1</td><td>AN</td></tr>
+<tr><td>Evo 2</td><td>Shock Wave</td><td>A2</td><td>10</td><td>2</td><td>6</td><td>0</td><td>9+</td><td>1</td><td>AN</td></tr>
+<tr><td>Evo 3</td><td>Storm Wind</td><td>A2</td><td>10</td><td>40+</td><td>8+</td><td>3</td><td>17+</td><td>1</td><td>Mun, NUW</td></tr>
+<tr><td>Evo 5</td><td>Orb Lightning</td><td>A2</td><td>20</td><td>20</td><td>0</td><td>0</td><td>5</td><td>1</td><td>AN, Chaining 7</td></tr>
+<tr><td>Alt 2</td><td>Personal Mistform</td><td>A2</td><td>10</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Alt 3</td><td>Protective Winds</td><td>A2</td><td>40</td><td>15</td><td>3+</td><td>0</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr><td>Alt 4</td><td>Lacerating Winds</td><td>A2</td><td>20</td><td>40+</td><td>5+</td><td>1</td><td>5+</td><td>1</td><td>NUW</td></tr>
+<tr><td>Alt 4</td><td>Mistform</td><td>A2</td><td>20</td><td>10</td><td>1</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Ench 3</td><td>Arrow of the Western Wind A2</td><td>20</td><td>50+</td><td>0</td><td>25</td><td>20+</td><td>1</td><td>NUW</td><td></td></tr>
+<tr><td>Ench 3</td><td>Gift of Flight</td><td>A2</td><td>20</td><td>10</td><td>1</td><td>0</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr><td>Ench 3</td><td>Lesser Thunder Ward</td><td>A2</td><td>20</td><td>15</td><td>1</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Ench 4</td><td>Levitate Soldiers</td><td>A2</td><td>40</td><td>15</td><td>3+</td><td>0</td><td>0</td><td>1</td><td>AN, NUW</td></tr>
+<tr><td>Ench 4</td><td>Trueshot Warriors</td><td>A2</td><td>100</td><td>15</td><td>20+</td><td>0</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr><td>Ench 5</td><td>Farflight Arrows</td><td>A2</td><td>100</td><td>15</td><td>20+</td><td>0</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr><td>Ench 5</td><td>Thunder Ward</td><td>A2</td><td>100</td><td>15</td><td>20+</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Evo 4</td><td>Thunder Strike</td><td>A3</td><td>50</td><td>100</td><td>1</td><td>-2</td><td>26+</td><td>1</td><td>AN, NUW</td></tr>
+<tr><td>Evo 8</td><td>Chain Lightning</td><td>A3</td><td>30</td><td>25</td><td>0</td><td>0</td><td>6+</td><td>1</td><td>AN, Chaining 20</td></tr>
+<tr><td>Alt 3</td><td>Mist</td><td>A3</td><td>100</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>BE, NUW</td></tr>
+<tr><td>Alt 5</td><td>Arrow Ward</td><td>A3</td><td>100</td><td>15</td><td>20+</td><td>0</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr><td>Conj 5</td><td>Summon Air Elemental</td><td>A3</td><td>100</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Air Elemental x1: HP 48, Prot 0, MR 16, Mor 50, Str 13, Att 15, Def 15, Prec 5, Enc 0, CS 26, MM 34, Fly, Eth, Spi, Inanim, Magic, Mind, Trample, NNEat, Aff Res 99, Storm Power 4, SR +15, PR +25, SpSi, Wpn: Lightning Swarm</td></tr>
+<tr><td>Ench 6</td><td>Wind Guide</td><td>A3</td><td>100</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr><td>Alt 5</td><td>Storm</td><td>A4</td><td>100</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>BE, NUW</td></tr>
+<tr><td>Alt 6</td><td>Blizzard</td><td>A4W3</td><td>100</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>BE, NUW</td></tr>
+<tr><td>Alt 7</td><td>Arrow Fend</td><td>A4</td><td>100</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr><td>Alt 7</td><td>Fog Warriors</td><td>A4</td><td>100</td><td>15</td><td>20+</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Conj 7</td><td>Living Clouds</td><td>A4</td><td>200</td><td>1</td><td>0</td><td>0</td><td>0</td><td>4+</td><td>NUW</td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Air Elemental x4+: HP 35, Prot 0, MR 15, Mor 50, Str 11, Att 14, Def 14, Prec 5, Enc 0, CS 24, MM 34, Fly, Eth, Spi, Inanim, Magic, Mind, Trample, NNEat, Aff Res 99, Storm Power 3, SR +15, PR +25, SpSi, Wpn: Lightning Swarm</td></tr>
+<tr><td>Ench 6</td><td>Greater Farflight</td><td>A4</td><td>100</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr><td>Ench 7</td><td>Mass Flight</td><td>A4</td><td>100</td><td>15</td><td>20+</td><td>0</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr><td>Ench 8</td><td>Thunder Fend</td><td>A4</td><td>100</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Evo 6</td><td>Wrathful Skies</td><td>A5</td><td>200</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>BE, NUW</td></tr>
+<tr><td>Alt 8</td><td>Army of Mist</td><td>A5</td><td>300</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Ench 8</td><td>Soaring Army</td><td>A5</td><td>300</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr><td>Evo 9</td><td>Lightning Field</td><td>A6</td><td>100</td><td>30</td><td>100</td><td>0</td><td>1</td><td>1</td><td>AN, Chaining 8</td></tr>
+</tbody></table>
+```
 
 ## Water Spells
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Evo 0 | Freezing Touch | W1 | 10 | 1 | 0 | 1 | 9+ | 1 | AN, NUW |
-| Evo 1 | Slime | W1 | 20 | 30+ | 1 | 2 | 0 | 1 | MR, NUW |
-| Evo 1 | Water Strike | W1 | 20 | 35+ | 1 | 2 | 13+ | 1 | UW |
-| Evo 1 | Geyser | W1F1 | 10 | 20+ | 3 | 3 | 6+ | 1 | AP |
-| Alt 2 | Resist Fire | W1 | 10 | 0 | 0 | 0 | 0 | 1 |  |
-| Alt 2 | Quicken Self | W1 | 20 | 0 | 0 | 0 | 0 | 1 |  |
-| Alt 2 | Ice Shield | W1 | 20 | 0 | 0 | 0 | 0 | 1 | UW |
-| Alt 4 | Liquid Body | W1 | 20 | 0 | 0 | 0 | 0 | 1 | SpiIm |
-| Alt 6 | Frozen Heart | W1 | 20 | 25+ | 0 | 100 | 10+ | 1 | AN, InanimIm |
-| Conj 2 | Summon Water Power | W1 | 20 | 0 | 0 | 0 | 0 | 1 | UW |
-| Conj 3 | Summon Lesser Water | W1 | 100 | 1 | 0 | 0 | 0 | 1 | Elemental Summons Water Elemental x1: HP 27, Prot 0, MR 13, Mor 50, Str 12, Att 10, Def 10, Prec 5, Enc 0, CS 9, MM 16, Spi, Inanim, Magic, Mind, Amph, NNEat, BlR, SlR, PiR, Aff Res 99, FR +5, PR +25, SpSi, Wpn: Crush |
-| Ench 1 | Protection from Cold | W1 | 5 | 0 | 0 | 0 | 0 | 1 |  |
-| Ench 2 | Water Shield | W1 | 20 | 0 | 0 | 0 | 0 | 1 | UW |
-| Ench 2 | Breath of Winter | W1 | 20 | 0 | 0 | 0 | 0 | 1 |  |
-| Ench 6 | Water Ward | W1 | 100 | 15 | 25 | 0 | 0 | 1 | UW |
-| Thau 2 | Calm Emotions | W1 | 20 | 10 | 0 | 100 | 0 | 1 | MR, MindIm |
-| Evo 1 | Cold Bolt | W2 | 20 | 50+ | 1 | 3 | 13+ | 1 | AP, NUW |
-| Evo 1 | Acid Spray | W2F1 | 20 | 2 | 5 | 0 | 10 | 1 | AP, NUW |
-| Evo 2 | Cold Blast | W2 | 20 | 7+ | 3 | 0 | 12+ | 1 | AP, NUW |
-| Evo 3 | Acid Bolt | W2F1 | 30 | 35+ | 1 | 3 | 16+ | 1 | AP, NUW |
-| Evo 6 | Cleansing Water | W2 | 20 | 30+ | 5+ | 0 | 5+ | 1 | AN, NUW |
-| Evo 7 | Ice Strike | W2 | 20 | 30 | 24+ | 1 | 18 | 1 | NUW |
-| Alt 2 | Gooey Water | W2 | 20 | 35+ | 5+ | 2 | 0 | 1 | MR, UW |
-| Alt 3 | Fire Resistance | W2 | 20 | 15 | 1 | 0 | 0 | 1 |  |
-| Alt 3 | Freeze | W2 | 20 | 25 | 1 | 100 | 0 | 1 |  |
-| Alt 4 | Quickness | W2 | 20 | 15 | 1 | 1 | 0 | 1 |  |
-| Alt 4 | Slow | W2 | 20 | 30 | 1 | 100 | 0 | 1 | MR |
-| Alt 4 | Encase in Ice | W2 | 20 | 25 | 1 | 100 | 0 | 1 | UW |
-| Alt 5 | Gift of Formlessness | W2 | 40 | 10 | 1 | 0 | 0 | 1 | SpiIm |
-| Alt 8 | Quickening | W2 | 100 | 20 | 9+ | 0 | 0 | 1 |  |
-| Conj 4 | School of Sharks | W2 | 100 | 0 | 0 | 0 | 0 | 10+ | UW Summons Small Shark x10+: HP 2, Prot 0, MR 4, Mor 30, Str 1, Att 13, Def 12, Prec 5, Enc 3, CS 14, MM 18, Aqua, NNEat, Stealth 40, Wpn: Bite |
-| Ench 3 | Lesser Winter Ward | W2 | 20 | 15 | 1 | 0 | 0 | 1 |  |
-| Ench 5 | Winter Ward | W2 | 100 | 15 | 20+ | 0 | 0 | 1 |  |
-| Thau 1 | Desiccation | W2 | 20 | 30 | 1 | 100 | 0 | 1 | AN, MR, UndIm, InanimIm, NUW |
-| Evo 3 | Rain | W3 | 100 | 0 | 0 | 0 | 0 | 1 | BE, NUW |
-| Evo 3 | Freezing Mist | W3A1 | 20 | 30 | 10+ | 1 | 1 | 1 | AN, NUW |
-| Evo 4 | Acid Rain | W3F1 | 30 | 30 | 6+ | -1 | 12 | 1 | AP, NUW |
-| Evo 5 | Falling Frost | W3 | 20 | 50 | 10+ | -2 | 10+ | 1 | AP, NUW |
-| Alt 5 | Winter's Chill | W3 | 20 | 25 | 5+ | 100 | 0 | 1 |  |
-| Alt 5 | Fire Resistant Warriors | W3 | 100 | 15 | 20+ | 0 | 0 | 1 |  |
-| Alt 5 | Bone Melter | W3N2 | 20 | 25 | 1 | 3 | Death | 1 | Mun, MR, SpiIm |
-| Alt 7 | Prison of Sedna | W3 | 100 | 25 | 6+ | 100 | 0 | 1 | UW |
-| Alt 7 | Crawl | W3 | 100 | 30 | 6+ | 100 | 0 | 1 | MR |
-| Alt 7 | Wave Warriors | W3 | 100 | 15 | 20+ | 0 | 0 | 1 |  |
-| Conj 5 | Summon Water Elemental W3 | 100 | 1 | 0 | 0 | 0 | 1 |  | Summons Water Elemental x1: HP 81, Prot 0, MR 16, Mor 50, Str 18, Att 13, Def 13, Prec 5, Enc 0, CS 12, MM 16, Spi, Inanim, Magic, Mind, Amph, NNEat, BlR, SlR, PiR, Aff Res 99, FR +10, PR +25, SpSi, Wpn: Crush, Crush, Crush, Crush |
-| Conj 6 | Shark Attack | W3 | 300 | 1 | 0 | 0 | 0 | 1 | BE, UW |
-| Ench 5 | Friendly Currents | W3 | 100 | 0 | 0 | 0 | 0 | 1 | BE, UW |
-| Thau 3 | Sailors' Death | W3 | 20 | 30 | 1 | 1 | 14+ | 1 | AN, MR, UndIm, InanimIm, NUW |
-| Thau 4 | Curse of the Desert | W3 | 30 | 30 | 5 | 100 | 0 | 1 | AN, MR, UndIm, InanimIm, NUW |
-| Thau 5 | Serenity | W3 | 20 | 15 | 3+ | 100 | 0 | 1 | MR, MindIm |
-| Evo 7 | Acid Storm | W4F1 | 300 | 0 | 0 | 0 | 0 | 1 | BE, NUW |
-| Alt 8 | Liquify | W4 | 20 | 30 | 3 | 100 | Death | 1 | MR-, SpiIm |
-| Alt 8 | Frostflesh Army | W4 | 200 | 0 | BF | 0 | 0 | 1 |  |
-| Conj 7 | Living Water | W4 | 200 | 1 | 0 | 0 | 0 | 4+ | Summons Water Elemental x4+: HP 60, Prot 0, MR 15, Mor 50, Str 16, Att 12, Def 12, Prec 5, Enc 0, CS 11, MM 16, Spi, Inanim, Magic, Mind, Amph, NNEat, BlR, SlR, PiR, Aff Res 99, FR +10, PR +25, SpSi, Wpn: Crush, Crush, Crush |
-| Ench 5 | Quagmire | W4 | 100 | 0 | 0 | 0 | 0 | 1 | BE, NUW |
-| Ench 6 | Grip of Winter | W4 | 200 | 0 | 0 | 0 | 0 | 1 | BE |
-| Ench 8 | Frost Fend | W4 | 100 | 0 | BF | 0 | 0 | 1 |  |
-| Evo 9 | Niefel Flames | W5 | 100 | 40+ | 75+ | 0 | 12+ | 1 | AP, NUW |
-| Ench 9 | Demon Cleansing | W5 | 100 | 0 | 0 | 0 | 0 | 1 | BE |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Evo 0</td><td>Freezing Touch</td><td>W1</td><td>10</td><td>1</td><td>0</td><td>1</td><td>9+</td><td>1</td><td>AN, NUW</td></tr>
+<tr><td>Evo 1</td><td>Slime</td><td>W1</td><td>20</td><td>30+</td><td>1</td><td>2</td><td>0</td><td>1</td><td>MR, NUW</td></tr>
+<tr><td>Evo 1</td><td>Water Strike</td><td>W1</td><td>20</td><td>35+</td><td>1</td><td>2</td><td>13+</td><td>1</td><td>UW</td></tr>
+<tr><td>Evo 1</td><td>Geyser</td><td>W1F1</td><td>10</td><td>20+</td><td>3</td><td>3</td><td>6+</td><td>1</td><td>AP</td></tr>
+<tr><td>Alt 2</td><td>Resist Fire</td><td>W1</td><td>10</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Alt 2</td><td>Quicken Self</td><td>W1</td><td>20</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Alt 2</td><td>Ice Shield</td><td>W1</td><td>20</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>UW</td></tr>
+<tr><td>Alt 4</td><td>Liquid Body</td><td>W1</td><td>20</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>SpiIm</td></tr>
+<tr><td>Alt 6</td><td>Frozen Heart</td><td>W1</td><td>20</td><td>25+</td><td>0</td><td>100</td><td>10+</td><td>1</td><td>AN, InanimIm</td></tr>
+<tr><td>Conj 2</td><td>Summon Water Power</td><td>W1</td><td>20</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>UW</td></tr>
+<tr><td>Conj 3</td><td>Summon Lesser Water</td><td>W1</td><td>100</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>Elemental</td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Water Elemental x1: HP 27, Prot 0, MR 13, Mor 50, Str 12, Att 10, Def 10, Prec 5, Enc 0, CS 9, MM 16, Spi, Inanim, Magic, Mind, Amph, NNEat, BlR, SlR, PiR, Aff Res 99, FR +5, PR +25, SpSi, Wpn: Crush</td></tr>
+<tr><td>Ench 1</td><td>Protection from Cold</td><td>W1</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Ench 2</td><td>Water Shield</td><td>W1</td><td>20</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>UW</td></tr>
+<tr><td>Ench 2</td><td>Breath of Winter</td><td>W1</td><td>20</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Ench 6</td><td>Water Ward</td><td>W1</td><td>100</td><td>15</td><td>25</td><td>0</td><td>0</td><td>1</td><td>UW</td></tr>
+<tr><td>Thau 2</td><td>Calm Emotions</td><td>W1</td><td>20</td><td>10</td><td>0</td><td>100</td><td>0</td><td>1</td><td>MR, MindIm</td></tr>
+<tr><td>Evo 1</td><td>Cold Bolt</td><td>W2</td><td>20</td><td>50+</td><td>1</td><td>3</td><td>13+</td><td>1</td><td>AP, NUW</td></tr>
+<tr><td>Evo 1</td><td>Acid Spray</td><td>W2F1</td><td>20</td><td>2</td><td>5</td><td>0</td><td>10</td><td>1</td><td>AP, NUW</td></tr>
+<tr><td>Evo 2</td><td>Cold Blast</td><td>W2</td><td>20</td><td>7+</td><td>3</td><td>0</td><td>12+</td><td>1</td><td>AP, NUW</td></tr>
+<tr><td>Evo 3</td><td>Acid Bolt</td><td>W2F1</td><td>30</td><td>35+</td><td>1</td><td>3</td><td>16+</td><td>1</td><td>AP, NUW</td></tr>
+<tr><td>Evo 6</td><td>Cleansing Water</td><td>W2</td><td>20</td><td>30+</td><td>5+</td><td>0</td><td>5+</td><td>1</td><td>AN, NUW</td></tr>
+<tr><td>Evo 7</td><td>Ice Strike</td><td>W2</td><td>20</td><td>30</td><td>24+</td><td>1</td><td>18</td><td>1</td><td>NUW</td></tr>
+<tr><td>Alt 2</td><td>Gooey Water</td><td>W2</td><td>20</td><td>35+</td><td>5+</td><td>2</td><td>0</td><td>1</td><td>MR, UW</td></tr>
+<tr><td>Alt 3</td><td>Fire Resistance</td><td>W2</td><td>20</td><td>15</td><td>1</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Alt 3</td><td>Freeze</td><td>W2</td><td>20</td><td>25</td><td>1</td><td>100</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Alt 4</td><td>Quickness</td><td>W2</td><td>20</td><td>15</td><td>1</td><td>1</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Alt 4</td><td>Slow</td><td>W2</td><td>20</td><td>30</td><td>1</td><td>100</td><td>0</td><td>1</td><td>MR</td></tr>
+<tr><td>Alt 4</td><td>Encase in Ice</td><td>W2</td><td>20</td><td>25</td><td>1</td><td>100</td><td>0</td><td>1</td><td>UW</td></tr>
+<tr><td>Alt 5</td><td>Gift of Formlessness</td><td>W2</td><td>40</td><td>10</td><td>1</td><td>0</td><td>0</td><td>1</td><td>SpiIm</td></tr>
+<tr><td>Alt 8</td><td>Quickening</td><td>W2</td><td>100</td><td>20</td><td>9+</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Conj 4</td><td>School of Sharks</td><td>W2</td><td>100</td><td>0</td><td>0</td><td>0</td><td>0</td><td>10+</td><td>UW</td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Small Shark x10+: HP 2, Prot 0, MR 4, Mor 30, Str 1, Att 13, Def 12, Prec 5, Enc 3, CS 14, MM 18, Aqua, NNEat, Stealth 40, Wpn: Bite</td></tr>
+<tr><td>Ench 3</td><td>Lesser Winter Ward</td><td>W2</td><td>20</td><td>15</td><td>1</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Ench 5</td><td>Winter Ward</td><td>W2</td><td>100</td><td>15</td><td>20+</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Thau 1</td><td>Desiccation</td><td>W2</td><td>20</td><td>30</td><td>1</td><td>100</td><td>0</td><td>1</td><td>AN, MR, UndIm, InanimIm, NUW</td></tr>
+<tr><td>Evo 3</td><td>Rain</td><td>W3</td><td>100</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>BE, NUW</td></tr>
+<tr><td>Evo 3</td><td>Freezing Mist</td><td>W3A1</td><td>20</td><td>30</td><td>10+</td><td>1</td><td>1</td><td>1</td><td>AN, NUW</td></tr>
+<tr><td>Evo 4</td><td>Acid Rain</td><td>W3F1</td><td>30</td><td>30</td><td>6+</td><td>-1</td><td>12</td><td>1</td><td>AP, NUW</td></tr>
+<tr><td>Evo 5</td><td>Falling Frost</td><td>W3</td><td>20</td><td>50</td><td>10+</td><td>-2</td><td>10+</td><td>1</td><td>AP, NUW</td></tr>
+<tr><td>Alt 5</td><td>Winter&#x27;s Chill</td><td>W3</td><td>20</td><td>25</td><td>5+</td><td>100</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Alt 5</td><td>Fire Resistant Warriors</td><td>W3</td><td>100</td><td>15</td><td>20+</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Alt 5</td><td>Bone Melter</td><td>W3N2</td><td>20</td><td>25</td><td>1</td><td>3</td><td>Death</td><td>1</td><td>Mun, MR, SpiIm</td></tr>
+<tr><td>Alt 7</td><td>Prison of Sedna</td><td>W3</td><td>100</td><td>25</td><td>6+</td><td>100</td><td>0</td><td>1</td><td>UW</td></tr>
+<tr><td>Alt 7</td><td>Crawl</td><td>W3</td><td>100</td><td>30</td><td>6+</td><td>100</td><td>0</td><td>1</td><td>MR</td></tr>
+<tr><td>Alt 7</td><td>Wave Warriors</td><td>W3</td><td>100</td><td>15</td><td>20+</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Conj 5</td><td>Summon Water Elemental W3</td><td>100</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td></td><td></td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Water Elemental x1: HP 81, Prot 0, MR 16, Mor 50, Str 18, Att 13, Def 13, Prec 5, Enc 0, CS 12, MM 16, Spi, Inanim, Magic, Mind, Amph, NNEat, BlR, SlR, PiR, Aff Res 99, FR +10, PR +25, SpSi, Wpn: Crush, Crush, Crush, Crush</td></tr>
+<tr><td>Conj 6</td><td>Shark Attack</td><td>W3</td><td>300</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>BE, UW</td></tr>
+<tr><td>Ench 5</td><td>Friendly Currents</td><td>W3</td><td>100</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>BE, UW</td></tr>
+<tr><td>Thau 3</td><td>Sailors&#x27; Death</td><td>W3</td><td>20</td><td>30</td><td>1</td><td>1</td><td>14+</td><td>1</td><td>AN, MR, UndIm, InanimIm, NUW</td></tr>
+<tr><td>Thau 4</td><td>Curse of the Desert</td><td>W3</td><td>30</td><td>30</td><td>5</td><td>100</td><td>0</td><td>1</td><td>AN, MR, UndIm, InanimIm, NUW</td></tr>
+<tr><td>Thau 5</td><td>Serenity</td><td>W3</td><td>20</td><td>15</td><td>3+</td><td>100</td><td>0</td><td>1</td><td>MR, MindIm</td></tr>
+<tr><td>Evo 7</td><td>Acid Storm</td><td>W4F1</td><td>300</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>BE, NUW</td></tr>
+<tr><td>Alt 8</td><td>Liquify</td><td>W4</td><td>20</td><td>30</td><td>3</td><td>100</td><td>Death</td><td>1</td><td>MR-, SpiIm</td></tr>
+<tr><td>Alt 8</td><td>Frostflesh Army</td><td>W4</td><td>200</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Conj 7</td><td>Living Water</td><td>W4</td><td>200</td><td>1</td><td>0</td><td>0</td><td>0</td><td>4+</td><td></td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Water Elemental x4+: HP 60, Prot 0, MR 15, Mor 50, Str 16, Att 12, Def 12, Prec 5, Enc 0, CS 11, MM 16, Spi, Inanim, Magic, Mind, Amph, NNEat, BlR, SlR, PiR, Aff Res 99, FR +10, PR +25, SpSi, Wpn: Crush, Crush, Crush</td></tr>
+<tr><td>Ench 5</td><td>Quagmire</td><td>W4</td><td>100</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>BE, NUW</td></tr>
+<tr><td>Ench 6</td><td>Grip of Winter</td><td>W4</td><td>200</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>BE</td></tr>
+<tr><td>Ench 8</td><td>Frost Fend</td><td>W4</td><td>100</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Evo 9</td><td>Niefel Flames</td><td>W5</td><td>100</td><td>40+</td><td>75+</td><td>0</td><td>12+</td><td>1</td><td>AP, NUW</td></tr>
+<tr><td>Ench 9</td><td>Demon Cleansing</td><td>W5</td><td>100</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>BE</td></tr>
+</tbody></table>
+```
 
 ## Earth Spells
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Evo 0 | Flying Shards | E1 | 30 | 30+ | 0 | 0 | 7+ | 4+ | Mun, NUW |
-| Evo 3 | Magma Bolts | E1F1 | 20 | 30+ | 0 | 2 | 25+ | 5 | NUW |
-| Alt 1 | Fists of Iron | E1 | 20 | 1 | 0 | 100 | 15 | 1+ |  |
-| Alt 1 | Earth Grip | E1 | 10 | 20 | 0 | 5 | 0 | 1 |  |
-| Alt 2 | Resist Lightning | E1 | 10 | 0 | 0 | 0 | 0 | 1 |  |
-| Alt 2 | Personal Stoneskin | E1 | 10 | 0 | 0 | 0 | 0 | 1 | SpiIm |
-| Alt 2 | Armor of Achilles | E1 | 40 | 15 | 1 | 3 | 10 | 1 | AN |
-| Alt 3 | Personal Ironskin | E1 | 20 | 0 | 0 | 0 | 0 | 1 | SpiIm |
-| Alt 4 | Temper Flesh | E1 | 20 | 0 | 0 | 0 | 0 | 1 | SpiIm |
-| Conj 3 | Summon Lesser Earth | E1 | 100 | 1 | 0 | 0 | 0 | 1 | Elemental Summons Earth Elemental x1: HP 33, Prot 12, MR 13, Mor 50, Str 13, Att 10, Def 10, Prec 3, Enc 0, CS 9, MM 16, Inanim, Magic, Mind, Trample, Amph, NNEat, Aff Res 4, Reconstruction 10%, PR +25, SpSi, Wpn: Crystal Fist |
-| Ench 2 | Flying Shield | E1A1 | 20 | 0 | 0 | 0 | 0 | 1 | NUW |
-| Thau 3 | Iron Will | E1 | 20 | 25 | 1 | 100 | 0 | 1 | MindIm |
-| Evo 2 | Rust Mist | E2W1 | 30 | 30 | 9+ | 0 | 0 | 1 | NUW |
-| Evo 6 | Magma Eruption | E2F2 | 50 | 30 | 6+ | 0 | 22+ | 1 |  |
-| Alt 3 | Lightning Resistance | E2 | 20 | 15 | 1 | 0 | 0 | 1 |  |
-| Alt 3 | Earth Meld | E2 | 60 | 25 | 5 | 3 | 0 | 1 |  |
-| Alt 4 | Stoneskin | E2 | 20 | 15 | 1 | 0 | 0 | 1 | SpiIm |
-| Alt 5 | Ironskin | E2 | 40 | 10 | 1 | 2 | 0 | 1 | SpiIm |
-| Conj 3 | Summon Earthpower | E2 | 20 | 0 | 0 | 0 | 0 | 1 |  |
-| Ench 1 | Strength of Giants | E2 | 20 | 5 | 1 | 0 | 0 | 1 |  |
-| Ench 3 | Gift of Giant Strength | E2 | 40 | 15 | 3+ | 0 | 0 | 1 |  |
-| Ench 4 | Earth Shatter Hammers | E2 | 40 | 15 | 1 | 0 | 0 | 1 |  |
-| Ench 4 | Shroud of Flying Shards | E2A1 | 20 | 0 | 0 | 0 | 0 | 1 | NUW |
-| Thau 1 | Farstrike | E2S1 | 5 | 50 | 0 | 5 | 17+ | 1 |  |
-| Evo 4 | Blade Wind | E3 | 80 | 35+ | 0 | 0 | 14 | 50+ | Mun, NUW |
-| Evo 5 | Gifts from Heaven | E3S1 | 50 | 100 | 1 | -3 | 150 | 3 | NUW |
-| Evo 7 | Rain of Stones | E3A1 | 100 | 0 | 0 | 0 | 0 | 1 | Mun, BE, NUW |
-| Alt 4 | Destruction | E3 | 40 | 30 | 6 | 3 | 5 | 1 | AN |
-| Alt 4 | Curse of Stones | E3 | 300 | 0 | BF | 0 | 0 | 1 | MR- |
-| Alt 5 | Group Stoneskin | E3 | 40 | 15 | 3+ | 0 | 0 | 1 | SpiIm |
-| Alt 5 | Lightning Resistant | E3 | 100 | 15 | 20+ | 0 | 0 | 1 | Warriors |
-| Alt 5 | Maws of the Earth | E3 | 100 | 30+ | 7+ | 3 | 15+ | 1 | AP |
-| Alt 5 | Shatter | E3 | 20 | 15 | 0 | 100 | 35+ | 1 | AN |
-| Alt 6 | Group Ironskin | E3 | 60 | 15 | 3+ | 2 | 0 | 1 | SpiIm |
-| Alt 6 | Iron Bane | E3 | 100 | 0 | BF | 0 | 0 | 1 |  |
-| Alt 7 | Marble Warriors | E3 | 100 | 15 | 20+ | 0 | 0 | 1 | SpiIm |
-| Conj 5 | Summon Earth Elemental | E3 | 100 | 1 | 0 | 0 | 0 | 1 | Summons Earth Elemental x1: HP 93, Prot 14, MR 16, Mor 50, Str 22, Att 10, Def 10, Prec 3, Enc 0, CS 12, MM 16, Inanim, Magic, Mind, Trample, Amph, NNEat, Aff Res 4, Reconstruction 7%, PR +25, SpSi, Wpn: Crystal Fist, Crystal Fist |
-| Ench 5 | Giant Strength Warriors | E3 | 100 | 15 | 20+ | 0 | 0 | 1 |  |
-| Ench 5 | Weapons of Sharpness | E3 | 40 | 15 | 1 | 0 | 0 | 1 |  |
-| Evo 5 | Earthquake | E4 | 300 | 0 | BF | 0 | 8 | 1 | Mun, AP, NUW |
-| Alt 8 | Iron Warriors | E4 | 200 | 15 | 20+ | 2 | 0 | 1 | SpiIm |
-| Alt 8 | Marble Army | E4 | 300 | 0 | BF | 0 | 0 | 1 | SpiIm |
-| Alt 8 | Ground Army | E4 | 200 | 0 | BF | 0 | 0 | 1 |  |
-| Conj 7 | Living Earth | E4 | 200 | 1 | 0 | 0 | 0 | 4+ | Summons Earth Elemental x4+: HP 70, Prot 13, MR 16, Mor 50, Str 19, Att 10, Def 10, Prec 3, Enc 0, CS 11, MM 16, Inanim, Magic, Mind, Trample, Amph, NNEat, Aff Res 4, Reconstruction 8%, PR +25, SpSi, Wpn: Crystal Fist |
-| Ench 6 | Earthquake Warriors | E4 | 100 | 15 | 20+ | 0 | 0 | 1 |  |
-| Ench 7 | Steel Slice Warriors | E4 | 100 | 15 | 20+ | 0 | 0 | 1 |  |
-| Evo 8 | Meteor Shower | E5S4 | 300 | 0 | 0 | 0 | 0 | 1 | BE, NUW |
-| Alt 6 | Petrify | E5 | 40 | 30 | 1 | 100 | Death | 1 | AN, SpiIm |
-| Alt 9 | Army of Gold | E5F1 | 300 | 0 | BF | 0 | 0 | 1 | SpiIm |
-| Alt 9 | Army of Lead | E5S1 | 300 | 0 | BF | 0 | 0 | 1 | SpiIm |
-| Ench 9 | Earth Shatter Army | E5 | 200 | 0 | BF | 0 | 0 | 1 |  |
-| Alt 9 | Army of Bronze | E6 | 300 | 0 | BF | 0 | 0 | 1 | SpiIm |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Evo 0</td><td>Flying Shards</td><td>E1</td><td>30</td><td>30+</td><td>0</td><td>0</td><td>7+</td><td>4+</td><td>Mun, NUW</td></tr>
+<tr><td>Evo 3</td><td>Magma Bolts</td><td>E1F1</td><td>20</td><td>30+</td><td>0</td><td>2</td><td>25+</td><td>5</td><td>NUW</td></tr>
+<tr><td>Alt 1</td><td>Fists of Iron</td><td>E1</td><td>20</td><td>1</td><td>0</td><td>100</td><td>15</td><td>1+</td><td></td></tr>
+<tr><td>Alt 1</td><td>Earth Grip</td><td>E1</td><td>10</td><td>20</td><td>0</td><td>5</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Alt 2</td><td>Resist Lightning</td><td>E1</td><td>10</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Alt 2</td><td>Personal Stoneskin</td><td>E1</td><td>10</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>SpiIm</td></tr>
+<tr><td>Alt 2</td><td>Armor of Achilles</td><td>E1</td><td>40</td><td>15</td><td>1</td><td>3</td><td>10</td><td>1</td><td>AN</td></tr>
+<tr><td>Alt 3</td><td>Personal Ironskin</td><td>E1</td><td>20</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>SpiIm</td></tr>
+<tr><td>Alt 4</td><td>Temper Flesh</td><td>E1</td><td>20</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>SpiIm</td></tr>
+<tr><td>Conj 3</td><td>Summon Lesser Earth</td><td>E1</td><td>100</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>Elemental</td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Earth Elemental x1: HP 33, Prot 12, MR 13, Mor 50, Str 13, Att 10, Def 10, Prec 3, Enc 0, CS 9, MM 16, Inanim, Magic, Mind, Trample, Amph, NNEat, Aff Res 4, Reconstruction 10%, PR +25, SpSi, Wpn: Crystal Fist</td></tr>
+<tr><td>Ench 2</td><td>Flying Shield</td><td>E1A1</td><td>20</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr><td>Thau 3</td><td>Iron Will</td><td>E1</td><td>20</td><td>25</td><td>1</td><td>100</td><td>0</td><td>1</td><td>MindIm</td></tr>
+<tr><td>Evo 2</td><td>Rust Mist</td><td>E2W1</td><td>30</td><td>30</td><td>9+</td><td>0</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr><td>Evo 6</td><td>Magma Eruption</td><td>E2F2</td><td>50</td><td>30</td><td>6+</td><td>0</td><td>22+</td><td>1</td><td></td></tr>
+<tr><td>Alt 3</td><td>Lightning Resistance</td><td>E2</td><td>20</td><td>15</td><td>1</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Alt 3</td><td>Earth Meld</td><td>E2</td><td>60</td><td>25</td><td>5</td><td>3</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Alt 4</td><td>Stoneskin</td><td>E2</td><td>20</td><td>15</td><td>1</td><td>0</td><td>0</td><td>1</td><td>SpiIm</td></tr>
+<tr><td>Alt 5</td><td>Ironskin</td><td>E2</td><td>40</td><td>10</td><td>1</td><td>2</td><td>0</td><td>1</td><td>SpiIm</td></tr>
+<tr><td>Conj 3</td><td>Summon Earthpower</td><td>E2</td><td>20</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Ench 1</td><td>Strength of Giants</td><td>E2</td><td>20</td><td>5</td><td>1</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Ench 3</td><td>Gift of Giant Strength</td><td>E2</td><td>40</td><td>15</td><td>3+</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Ench 4</td><td>Earth Shatter Hammers</td><td>E2</td><td>40</td><td>15</td><td>1</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Ench 4</td><td>Shroud of Flying Shards</td><td>E2A1</td><td>20</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr><td>Thau 1</td><td>Farstrike</td><td>E2S1</td><td>5</td><td>50</td><td>0</td><td>5</td><td>17+</td><td>1</td><td></td></tr>
+<tr><td>Evo 4</td><td>Blade Wind</td><td>E3</td><td>80</td><td>35+</td><td>0</td><td>0</td><td>14</td><td>50+</td><td>Mun, NUW</td></tr>
+<tr><td>Evo 5</td><td>Gifts from Heaven</td><td>E3S1</td><td>50</td><td>100</td><td>1</td><td>-3</td><td>150</td><td>3</td><td>NUW</td></tr>
+<tr><td>Evo 7</td><td>Rain of Stones</td><td>E3A1</td><td>100</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>Mun, BE, NUW</td></tr>
+<tr><td>Alt 4</td><td>Destruction</td><td>E3</td><td>40</td><td>30</td><td>6</td><td>3</td><td>5</td><td>1</td><td>AN</td></tr>
+<tr><td>Alt 4</td><td>Curse of Stones</td><td>E3</td><td>300</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td>MR-</td></tr>
+<tr><td>Alt 5</td><td>Group Stoneskin</td><td>E3</td><td>40</td><td>15</td><td>3+</td><td>0</td><td>0</td><td>1</td><td>SpiIm</td></tr>
+<tr><td>Alt 5</td><td>Lightning Resistant</td><td>E3</td><td>100</td><td>15</td><td>20+</td><td>0</td><td>0</td><td>1</td><td>Warriors</td></tr>
+<tr><td>Alt 5</td><td>Maws of the Earth</td><td>E3</td><td>100</td><td>30+</td><td>7+</td><td>3</td><td>15+</td><td>1</td><td>AP</td></tr>
+<tr><td>Alt 5</td><td>Shatter</td><td>E3</td><td>20</td><td>15</td><td>0</td><td>100</td><td>35+</td><td>1</td><td>AN</td></tr>
+<tr><td>Alt 6</td><td>Group Ironskin</td><td>E3</td><td>60</td><td>15</td><td>3+</td><td>2</td><td>0</td><td>1</td><td>SpiIm</td></tr>
+<tr><td>Alt 6</td><td>Iron Bane</td><td>E3</td><td>100</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Alt 7</td><td>Marble Warriors</td><td>E3</td><td>100</td><td>15</td><td>20+</td><td>0</td><td>0</td><td>1</td><td>SpiIm</td></tr>
+<tr><td>Conj 5</td><td>Summon Earth Elemental</td><td>E3</td><td>100</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Earth Elemental x1: HP 93, Prot 14, MR 16, Mor 50, Str 22, Att 10, Def 10, Prec 3, Enc 0, CS 12, MM 16, Inanim, Magic, Mind, Trample, Amph, NNEat, Aff Res 4, Reconstruction 7%, PR +25, SpSi, Wpn: Crystal Fist, Crystal Fist</td></tr>
+<tr><td>Ench 5</td><td>Giant Strength Warriors</td><td>E3</td><td>100</td><td>15</td><td>20+</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Ench 5</td><td>Weapons of Sharpness</td><td>E3</td><td>40</td><td>15</td><td>1</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Evo 5</td><td>Earthquake</td><td>E4</td><td>300</td><td>0</td><td>BF</td><td>0</td><td>8</td><td>1</td><td>Mun, AP, NUW</td></tr>
+<tr><td>Alt 8</td><td>Iron Warriors</td><td>E4</td><td>200</td><td>15</td><td>20+</td><td>2</td><td>0</td><td>1</td><td>SpiIm</td></tr>
+<tr><td>Alt 8</td><td>Marble Army</td><td>E4</td><td>300</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td>SpiIm</td></tr>
+<tr><td>Alt 8</td><td>Ground Army</td><td>E4</td><td>200</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Conj 7</td><td>Living Earth</td><td>E4</td><td>200</td><td>1</td><td>0</td><td>0</td><td>0</td><td>4+</td><td></td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Earth Elemental x4+: HP 70, Prot 13, MR 16, Mor 50, Str 19, Att 10, Def 10, Prec 3, Enc 0, CS 11, MM 16, Inanim, Magic, Mind, Trample, Amph, NNEat, Aff Res 4, Reconstruction 8%, PR +25, SpSi, Wpn: Crystal Fist</td></tr>
+<tr><td>Ench 6</td><td>Earthquake Warriors</td><td>E4</td><td>100</td><td>15</td><td>20+</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Ench 7</td><td>Steel Slice Warriors</td><td>E4</td><td>100</td><td>15</td><td>20+</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Evo 8</td><td>Meteor Shower</td><td>E5S4</td><td>300</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>BE, NUW</td></tr>
+<tr><td>Alt 6</td><td>Petrify</td><td>E5</td><td>40</td><td>30</td><td>1</td><td>100</td><td>Death</td><td>1</td><td>AN, SpiIm</td></tr>
+<tr><td>Alt 9</td><td>Army of Gold</td><td>E5F1</td><td>300</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td>SpiIm</td></tr>
+<tr><td>Alt 9</td><td>Army of Lead</td><td>E5S1</td><td>300</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td>SpiIm</td></tr>
+<tr><td>Ench 9</td><td>Earth Shatter Army</td><td>E5</td><td>200</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Alt 9</td><td>Army of Bronze</td><td>E6</td><td>300</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td>SpiIm</td></tr>
+</tbody></table>
+```
 
 ## Astral Spells
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Alt 0 | Twist Fate | S1 | 10 | 0 | 0 | 0 | 0 | 1 |  |
-| Evo 1 | Star Fires | S1 | 20 | 35 | 0 | 2 | 5+ | 3 | AN, NUW |
-| Evo 3 | Magic Duel | S1 | 100 | 100 | 0 | 100 | Death | 1 | AN, MindIm |
-| Evo 3 | Healing Light | S1N1 | 20 | 30+ | 1 | 100 | 15 | 1 | AN, UndIm, InanimIm, MindIm, NUW |
-| Evo 4 | Nether Bolt | S1D1 | 15 | 35+ | 1 | 2 | 20+ | 1 | AP, MR+ |
-| Evo 7 | Nether Darts | S1D1 | 15 | 30+ | 0 | 0 | 15+ | 15+ | AP, MR+ |
-| Alt 2 | Gift of Cheated Fate | S1 | 20 | 10 | 1 | 0 | 0 | 1 |  |
-| Alt 3 | Body Ethereal | S1 | 30 | 10 | 1 | 0 | 0 | 1 |  |
-| Conj 3 | Power of the Spheres | S1 | 100 | 0 | 0 | 0 | 0 | 1 |  |
-| Ench 1 | Resist Magic | S1 | 20 | 0 | 0 | 0 | 0 | 1 |  |
-| Ench 3 | Astral Shield | S1 | 20 | 0 | 0 | 0 | 0 | 1 |  |
-| Ench 3 | Second Sight | S1D1 | 20 | 0 | 0 | 0 | 0 | 1 |  |
-| Thau 1 | Blink | S1 | 10 | 0 | 0 | 0 | 30 | 1 |  |
-| Thau 1 | Communion Master | S1 | 20 | 0 | 0 | 0 | 0 | 1 |  |
-| Thau 1 | Communion Slave | S1 | 20 | 0 | 0 | 0 | 0 | 1 |  |
-| Evo 1 | Arcane Bolt | S2 | 20 | 40+ | 1 | 3 | 10+ | 1 | AN |
-| Evo 2 | Solar Rays | S2 | 20 | 40+ | 1 | 100 | 14+ | 1 | AP, NUW |
-| Evo 5 | Stellar Cascades | S2 | 20 | 35 | 7 | 100 | 25 | 1 | AP, NUW |
-| Ench 4 | Spell Ward | S2 | 100 | 15 | 20+ | 0 | 0 | 1 |  |
-| Thau 1 | Horror Mark | S2 | 20 | 50 | 0 | 100 | 0 | 1 | MindIm |
-| Thau 2 | Returning | S2 | 200 | 0 | 0 | 0 | 1 | 1 | AN |
-| Thau 2 | Mind Burn | S2 | 20 | 100 | 0 | 100 | 12+ | 1 | AN, MR, MindIm |
-| Thau 4 | Paralyze | S2 | 20 | 100 | 0 | 100 | 60+ | 1 | AN, MR, MindIm |
-| Evo 5 | Astral Geyser | S3 | 20 | 50+ | 1 | 0 | 0 | 1 | AN, MindIm |
-| Alt 6 | Control | S3 | 100 | 25 | 0 | 100 | 0 | 1 | AN, MR |
-| Conj 4 | Light of the Northern Star | S3 | 200 | 0 | 0 | 0 | 0 | 1 | BE |
-| Ench 4 | Astral Healing | S3 | 100 | 0 | BF | 0 | 2 | 1 | AN, InanimIm, MindIm |
-| Ench 5 | Gift of Spirit Sight | S3D1 | 20 | 15 | 1 | 0 | 0 | 1 |  |
-| Ench 6 | Opposition | S3 | 20 | 25 | 0 | 100 | Death | 1 | MR |
-| Ench 7 | Antimagic | S3 | 200 | 0 | BF | 0 | 0 | 1 |  |
-| Thau 5 | Soul Slay | S3 | 20 | 100 | 0 | 100 | Death | 1 | AN, MR, MindIm |
-| Evo 6 | Astral Fires | S4F1 | 20 | 45+ | 1 | 100 | 10 | 1 | AN, MR+ |
-| Alt 6 | Rewrite Fate | S4 | 100 | 15 | 20+ | 5 | 0 | 1 |  |
-| Alt 7 | Doom | S4 | 100 | 0 | BF | 0 | 0 | 1 |  |
-| Thau 6 | Enslave Mind | S4 | 20 | 100 | 0 | 100 | 0 | 1 | AN, MR, MindIm |
-| Thau 7 | Vortex of Returning | S4 | 300 | 0 | BF | 0 | 1 | 1 | AN |
-| Evo 8 | Astral Tempest | S5 | 200 | 0 | 0 | 0 | 0 | 1 | BE |
-| Alt 7 | Will of the Fates | S5 | 200 | 0 | BF | 0 | 0 | 1 |  |
-| Ench 7 | Solar Brilliance | S5 | 300 | 0 | 0 | 0 | 0 | 1 | BE, NUW |
-| Thau 8 | Soul Drain | S5D5 | 500 | 0 | 0 | 0 | 0 | 1 | MindIm, BE |
-| Alt 9 | Time Stop | S6 | 100 | 0 | 0 | 0 | 104 | 1 | MR |
-| Ench 8 | Unraveling | S6 | 600 | 0 | BF | 0 | 0 | 1 | MR |
-| Alt 8 | Arcane Domination | S7 | 700 | 0 | BF | 0 | 0 | 1 | AN, MR- |
-| Thau 9 | Master Enslave | S8 | 800 | 0 | BF | 0 | 0 | 1 | AN, MR-, MindIm |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Alt 0</td><td>Twist Fate</td><td>S1</td><td>10</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Evo 1</td><td>Star Fires</td><td>S1</td><td>20</td><td>35</td><td>0</td><td>2</td><td>5+</td><td>3</td><td>AN, NUW</td></tr>
+<tr><td>Evo 3</td><td>Magic Duel</td><td>S1</td><td>100</td><td>100</td><td>0</td><td>100</td><td>Death</td><td>1</td><td>AN, MindIm</td></tr>
+<tr><td>Evo 3</td><td>Healing Light</td><td>S1N1</td><td>20</td><td>30+</td><td>1</td><td>100</td><td>15</td><td>1</td><td>AN, UndIm, InanimIm,</td></tr>
+<tr class="spell-desc"><td colspan="10">MindIm, NUW</td></tr>
+<tr><td>Evo 4</td><td>Nether Bolt</td><td>S1D1</td><td>15</td><td>35+</td><td>1</td><td>2</td><td>20+</td><td>1</td><td>AP, MR+</td></tr>
+<tr><td>Evo 7</td><td>Nether Darts</td><td>S1D1</td><td>15</td><td>30+</td><td>0</td><td>0</td><td>15+</td><td>15+</td><td>AP, MR+</td></tr>
+<tr><td>Alt 2</td><td>Gift of Cheated Fate</td><td>S1</td><td>20</td><td>10</td><td>1</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Alt 3</td><td>Body Ethereal</td><td>S1</td><td>30</td><td>10</td><td>1</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Conj 3</td><td>Power of the Spheres</td><td>S1</td><td>100</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Ench 1</td><td>Resist Magic</td><td>S1</td><td>20</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Ench 3</td><td>Astral Shield</td><td>S1</td><td>20</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Ench 3</td><td>Second Sight</td><td>S1D1</td><td>20</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Thau 1</td><td>Blink</td><td>S1</td><td>10</td><td>0</td><td>0</td><td>0</td><td>30</td><td>1</td><td></td></tr>
+<tr><td>Thau 1</td><td>Communion Master</td><td>S1</td><td>20</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Thau 1</td><td>Communion Slave</td><td>S1</td><td>20</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Evo 1</td><td>Arcane Bolt</td><td>S2</td><td>20</td><td>40+</td><td>1</td><td>3</td><td>10+</td><td>1</td><td>AN</td></tr>
+<tr><td>Evo 2</td><td>Solar Rays</td><td>S2</td><td>20</td><td>40+</td><td>1</td><td>100</td><td>14+</td><td>1</td><td>AP, NUW</td></tr>
+<tr><td>Evo 5</td><td>Stellar Cascades</td><td>S2</td><td>20</td><td>35</td><td>7</td><td>100</td><td>25</td><td>1</td><td>AP, NUW</td></tr>
+<tr><td>Ench 4</td><td>Spell Ward</td><td>S2</td><td>100</td><td>15</td><td>20+</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Thau 1</td><td>Horror Mark</td><td>S2</td><td>20</td><td>50</td><td>0</td><td>100</td><td>0</td><td>1</td><td>MindIm</td></tr>
+<tr><td>Thau 2</td><td>Returning</td><td>S2</td><td>200</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td><td>AN</td></tr>
+<tr><td>Thau 2</td><td>Mind Burn</td><td>S2</td><td>20</td><td>100</td><td>0</td><td>100</td><td>12+</td><td>1</td><td>AN, MR, MindIm</td></tr>
+<tr><td>Thau 4</td><td>Paralyze</td><td>S2</td><td>20</td><td>100</td><td>0</td><td>100</td><td>60+</td><td>1</td><td>AN, MR, MindIm</td></tr>
+<tr><td>Evo 5</td><td>Astral Geyser</td><td>S3</td><td>20</td><td>50+</td><td>1</td><td>0</td><td>0</td><td>1</td><td>AN, MindIm</td></tr>
+<tr><td>Alt 6</td><td>Control</td><td>S3</td><td>100</td><td>25</td><td>0</td><td>100</td><td>0</td><td>1</td><td>AN, MR</td></tr>
+<tr><td>Conj 4</td><td>Light of the Northern Star</td><td>S3</td><td>200</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>BE</td></tr>
+<tr><td>Ench 4</td><td>Astral Healing</td><td>S3</td><td>100</td><td>0</td><td>BF</td><td>0</td><td>2</td><td>1</td><td>AN, InanimIm, MindIm</td></tr>
+<tr><td>Ench 5</td><td>Gift of Spirit Sight</td><td>S3D1</td><td>20</td><td>15</td><td>1</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Ench 6</td><td>Opposition</td><td>S3</td><td>20</td><td>25</td><td>0</td><td>100</td><td>Death</td><td>1</td><td>MR</td></tr>
+<tr><td>Ench 7</td><td>Antimagic</td><td>S3</td><td>200</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Thau 5</td><td>Soul Slay</td><td>S3</td><td>20</td><td>100</td><td>0</td><td>100</td><td>Death</td><td>1</td><td>AN, MR, MindIm</td></tr>
+<tr><td>Evo 6</td><td>Astral Fires</td><td>S4F1</td><td>20</td><td>45+</td><td>1</td><td>100</td><td>10</td><td>1</td><td>AN, MR+</td></tr>
+<tr><td>Alt 6</td><td>Rewrite Fate</td><td>S4</td><td>100</td><td>15</td><td>20+</td><td>5</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Alt 7</td><td>Doom</td><td>S4</td><td>100</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Thau 6</td><td>Enslave Mind</td><td>S4</td><td>20</td><td>100</td><td>0</td><td>100</td><td>0</td><td>1</td><td>AN, MR, MindIm</td></tr>
+<tr><td>Thau 7</td><td>Vortex of Returning</td><td>S4</td><td>300</td><td>0</td><td>BF</td><td>0</td><td>1</td><td>1</td><td>AN</td></tr>
+<tr><td>Evo 8</td><td>Astral Tempest</td><td>S5</td><td>200</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>BE</td></tr>
+<tr><td>Alt 7</td><td>Will of the Fates</td><td>S5</td><td>200</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Ench 7</td><td>Solar Brilliance</td><td>S5</td><td>300</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>BE, NUW</td></tr>
+<tr><td>Thau 8</td><td>Soul Drain</td><td>S5D5</td><td>500</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>MindIm, BE</td></tr>
+<tr><td>Alt 9</td><td>Time Stop</td><td>S6</td><td>100</td><td>0</td><td>0</td><td>0</td><td>104</td><td>1</td><td>MR</td></tr>
+<tr><td>Ench 8</td><td>Unraveling</td><td>S6</td><td>600</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td>MR</td></tr>
+<tr><td>Alt 8</td><td>Arcane Domination</td><td>S7</td><td>700</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td>AN, MR-</td></tr>
+<tr><td>Thau 9</td><td>Master Enslave</td><td>S8</td><td>800</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td>AN, MR-, MindIm</td></tr>
+</tbody></table>
+```
 
 ## Death Spells
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Alt 0 | Hand of Dust | D1 | 10 | 1 | 0 | 0 | 6+ | 1 | AN |
-| Evo 4 | Bane Fire Dart | D1F1 | 20 | 30+ | 0 | 4 | 15+ | 1 | AP, NUW |
-| Alt 1 | Skeletal Body | D1 | 20 | 0 | 0 | 0 | 0 | 1 | SpiIm |
-| Alt 2 | Weakness | D1 | 20 | 25 | 0 | 3 | 3 | 1 | AN, MR |
-| Alt 4 | Stygian Skin | D1W1 | 20 | 0 | 0 | 0 | 0 | 1 | InanimIm, SpiIm |
-| Conj 1 | Spirit Curse | D1 | 100 | 50 | 0 | 100 | 0 | 1 |  |
-| Conj 5 | Ghost Grip | D1 | 10 | 25 | 0 | 3 | 25+ | 5 |  |
-| Conj 5 | Corpse Candle | D1F1 | 100 | 0 | 0 | 0 | 0 | 3 | NUW Summons Corpse Candle x3: HP 4, Prot 0, MR 13, Mor 50, Str 4, Att 19, Def 19, Prec 5, Enc 0, CS 20, MM 22, SS, Float, Eth, Spi, Magic, Mind, NNEat, PR +15, SpSi, Wpn: Bane Burst |
-| Ench 1 | Animate Skeleton | D1 | 30 | 5 | 0 | -2 | 0 | 1 | Summons Longdead x1: HP 5, Prot 8, MR 9, Mor 50, Str 10, Att 11, Def 11, Prec 10, Enc 0, CS 8, MM 20, Inanim, Und, Mind, PAmph, NNEat, PiR, CR +15, PR +25, SpSi, Wpn: Spear |
-| Ench 1 | Animate Dead | D1 | 20 | 5 | 0 | -2 | 0 | 1 |  |
-| Thau 1 | Dust to Dust | D1 | 20 | 30 | 1 | 0 | 22+ | 1 | AN |
-| Thau 1 | Decay | D1 | 20 | 25 | 0 | 3 | 0 | 1 | MR |
-| Thau 1 | Frighten | D1 | 5 | 50 | 1 | 5 | 5 | 1 | AN |
-| Evo 3 | Shadow Bolt | D2 | 20 | 35+ | 1 | 3 | 7+ | 1 | AN, UndIm |
-| Evo 4 | Bolt of Unlife | D2 | 20 | 30+ | 1 | 1 | 15+ | 1 | AN, MR, UndIm, MindIm |
-| Evo 5 | Shadow Blast | D2 | 100 | 35+ | 9+ | 0 | 8+ | 1 | AN, UndIm |
-| Alt 1 | Hand of Death | D2 | 5 | 1 | 0 | 0 | 40+ | 1 | AN |
-| Alt 5 | Enfeeble | D2 | 100 | 25 | 6+ | 3 | 2 | 1 | AN, MR |
-| Alt 8 | Disintegrate | D2 | 10 | 30 | 0 | 100 | Death | 1 | AN, MR |
-| Conj 4 | Summon Lammashtas | D2 | 100 | 0 | 0 | 0 | 0 | 2 | Summons Lammashta x2: HP 15, Prot 0, MR 15, Mor 30, Str 13, Att 13, Def 16, Prec 13, Enc 0, CS 12, MM 22, Fly, Eth, Und, Amph, CR +15, PR +25, Fear +5, SpSi, Invulnerability 20, Wpn: Wraith Sword |
-| Ench 3 | Raise Skeletons | D2 | 40 | 5 | 0 | -2 | 0 | 3 | Summons Longdead x3: HP 5, Prot 0, MR 9, Mor 50, Str 10, Att 11, Def 9, Prec 10, Enc 0, CS 11, MM 22, Inanim, Und, Mind, PAmph, NNEat, PiR, CR +15, PR +25, SpSi, Wpn: Spear |
-| Ench 4 | Raise Dead | D2 | 40 | 5 | 0 | -2 | 0 | 10+ |  |
-| Ench 5 | Horde of Skeletons | D2 | 40 | 5 | 0 | -2 | 0 | 5+ | Summons Longdead x5+: HP 5, Prot 8, MR 9, Mor 50, Str 10, Att 11, Def 12, Prec 10, Enc 0, CS 8, MM 20, Inanim, Und, Mind, PAmph, NNEat, PiR, CR +15, PR +25, SpSi, Wpn: Broad Sword |
-| Thau 5 | Control the Dead | D2 | 20 | 25 | 1 | 0 | 0 | 1 | AN, MR |
-| Evo 6 | Blast of Unlife | D3 | 20 | 30+ | 2 | 0 | 20+ | 1 | AN, MR, UndIm, MindIm |
-| Evo 6 | Bane Fire | D3F1 | 20 | 45+ | 1 | 1 | 55+ | 1 | AP |
-| Evo 7 | Stygian Rains | D3W2 | 200 | 0 | BF | 0 | 0 | 1 | InanimIm, NUW |
-| Alt 5 | Invulnerability | D3 | 20 | 0 | 0 | 0 | 0 | 1 |  |
-| Alt 6 | Soul Vortex | D3 | 40 | 0 | 0 | 0 | 0 | 1 |  |
-| Thau 4 | Terror | D3 | 20 | 30 | 5+ | 1 | 0 | 1 | AN |
-| Thau 5 | Leeching Darkness | D3 | 20 | 30 | 3+ | 1 | 0 | 1 | AP, MR, NUW |
-| Thau 6 | Wither Bones | D3 | 50 | 30 | 6+ | -1 | 16+ | 1 | AN |
-| Evo 7 | Cloud of Death | D4A1 | 20 | 30 | 15+ | -3 | 1192+ | 1 | AN, MR, UndIm, NUW |
-| Evo 7 | Wind of Death | D4A1 | 100 | 0 | BF | 0 | 0 | 1 | MR-, NUW |
-| Alt 5 | Drain Life | D4 | 10 | 30 | 0 | 100 | 14+ | 1 | AN, InanimIm |
-| Alt 6 | Skeletal Legion | D4 | 100 | 0 | BF | 0 | 0 | 1 |  |
-| Alt 6 | Darkness | D4 | 400 | 0 | 0 | 0 | 0 | 1 | BE, NUW |
-| Ench 6 | Rigor Mortis | D4 | 300 | 0 | 0 | 0 | 0 | 1 | AN, MR+, UndIm, InanimIm, BE |
-| Ench 7 | Life after Death | D4 | 400 | 0 | BF | 0 | 0 | 1 | MindIm |
-| Thau 7 | Plague | D4 | 100 | 25 | 1 | 0 | 0 | 1 | MR, UndIm, InanimIm |
-| Evo 8 | Vortex of Unlife | D5 | 20 | 30+ | 8+ | 0 | 16+ | 1 | AN, MR, UndIm, MindIm |
-| Ench 8 | Fields of the Dead | D5E2 | 200 | 0 | 0 | 0 | 0 | 1 | BE |
-| Alt 7 | Bone Grinding | D7 | 100 | 0 | BF | 0 | 3 | 1 | Mun, AN |
-| Thau 8 | Undead Mastery | D7 | 700 | 0 | BF | 0 | 0 | 1 | AN, MR- |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Alt 0</td><td>Hand of Dust</td><td>D1</td><td>10</td><td>1</td><td>0</td><td>0</td><td>6+</td><td>1</td><td>AN</td></tr>
+<tr><td>Evo 4</td><td>Bane Fire Dart</td><td>D1F1</td><td>20</td><td>30+</td><td>0</td><td>4</td><td>15+</td><td>1</td><td>AP, NUW</td></tr>
+<tr><td>Alt 1</td><td>Skeletal Body</td><td>D1</td><td>20</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>SpiIm</td></tr>
+<tr><td>Alt 2</td><td>Weakness</td><td>D1</td><td>20</td><td>25</td><td>0</td><td>3</td><td>3</td><td>1</td><td>AN, MR</td></tr>
+<tr><td>Alt 4</td><td>Stygian Skin</td><td>D1W1</td><td>20</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>InanimIm, SpiIm</td></tr>
+<tr><td>Conj 1</td><td>Spirit Curse</td><td>D1</td><td>100</td><td>50</td><td>0</td><td>100</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Conj 5</td><td>Ghost Grip</td><td>D1</td><td>10</td><td>25</td><td>0</td><td>3</td><td>25+</td><td>5</td><td></td></tr>
+<tr><td>Conj 5</td><td>Corpse Candle</td><td>D1F1</td><td>100</td><td>0</td><td>0</td><td>0</td><td>0</td><td>3</td><td>NUW</td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Corpse Candle x3: HP 4, Prot 0, MR 13, Mor 50, Str 4, Att 19, Def 19, Prec 5, Enc 0, CS 20, MM 22, SS, Float, Eth, Spi, Magic, Mind, NNEat, PR +15, SpSi, Wpn: Bane Burst</td></tr>
+<tr><td>Ench 1</td><td>Animate Skeleton</td><td>D1</td><td>30</td><td>5</td><td>0</td><td>-2</td><td>0</td><td>1</td><td></td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Longdead x1: HP 5, Prot 8, MR 9, Mor 50, Str 10, Att 11, Def 11, Prec 10, Enc 0, CS 8, MM 20, Inanim, Und, Mind, PAmph, NNEat, PiR, CR +15, PR +25, SpSi, Wpn: Spear</td></tr>
+<tr><td>Ench 1</td><td>Animate Dead</td><td>D1</td><td>20</td><td>5</td><td>0</td><td>-2</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Thau 1</td><td>Dust to Dust</td><td>D1</td><td>20</td><td>30</td><td>1</td><td>0</td><td>22+</td><td>1</td><td>AN</td></tr>
+<tr><td>Thau 1</td><td>Decay</td><td>D1</td><td>20</td><td>25</td><td>0</td><td>3</td><td>0</td><td>1</td><td>MR</td></tr>
+<tr><td>Thau 1</td><td>Frighten</td><td>D1</td><td>5</td><td>50</td><td>1</td><td>5</td><td>5</td><td>1</td><td>AN</td></tr>
+<tr><td>Evo 3</td><td>Shadow Bolt</td><td>D2</td><td>20</td><td>35+</td><td>1</td><td>3</td><td>7+</td><td>1</td><td>AN, UndIm</td></tr>
+<tr><td>Evo 4</td><td>Bolt of Unlife</td><td>D2</td><td>20</td><td>30+</td><td>1</td><td>1</td><td>15+</td><td>1</td><td>AN, MR, UndIm, MindIm</td></tr>
+<tr><td>Evo 5</td><td>Shadow Blast</td><td>D2</td><td>100</td><td>35+</td><td>9+</td><td>0</td><td>8+</td><td>1</td><td>AN, UndIm</td></tr>
+<tr><td>Alt 1</td><td>Hand of Death</td><td>D2</td><td>5</td><td>1</td><td>0</td><td>0</td><td>40+</td><td>1</td><td>AN</td></tr>
+<tr><td>Alt 5</td><td>Enfeeble</td><td>D2</td><td>100</td><td>25</td><td>6+</td><td>3</td><td>2</td><td>1</td><td>AN, MR</td></tr>
+<tr><td>Alt 8</td><td>Disintegrate</td><td>D2</td><td>10</td><td>30</td><td>0</td><td>100</td><td>Death</td><td>1</td><td>AN, MR</td></tr>
+<tr><td>Conj 4</td><td>Summon Lammashtas</td><td>D2</td><td>100</td><td>0</td><td>0</td><td>0</td><td>0</td><td>2</td><td></td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Lammashta x2: HP 15, Prot 0, MR 15, Mor 30, Str 13, Att 13, Def 16, Prec 13, Enc 0, CS 12, MM 22, Fly, Eth, Und, Amph, CR +15, PR +25, Fear +5, SpSi, Invulnerability 20, Wpn: Wraith Sword</td></tr>
+<tr><td>Ench 3</td><td>Raise Skeletons</td><td>D2</td><td>40</td><td>5</td><td>0</td><td>-2</td><td>0</td><td>3</td><td></td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Longdead x3: HP 5, Prot 0, MR 9, Mor 50, Str 10, Att 11, Def 9, Prec 10, Enc 0, CS 11, MM 22, Inanim, Und, Mind, PAmph, NNEat, PiR, CR +15, PR +25, SpSi, Wpn: Spear</td></tr>
+<tr><td>Ench 4</td><td>Raise Dead</td><td>D2</td><td>40</td><td>5</td><td>0</td><td>-2</td><td>0</td><td>10+</td><td></td></tr>
+<tr><td>Ench 5</td><td>Horde of Skeletons</td><td>D2</td><td>40</td><td>5</td><td>0</td><td>-2</td><td>0</td><td>5+</td><td></td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Longdead x5+: HP 5, Prot 8, MR 9, Mor 50, Str 10, Att 11, Def 12, Prec 10, Enc 0, CS 8, MM 20, Inanim, Und, Mind, PAmph, NNEat, PiR, CR +15, PR +25, SpSi, Wpn: Broad Sword</td></tr>
+<tr><td>Thau 5</td><td>Control the Dead</td><td>D2</td><td>20</td><td>25</td><td>1</td><td>0</td><td>0</td><td>1</td><td>AN, MR</td></tr>
+<tr><td>Evo 6</td><td>Blast of Unlife</td><td>D3</td><td>20</td><td>30+</td><td>2</td><td>0</td><td>20+</td><td>1</td><td>AN, MR, UndIm, MindIm</td></tr>
+<tr><td>Evo 6</td><td>Bane Fire</td><td>D3F1</td><td>20</td><td>45+</td><td>1</td><td>1</td><td>55+</td><td>1</td><td>AP</td></tr>
+<tr><td>Evo 7</td><td>Stygian Rains</td><td>D3W2</td><td>200</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td>InanimIm, NUW</td></tr>
+<tr><td>Alt 5</td><td>Invulnerability</td><td>D3</td><td>20</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Alt 6</td><td>Soul Vortex</td><td>D3</td><td>40</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Thau 4</td><td>Terror</td><td>D3</td><td>20</td><td>30</td><td>5+</td><td>1</td><td>0</td><td>1</td><td>AN</td></tr>
+<tr><td>Thau 5</td><td>Leeching Darkness</td><td>D3</td><td>20</td><td>30</td><td>3+</td><td>1</td><td>0</td><td>1</td><td>AP, MR, NUW</td></tr>
+<tr><td>Thau 6</td><td>Wither Bones</td><td>D3</td><td>50</td><td>30</td><td>6+</td><td>-1</td><td>16+</td><td>1</td><td>AN</td></tr>
+<tr><td>Evo 7</td><td>Cloud of Death</td><td>D4A1</td><td>20</td><td>30</td><td>15+</td><td>-3</td><td>1192+</td><td>1</td><td>AN, MR, UndIm, NUW</td></tr>
+<tr><td>Evo 7</td><td>Wind of Death</td><td>D4A1</td><td>100</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td>MR-, NUW</td></tr>
+<tr><td>Alt 5</td><td>Drain Life</td><td>D4</td><td>10</td><td>30</td><td>0</td><td>100</td><td>14+</td><td>1</td><td>AN, InanimIm</td></tr>
+<tr><td>Alt 6</td><td>Skeletal Legion</td><td>D4</td><td>100</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Alt 6</td><td>Darkness</td><td>D4</td><td>400</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>BE, NUW</td></tr>
+<tr><td>Ench 6</td><td>Rigor Mortis</td><td>D4</td><td>300</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>AN, MR+, UndIm, InanimIm, BE</td></tr>
+<tr><td>Ench 7</td><td>Life after Death</td><td>D4</td><td>400</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td>MindIm</td></tr>
+<tr><td>Thau 7</td><td>Plague</td><td>D4</td><td>100</td><td>25</td><td>1</td><td>0</td><td>0</td><td>1</td><td>MR, UndIm, InanimIm</td></tr>
+<tr><td>Evo 8</td><td>Vortex of Unlife</td><td>D5</td><td>20</td><td>30+</td><td>8+</td><td>0</td><td>16+</td><td>1</td><td>AN, MR, UndIm, MindIm</td></tr>
+<tr><td>Ench 8</td><td>Fields of the Dead</td><td>D5E2</td><td>200</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>BE</td></tr>
+<tr><td>Alt 7</td><td>Bone Grinding</td><td>D7</td><td>100</td><td>0</td><td>BF</td><td>0</td><td>3</td><td>1</td><td>Mun, AN</td></tr>
+<tr><td>Thau 8</td><td>Undead Mastery</td><td>D7</td><td>700</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td>AN, MR-</td></tr>
+</tbody></table>
+```
 
 ## Nature Spells
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Alt 0 | Poison Touch | N1 | 5 | 1 | 0 | 0 | 10+ | 1 | AN |
-| Evo 1 | Vine Arrow | N1 | 20 | 30+ | 0 | 0 | 14+ | 1 | NUW |
-| Evo 2 | Web | N1 | 20 | 25+ | 3 | 2 | 0 | 1 | Mun |
-| Evo 3 | Poison Darts | N1 | 20 | 30+ | 0 | 3 | 9 | 5+ | AP, NUW |
-| Alt 1 | Eagle Eyes | N1 | 5 | 0 | 0 | 0 | 0 | 1 |  |
-| Alt 1 | Cat Eyes | N1 | 5 | 0 | 0 | 0 | 0 | 1 |  |
-| Alt 1 | Personal Poison Resistance N1 | 5 | 0 | 0 | 0 | 0 | 1 |  |  |
-| Alt 1 | Personal Barkskin | N1 | 5 | 0 | 0 | 0 | 0 | 1 | SpiIm |
-| Alt 3 | Gift of Cat Eyes | N1 | 20 | 15 | 2+ | 0 | 0 | 1 |  |
-| Alt 3 | Barkskin | N1 | 20 | 10 | 1 | 100 | 0 | 1 | SpiIm |
-| Alt 3 | Animate Tree | N1 | 20 | 10 | 1 | 100 | 0 | 1 | InanimIm, NUW |
-| Alt 3 | Mossbody | N1W1 | 20 | 10 | 1 | 0 | 0 | 1 | SpiIm |
-| Alt 4 | Elemental Fortitude | N1 | 10 | 0 | 0 | 0 | 0 | 1 |  |
-| Conj 1 | Tangle Vines | N1 | 20 | 20 | 1 | 2 | 0 | 1 |  |
-| Conj 4 | Maggots | N1 | 100 | 25 | 0 | 100 | 50 | 1 | Mun, AN |
-| Ench 1 | Protection from Poison | N1 | 5 | 0 | 0 | 0 | 0 | 1 |  |
-| Ench 1 | Healing Touch | N1 | 20 | 1 | 1 | 1 | 30+ | 1 | AN, InanimIm |
-| Ench 2 | Proud Steed | N1 | 20 | 10 | 1 | 2 | 0 | 1 | Anim, Mount, MindIm |
-| Ench 2 | Gift of the Hare | N1 | 20 | 15 | 1+ | 0 | 0 | 1 | AN |
-| Ench 2 | Envenom Arrows | N1 | 20 | 10 | 1 | 0 | 0 | 1 | NUW |
-| Ench 2 | Gift of the Serpent | N1 | 20 | 15 | 1 | 0 | 0 | 1 |  |
-| Ench 3 | Heal | N1 | 20 | 15 | 1 | 5 | 30+ | 1 | AN, InanimIm |
-| Thau 1 | Seven Year Fever | N1F1 | 30 | 25 | 1 | 2 | 0 | 1 | MR, UndIm, InanimIm |
-| Thau 2 | Beast Fury | N1 | 20 | 10 | 1 | 2 | 0 | 1 | Anim, MindIm |
-| Thau 4 | Touch of Madness | N1 | 30 | 20 | 1 | 0 | 0 | 1 | AN, InanimIm, MindIm |
-| Evo 4 | Breath of the Dragon | N2 | 20 | 20+ | 4+ | -1 | 7+ | 1 | AN, NUW |
-| Evo 5 | Poison Arrows | N2 | 20 | 35+ | 0 | 3 | 15+ | 4+ | NUW |
-| Evo 7 | Storm of Thorns | N2 | 20 | 35+ | 0 | 0 | 15+ | 10+ | NUW |
-| Alt 2 | Enlarge | N2 | 20 | 10 | 1 | 0 | 0 | 1 | SpiIm |
-| Alt 3 | Torpor | N2 | 20 | 35 | 1 | 100 | 20+ | 1 | AN, MR, UndIm, InanimIm, MindIm |
-| Alt 4 | Group Barkskin | N2 | 40 | 15 | 3+ | 100 | 0 | 1 | SpiIm |
-| Alt 4 | Swarm | N2 | 100 | 0 | 0 | 0 | 0 | 20+ | Summons Large Beetle x20+: HP 1, Prot 1, MR 3, Mor 50, Str 1, Att 14, Def 12, Prec 10, Enc 5, CS 6, MM 20, FS, Fly, Magic, Mind, NNEat, Stealth 40, Wpn: Tiny Sting |
-| Alt 4 | Shrink | N2 | 20 | 20+ | 1 | 0 | 0 | 1 | MR, SpiIm |
-| Alt 5 | Blood Poisoning | N2 | 20 | 30 | 0 | 100 | 15+ | 1 | AN |
-| Alt 6 | Venomous Death | N2D1 | 20 | 30 | 0 | 100 | 25+ | 1 | AN |
-| Alt 7 | Curse of the Frog Prince | N2 | 20 | 25 | 0 | 100 | 0 | 1 | MR, UndIm, InanimIm, SpiIm, MindIm |
-| Conj 4 | Nest of Asps | N2D1 | 100 | 0 | 0 | 0 | 0 | 10+ | NUW Summons Asp x10+: HP 2, Prot 1, MR 4, Mor 50, Str 2, Att 12, Def 10, Prec 5, Enc 2, CS 6, MM 10, SS, Magic, Mind, NNEat, Stealth 40, Wpn: Asp Bite |
-| Ench 2 | Personal Regeneration | N2 | 20 | 0 | 0 | 0 | 0 | 1 | InanimIm |
-| Ench 4 | Immaculate Mounts | N2 | 20 | 10 | 3+ | 2 | 0 | 1 | Anim, Mount, MindIm |
-| Ench 4 | Poison Ward | N2 | 100 | 15 | 20+ | 0 | 0 | 1 |  |
-| Thau 3 | Panic | N2 | 20 | 30 | 5+ | 1 | 1 | 1 | AN |
-| Thau 4 | Ferocity | N2 | 20 | 15 | 3+ | 2 | 0 | 1 | Anim, MindIm |
-| Thau 4 | Rage of the Cornered Rat | N2 | 20 | 20 | 3+ | 0 | 0 | 1 | AN, Anim |
-| Thau 5 | Charm Animal | N2 | 20 | 20 | 0 | 100 | 0 | 1 | MR-, Anim |
-| Thau 5 | Pack Ferocity | N2 | 100 | 15 | 20+ | 2 | 0 | 1 | Anim, MindIm |
-| Conj 4 | Tangle Thicket | N2 | 30 | 20 | 3+ | 2 | 0 | 1 |  |
-| Evo 5 | Poison Cloud | N3A1 | 20 | 30 | 6+ | -1 | 64 | 1 | AN |
-| Evo 6 | Stream of Life | N3 | 20 | 40+ | 1 | 2 | 40+ | 1 | AN, MR, UndIm, InanimIm |
-| Evo 7 | Poison Mist | N3A1 | 40 | 30 | 15+ | -1 | 64 | 1 | AN |
-| Alt 6 | Eagle-eyed Warriors | N3 | 100 | 15 | 20+ | 0 | 0 | 1 |  |
-| Alt 5 | Cat-eyed Warriors | N3 | 100 | 15 | 20+ | 0 | 0 | 1 |  |
-| Alt 6 | Wooden Warriors | N3 | 100 | 15 | 20+ | 0 | 0 | 1 | SpiIm |
-| Alt 6 | Giant Warriors | N3 | 100 | 10 | 10 | 0 | 0 | 1 | SpiIm |
-| Alt 7 | Creeping Doom | N3 | 100 | 0 | 0 | 0 | 0 | 70+ | NUW Summons Large Spider x70+: HP 1, Prot 1, MR 3, Mor 50, Str 1, Att 8, Def 10, Prec 4, Enc 2, CS 4, MM 10, FS, Magic, Mind, NNEat, Stealth 40, PR +15, Wpn: Sting |
-| Alt 8 | Polymorph | N3 | 200 | 25 | 10+ | 5 | 0 | 1 | MR, UndIm, InanimIm, SpiIm, MindIm |
-| Conj 4 | Strength of Gaia | N3E1 | 20 | 0 | 0 | 0 | 0 | 1 |  |
-| Conj 5 | Howl | N3 | 300 | 0 | 0 | 0 | 0 | 1 | BE, NUW |
-| Ench 3 | Regeneration | N3 | 40 | 15 | 1 | 0 | 0 | 1 | InanimIm |
-| Ench 4 | Haste | N3 | 100 | 15 | 20+ | 0 | 0 | 1 | AN, InanimIm |
-| Ench 4 | Serpent Fang Arrows | N3 | 100 | 15 | 20+ | 0 | 0 | 1 | NUW |
-| Ench 5 | Group Regeneration | N3 | 60 | 15 | 3+ | 0 | 0 | 1 | InanimIm |
-| Thau 4 | Wildness | N3 | 20 | 30 | 1 | 3 | 0 | 1 | MR, Anim |
-| Thau 5 | The Ravenous Swarm | N3 | 100 | 1 | 0 | 0 | 0 | 1 | BE, NUW |
-| Alt 7 | Oaken Army | N4 | 300 | 0 | BF | 0 | 0 | 1 | SpiIm |
-| Conj 8 | Wild Growth | N4 | 40 | 20 | 10+ | 0 | 0 | 1 |  |
-| Ench 6 | Hail of Serpent Fangs | N4 | 200 | 0 | BF | 0 | 0 | 1 | NUW |
-| Ench 6 | Foul Vapors | N4W1 | 200 | 0 | 0 | 0 | 0 | 1 | BE |
-| Ench 7 | Mass Regeneration | N4 | 100 | 15 | 20+ | 0 | 0 | 1 | InanimIm |
-| Ench 7 | Serpent's Blessing | N4 | 200 | 0 | BF | 0 | 0 | 1 |  |
-| Thau 6 | Growing Fury | N4 | 100 | 0 | 0 | 0 | 0 | 1 | BE |
-| Thau 7 | Fury of the Wild | N4 | 200 | 0 | BF | 0 | 0 | 1 | Anim, MindIm |
-| Alt 8 | Army of Giants | N5 | 300 | 0 | BF | 0 | 0 | 1 | SpiIm |
-| Alt 9 | Army of Rats | N5 | 400 | 0 | BF | 0 | 0 | 1 | MR+, SpiIm |
-| Alt 9 | Awaken Forest | N5 | 200 | 0 | BF | 100 | 0 | 1 | InanimIm, NUW |
-| Ench 6 | Relief | N5 | 100 | 0 | 0 | 0 | 0 | 1 | BE |
-| Ench 8 | Army Regeneration | N5 | 300 | 0 | BF | 0 | 0 | 1 | InanimIm |
-| Ench 9 | Gaia's Blessing | N5E2 | 300 | 0 | BF | 0 | 0 | 1 |  |
-| Thau 9 | Beast Mastery | N6 | 400 | 0 | BF | 0 | 0 | 1 | AN, MR-, Anim |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Alt 0</td><td>Poison Touch</td><td>N1</td><td>5</td><td>1</td><td>0</td><td>0</td><td>10+</td><td>1</td><td>AN</td></tr>
+<tr><td>Evo 1</td><td>Vine Arrow</td><td>N1</td><td>20</td><td>30+</td><td>0</td><td>0</td><td>14+</td><td>1</td><td>NUW</td></tr>
+<tr><td>Evo 2</td><td>Web</td><td>N1</td><td>20</td><td>25+</td><td>3</td><td>2</td><td>0</td><td>1</td><td>Mun</td></tr>
+<tr><td>Evo 3</td><td>Poison Darts</td><td>N1</td><td>20</td><td>30+</td><td>0</td><td>3</td><td>9</td><td>5+</td><td>AP, NUW</td></tr>
+<tr><td>Alt 1</td><td>Eagle Eyes</td><td>N1</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Alt 1</td><td>Cat Eyes</td><td>N1</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Alt 1</td><td>Personal Poison Resistance N1</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td></td><td></td></tr>
+<tr><td>Alt 1</td><td>Personal Barkskin</td><td>N1</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>SpiIm</td></tr>
+<tr><td>Alt 3</td><td>Gift of Cat Eyes</td><td>N1</td><td>20</td><td>15</td><td>2+</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Alt 3</td><td>Barkskin</td><td>N1</td><td>20</td><td>10</td><td>1</td><td>100</td><td>0</td><td>1</td><td>SpiIm</td></tr>
+<tr><td>Alt 3</td><td>Animate Tree</td><td>N1</td><td>20</td><td>10</td><td>1</td><td>100</td><td>0</td><td>1</td><td>InanimIm, NUW</td></tr>
+<tr><td>Alt 3</td><td>Mossbody</td><td>N1W1</td><td>20</td><td>10</td><td>1</td><td>0</td><td>0</td><td>1</td><td>SpiIm</td></tr>
+<tr><td>Alt 4</td><td>Elemental Fortitude</td><td>N1</td><td>10</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Conj 1</td><td>Tangle Vines</td><td>N1</td><td>20</td><td>20</td><td>1</td><td>2</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Conj 4</td><td>Maggots</td><td>N1</td><td>100</td><td>25</td><td>0</td><td>100</td><td>50</td><td>1</td><td>Mun, AN</td></tr>
+<tr><td>Ench 1</td><td>Protection from Poison</td><td>N1</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Ench 1</td><td>Healing Touch</td><td>N1</td><td>20</td><td>1</td><td>1</td><td>1</td><td>30+</td><td>1</td><td>AN, InanimIm</td></tr>
+<tr><td>Ench 2</td><td>Proud Steed</td><td>N1</td><td>20</td><td>10</td><td>1</td><td>2</td><td>0</td><td>1</td><td>Anim, Mount, MindIm</td></tr>
+<tr><td>Ench 2</td><td>Gift of the Hare</td><td>N1</td><td>20</td><td>15</td><td>1+</td><td>0</td><td>0</td><td>1</td><td>AN</td></tr>
+<tr><td>Ench 2</td><td>Envenom Arrows</td><td>N1</td><td>20</td><td>10</td><td>1</td><td>0</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr><td>Ench 2</td><td>Gift of the Serpent</td><td>N1</td><td>20</td><td>15</td><td>1</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Ench 3</td><td>Heal</td><td>N1</td><td>20</td><td>15</td><td>1</td><td>5</td><td>30+</td><td>1</td><td>AN, InanimIm</td></tr>
+<tr><td>Thau 1</td><td>Seven Year Fever</td><td>N1F1</td><td>30</td><td>25</td><td>1</td><td>2</td><td>0</td><td>1</td><td>MR, UndIm, InanimIm</td></tr>
+<tr><td>Thau 2</td><td>Beast Fury</td><td>N1</td><td>20</td><td>10</td><td>1</td><td>2</td><td>0</td><td>1</td><td>Anim, MindIm</td></tr>
+<tr><td>Thau 4</td><td>Touch of Madness</td><td>N1</td><td>30</td><td>20</td><td>1</td><td>0</td><td>0</td><td>1</td><td>AN, InanimIm, MindIm</td></tr>
+<tr><td>Evo 4</td><td>Breath of the Dragon</td><td>N2</td><td>20</td><td>20+</td><td>4+</td><td>-1</td><td>7+</td><td>1</td><td>AN, NUW</td></tr>
+<tr><td>Evo 5</td><td>Poison Arrows</td><td>N2</td><td>20</td><td>35+</td><td>0</td><td>3</td><td>15+</td><td>4+</td><td>NUW</td></tr>
+<tr><td>Evo 7</td><td>Storm of Thorns</td><td>N2</td><td>20</td><td>35+</td><td>0</td><td>0</td><td>15+</td><td>10+</td><td>NUW</td></tr>
+<tr><td>Alt 2</td><td>Enlarge</td><td>N2</td><td>20</td><td>10</td><td>1</td><td>0</td><td>0</td><td>1</td><td>SpiIm</td></tr>
+<tr><td>Alt 3</td><td>Torpor</td><td>N2</td><td>20</td><td>35</td><td>1</td><td>100</td><td>20+</td><td>1</td><td>AN, MR, UndIm, InanimIm, MindIm</td></tr>
+<tr><td>Alt 4</td><td>Group Barkskin</td><td>N2</td><td>40</td><td>15</td><td>3+</td><td>100</td><td>0</td><td>1</td><td>SpiIm</td></tr>
+<tr><td>Alt 4</td><td>Swarm</td><td>N2</td><td>100</td><td>0</td><td>0</td><td>0</td><td>0</td><td>20+</td><td></td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Large Beetle x20+: HP 1, Prot 1, MR 3, Mor 50, Str 1, Att 14, Def 12, Prec 10, Enc 5, CS 6, MM 20, FS, Fly, Magic, Mind, NNEat, Stealth 40, Wpn: Tiny Sting</td></tr>
+<tr><td>Alt 4</td><td>Shrink</td><td>N2</td><td>20</td><td>20+</td><td>1</td><td>0</td><td>0</td><td>1</td><td>MR, SpiIm</td></tr>
+<tr><td>Alt 5</td><td>Blood Poisoning</td><td>N2</td><td>20</td><td>30</td><td>0</td><td>100</td><td>15+</td><td>1</td><td>AN</td></tr>
+<tr><td>Alt 6</td><td>Venomous Death</td><td>N2D1</td><td>20</td><td>30</td><td>0</td><td>100</td><td>25+</td><td>1</td><td>AN</td></tr>
+<tr><td>Alt 7</td><td>Curse of the Frog Prince</td><td>N2</td><td>20</td><td>25</td><td>0</td><td>100</td><td>0</td><td>1</td><td>MR, UndIm, InanimIm,</td></tr>
+<tr class="spell-desc"><td colspan="10">SpiIm, MindIm</td></tr>
+<tr><td>Conj 4</td><td>Nest of Asps</td><td>N2D1</td><td>100</td><td>0</td><td>0</td><td>0</td><td>0</td><td>10+</td><td>NUW</td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Asp x10+: HP 2, Prot 1, MR 4, Mor 50, Str 2, Att 12, Def 10, Prec 5, Enc 2, CS 6, MM 10, SS, Magic, Mind, NNEat, Stealth 40, Wpn: Asp Bite</td></tr>
+<tr><td>Ench 2</td><td>Personal Regeneration</td><td>N2</td><td>20</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>InanimIm</td></tr>
+<tr><td>Ench 4</td><td>Immaculate Mounts</td><td>N2</td><td>20</td><td>10</td><td>3+</td><td>2</td><td>0</td><td>1</td><td>Anim, Mount, MindIm</td></tr>
+<tr><td>Ench 4</td><td>Poison Ward</td><td>N2</td><td>100</td><td>15</td><td>20+</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Thau 3</td><td>Panic</td><td>N2</td><td>20</td><td>30</td><td>5+</td><td>1</td><td>1</td><td>1</td><td>AN</td></tr>
+<tr><td>Thau 4</td><td>Ferocity</td><td>N2</td><td>20</td><td>15</td><td>3+</td><td>2</td><td>0</td><td>1</td><td>Anim, MindIm</td></tr>
+<tr><td>Thau 4</td><td>Rage of the Cornered Rat</td><td>N2</td><td>20</td><td>20</td><td>3+</td><td>0</td><td>0</td><td>1</td><td>AN, Anim</td></tr>
+<tr><td>Thau 5</td><td>Charm Animal</td><td>N2</td><td>20</td><td>20</td><td>0</td><td>100</td><td>0</td><td>1</td><td>MR-, Anim</td></tr>
+<tr><td>Thau 5</td><td>Pack Ferocity</td><td>N2</td><td>100</td><td>15</td><td>20+</td><td>2</td><td>0</td><td>1</td><td>Anim, MindIm</td></tr>
+<tr><td>Conj 4</td><td>Tangle Thicket</td><td>N2</td><td>30</td><td>20</td><td>3+</td><td>2</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Evo 5</td><td>Poison Cloud</td><td>N3A1</td><td>20</td><td>30</td><td>6+</td><td>-1</td><td>64</td><td>1</td><td>AN</td></tr>
+<tr><td>Evo 6</td><td>Stream of Life</td><td>N3</td><td>20</td><td>40+</td><td>1</td><td>2</td><td>40+</td><td>1</td><td>AN, MR, UndIm, InanimIm</td></tr>
+<tr><td>Evo 7</td><td>Poison Mist</td><td>N3A1</td><td>40</td><td>30</td><td>15+</td><td>-1</td><td>64</td><td>1</td><td>AN</td></tr>
+<tr><td>Alt 6</td><td>Eagle-eyed Warriors</td><td>N3</td><td>100</td><td>15</td><td>20+</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Alt 5</td><td>Cat-eyed Warriors</td><td>N3</td><td>100</td><td>15</td><td>20+</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Alt 6</td><td>Wooden Warriors</td><td>N3</td><td>100</td><td>15</td><td>20+</td><td>0</td><td>0</td><td>1</td><td>SpiIm</td></tr>
+<tr><td>Alt 6</td><td>Giant Warriors</td><td>N3</td><td>100</td><td>10</td><td>10</td><td>0</td><td>0</td><td>1</td><td>SpiIm</td></tr>
+<tr><td>Alt 7</td><td>Creeping Doom</td><td>N3</td><td>100</td><td>0</td><td>0</td><td>0</td><td>0</td><td>70+</td><td>NUW</td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Large Spider x70+: HP 1, Prot 1, MR 3, Mor 50, Str 1, Att 8, Def 10, Prec 4, Enc 2, CS 4, MM 10, FS, Magic, Mind, NNEat, Stealth 40, PR +15, Wpn: Sting</td></tr>
+<tr><td>Alt 8</td><td>Polymorph</td><td>N3</td><td>200</td><td>25</td><td>10+</td><td>5</td><td>0</td><td>1</td><td>MR, UndIm, InanimIm,</td></tr>
+<tr class="spell-desc"><td colspan="10">SpiIm, MindIm</td></tr>
+<tr><td>Conj 4</td><td>Strength of Gaia</td><td>N3E1</td><td>20</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Conj 5</td><td>Howl</td><td>N3</td><td>300</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>BE, NUW</td></tr>
+<tr><td>Ench 3</td><td>Regeneration</td><td>N3</td><td>40</td><td>15</td><td>1</td><td>0</td><td>0</td><td>1</td><td>InanimIm</td></tr>
+<tr><td>Ench 4</td><td>Haste</td><td>N3</td><td>100</td><td>15</td><td>20+</td><td>0</td><td>0</td><td>1</td><td>AN, InanimIm</td></tr>
+<tr><td>Ench 4</td><td>Serpent Fang Arrows</td><td>N3</td><td>100</td><td>15</td><td>20+</td><td>0</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr><td>Ench 5</td><td>Group Regeneration</td><td>N3</td><td>60</td><td>15</td><td>3+</td><td>0</td><td>0</td><td>1</td><td>InanimIm</td></tr>
+<tr><td>Thau 4</td><td>Wildness</td><td>N3</td><td>20</td><td>30</td><td>1</td><td>3</td><td>0</td><td>1</td><td>MR, Anim</td></tr>
+<tr><td>Thau 5</td><td>The Ravenous Swarm</td><td>N3</td><td>100</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>BE, NUW</td></tr>
+<tr><td>Alt 7</td><td>Oaken Army</td><td>N4</td><td>300</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td>SpiIm</td></tr>
+<tr><td>Conj 8</td><td>Wild Growth</td><td>N4</td><td>40</td><td>20</td><td>10+</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Ench 6</td><td>Hail of Serpent Fangs</td><td>N4</td><td>200</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr><td>Ench 6</td><td>Foul Vapors</td><td>N4W1</td><td>200</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>BE</td></tr>
+<tr><td>Ench 7</td><td>Mass Regeneration</td><td>N4</td><td>100</td><td>15</td><td>20+</td><td>0</td><td>0</td><td>1</td><td>InanimIm</td></tr>
+<tr><td>Ench 7</td><td>Serpent&#x27;s Blessing</td><td>N4</td><td>200</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Thau 6</td><td>Growing Fury</td><td>N4</td><td>100</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>BE</td></tr>
+<tr><td>Thau 7</td><td>Fury of the Wild</td><td>N4</td><td>200</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td>Anim, MindIm</td></tr>
+<tr><td>Alt 8</td><td>Army of Giants</td><td>N5</td><td>300</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td>SpiIm</td></tr>
+<tr><td>Alt 9</td><td>Army of Rats</td><td>N5</td><td>400</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td>MR+, SpiIm</td></tr>
+<tr><td>Alt 9</td><td>Awaken Forest</td><td>N5</td><td>200</td><td>0</td><td>BF</td><td>100</td><td>0</td><td>1</td><td>InanimIm, NUW</td></tr>
+<tr><td>Ench 6</td><td>Relief</td><td>N5</td><td>100</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>BE</td></tr>
+<tr><td>Ench 8</td><td>Army Regeneration</td><td>N5</td><td>300</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td>InanimIm</td></tr>
+<tr><td>Ench 9</td><td>Gaia&#x27;s Blessing</td><td>N5E2</td><td>300</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Thau 9</td><td>Beast Mastery</td><td>N6</td><td>400</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td>AN, MR-, Anim</td></tr>
+</tbody></table>
+```
 
 ## Glamour Spells
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Thau 0 | Sleep Ray | G1 | 20 | 1 | 1 | 0 | 0 | 1 | AN, MR, UndIm, InanimIm, MindIm |
-| Evo 1 | Bewitching Lights | G1 | 20 | 30 | 3 | 1 | 100 | 1 | AN, MR-, MindIm, NUW |
-| Evo 2 | Warrior Illusion | G1 | 10 | 5 | 0 | 0 | 0 | 1 | Summons Warrior Illusion x1: HP 1, Prot 0, MR 10, Mor 50, Str 10, Att 10, Def 10, Prec 10, Enc 0, CS 12, MM 22, Eth, Illu, Inanim, Mind, Amph, NNEat, PR +25, SpSi, Wpn: Phantasmal Weapon |
-| Evo 3 | False Fire | G1F1 | 20 | 30+ | 1 | 1 | 14+ | 1 | AP, MR, NUW |
-| Evo 3 | Elf Shot | G1N1 | 20 | 30+ | 0 | 4 | 100 | 1 | AN, MR, NUW |
-| Alt 1 | Blurred Body | G1 | 10 | 0 | 0 | 0 | 0 | 1 | AN |
-| Alt 2 | Mirror Image | G1 | 10 | 0 | 0 | 0 | 2+ | 1 | AN |
-| Alt 2 | Blur | G1 | 20 | 20 | 1 | 0 | 0 | 1 | AN |
-| Conj 3 | Conjure Phantasmal | G1 | 100 | 5 | 0 | 0 | 0 | 2 | Wolves Summons Phantasmal Wolf x2: HP 11, Prot 0, MR 12, Mor 14, Str 11, Att 14, Def 12, Prec 5, Enc 2, CS 26, MM 26, FS, MS, Eth, Magic, NNEat, TrSi, Wpn: Phantasmal Bite |
-| Conj 6 | Summon Sprites | G1N1 | 100 | 1 | 0 | 0 | 0 | 6 | NUW Summons Sprite x6: HP 2, Prot 0, MR 14, Mor 7, Str 3, Att 14, Def 19, Prec 14, Enc 1, CS 10, MM 22, FS, SS, Fly, Glamour, Magic, NNEat, Stealth 65, TrSi, Wpn: Fist, Elf Shot |
-| Ench 1 | True Sight | G1 | 5 | 0 | 0 | 0 | 0 | 1 |  |
-| Ench 2 | Shroud of Splendor | G1F1 | 10 | 0 | 0 | 0 | 0 | 1 | AN |
-| Ench 3 | Gift of True Sight | G1 | 20 | 10 | 1 | 0 | 0 | 1 | NUW |
-| Ench 6 | Steal Sight | G1 | 20 | 20 | 0 | 100 | 0 | 1 | MR |
-| Thau 1 | Fascination | G1 | 20 | 15 | 0 | 100 | 100 | 1 | AN, MR, MindIm |
-| Thau 1 | Personal Luck | G1 | 20 | 0 | 0 | 0 | 0 | 1 | UndIm, InanimIm |
-| Thau 1 | Curse | G1S1 | 30 | 50 | 0 | 100 | 0 | 1 |  |
-| Thau 3 | Luck | G1 | 20 | 10 | 1 | 2 | 0 | 1 | UndIm, InanimIm |
-| Thau 4 | Mind Blank | G1S1 | 20 | 0 | 0 | 0 | 0 | 1 |  |
-| Evo 2 | Ephemeral Bolt | G2 | 10 | 35+ | 1 | 2 | 4+ | 1 | AN, MR |
-| Evo 3 | Dance of Ephemeral | G2 | 10 | 0 | 0 | 0 | 0 | 1 | AN Swords |
-| Evo 3 | Cloud of Dreamless | G2A1 | 20 | 30 | 3+ | 3 | 4346+ | 1 | AN, MR, UndIm, InanimIm, Slumber                                                                                        MindIm |
-| Alt 3 | Displace Body | G2 | 10 | 0 | 0 | 0 | 0 | 1 | AN |
-| Alt 3 | Group Blur | G2 | 40 | 20 | 3+ | 0 | 0 | 1 | AN |
-| Alt 6 | Gift of Displacement | G2 | 20 | 10 | 1 | 0 | 0 | 1 | AN |
-| Conj 4 | Conjure Phantasmal | G2 | 100 | 5 | 0 | 0 | 0 | 2 | Warriors Summons Phantasmal Warrior x2: HP 14, Prot 9, MR 14, Mor 13, Str 12, Att 13, Def 17, Prec 13, Enc 3, CS 11, MM 20, Eth, Magic, NNEat, TrSi, Wpn: Phantasmal Weapon |
-| Conj 7 | Conjure Phantasmal Knight G2 | 100 | 5 | 0 | 0 | 0 | 1 |  | Summons Phantasmal Knight x1: HP 15, Prot 17, MR 14, Mor 14, Str 12, Att 14, Def 20, Prec 13, Enc 3, CS 12, MM 20, Eth, Magic, NNEat, TrSi, Rider 3, Wpn: Phantasmal Lance, Phantasmal Weapon, Mount: Phantasmal Steed |
-| Ench 1 | False Fetters | G2 | 10 | 15 | 2+ | 0 | 0 | 1 | MR |
-| Ench 3 | Shroud of Bewilderment | G2 | 20 | 0 | 0 | 0 | 0 | 1 | AN |
-| Ench 3 | Horrible Visage | G2D1 | 10 | 0 | 0 | 0 | 0 | 1 | AN |
-| Ench 4 | Gift of Splendor | G2F1 | 20 | 10 | 1 | 0 | 0 | 1 | AN |
-| Thau 2 | Sleep | G2 | 20 | 35 | 0 | 100 | 0 | 1 | AN, MR, UndIm, InanimIm, MindIm |
-| Thau 3 | Despair | G2 | 10 | 30 | 5+ | 1 | 4 | 1 | AN, MR |
-| Thau 4 | Slumber | G2 | 20 | 35 | 3+ | 100 | 0 | 1 | AN, MR, UndIm, InanimIm, MindIm |
-| Thau 5 | Confusion | G2 | 10 | 30 | 1 | 3 | 0 | 1 | MR, MindIm |
-| Thau 5 | Group Luck | G2 | 40 | 15 | 3+ | 2 | 0 | 1 | UndIm, InanimIm |
-| Thau 6 | Mirror Mind | G2S1 | 20 | 15 | 3+ | 0 | 0 | 1 |  |
-| Evo 4 | Ephemeral Blast | G3 | 10 | 40+ | 4+ | 2 | 7+ | 1 | AN, MR |
-| Evo 4 | Ghost Wolves | G3 | 10 | 5 | 0 | 0 | 0 | 2 | Summons Wolf Illusion x2: HP 1, Prot 0, MR 10, Mor 50, Str 9, Att 10, Def 10, Prec 10, Enc 0, CS 26, MM 22, Eth, Illu, Inanim, Mind, Amph, NNEat, PR +25, SpSi, Wpn: Phantasmal Bite |
-| Evo 5 | Illusory Army | G3 | 100 | 3+ | 0 | 0 | 0 | 20+ | Summons Warrior Illusion x20+: HP 1, Prot 0, MR 10, Mor 50, Str 10, Att 10, Def 10, Prec 10, Enc 0, CS 12, MM 22, Eth, Illu, Inanim, Mind, Amph, NNEat, PR +25, SpSi, Wpn: Phantasmal Weapon |
-| Evo 6 | False Horror | G3 | 10 | 5 | 0 | 0 | 0 | 1 | Summons False Horror x1: HP 1, Prot 0, MR 10, Mor 50, Str 10, Att 10, Def 13, Prec 10, Enc 0, CS 4, MM 22, Float, Eth, Illu, Inanim, Mind, Amph, NNEat, PR +25, Fear +5, SpSi, Wpn: Phantasmal Claw, Phantasmal Claw |
-| Alt 4 | Twilight | G3 | 100 | 0 | 0 | 0 | 0 | 1 | BE, NUW |
-| Alt 5 | Nightfall | G3 | 100 | 0 | 0 | 0 | 0 | 1 | BE, NUW |
-| Alt 5 | Shadow Warriors | G3 | 100 | 20 | 20+ | 0 | 0 | 1 | AN |
-| Alt 6 | Invisibility | G3 | 10 | 0 | 0 | 0 | 0 | 1 | AN |
-| Ench 6 | Fay-eyed Warriors | G3 | 100 | 15 | 20+ | 0 | 0 | 1 | NUW |
-| Conj 5 | Conjure Phantasmal Beast G3 | 100 | 5 | 0 | 0 | 0 | 1 |  | Summons Phantasmal Beast x1: HP 62, Prot 6, MR 15, Mor 15, Str 19, Att 14, Def 12, Prec 10, Enc 2, CS 18, MM 20, Eth, Magic, Amph, NNEat, TrSi, Wpn: Phantasmal Claw, Phantasmal Claw, Phantasmal Claw, Phantasmal Claw, Phantasmal Bite |
-| Ench 6 | Aura of Splendor | G3F1 | 40 | 15 | 5+ | 0 | 0 | 1 | AN |
-| Thau 4 | Visions of Death | G3 | 20 | 35+ | 0 | 100 | 25+ | 1 | AN, MR |
-| Thau 6 | Unending Nightmare | G3D1 | 20 | 35 | 3+ | 100 | 0 | 1 | AN, MR, UndIm, InanimIm, MindIm |
-| Thau 7 | Charm | G3 | 30 | 25 | 0 | 100 | 0 | 1 | AN, MR, MindIm |
-| Thau 7 | Mass Confusion | G3 | 10 | 30 | 5+ | 3 | 0 | 1 | MR, MindIm |
-| Evo 7 | Wailing Winds | G4A1 | 200 | 0 | 0 | 0 | 0 | 1 | BE, NUW |
-| Alt 7 | Army of Shades | G4 | 200 | 0 | BF | 0 | 0 | 1 | AN |
-| Alt 8 | Displaced Warriors | G4 | 100 | 15 | 20+ | 0 | 0 | 1 | AN |
-| Ench 7 | Aura of Bewilderment | G4 | 100 | 15 | 5+ | 0 | 0 | 1 | AN |
-| Ench 7 | Nightmare Masks | G4D1 | 100 | 15 | 5+ | 0 | 0 | 1 | AN |
-| Ench 7 | Warriors of the Dawn | G4F1 | 100 | 20 | 20+ | 0 | 0 | 1 | AN |
-| Thau 8 | Battle Fortune | G4 | 200 | 15 | 20+ | 5 | 0 | 1 | UndIm, InanimIm |
-| Evo 7 | Shimmering Fields | G5 | 200 | 25 | 50 | 0 | 9+ | 1 | AN, MR |
-| Evo 8 | Aurora Borealis | G5S1 | 200 | 1 | 1 | -1 | 0 | 1 | BE, NUW |
-| Ench 8 | Mists of Deception | G5A1 | 200 | 0 | 0 | 0 | 0 | 1 | BE, NUW |
-| Thau 6 | Sandman's Blessing | G5 | 20 | 30 | 25 | 0 | 0 | 1 | AN, MR, UndIm, InanimIm, MindIm |
-| Thau 9 | Dreamwild Legion | G5 | 400 | 0 | BF | 0 | 0 | 1 | UndIm, InanimIm |
-| Thau 9 | Legion's Demise | G7 | 400 | 0 | 0 | 0 | 0 | 1 | AN, MR-, BE |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Thau 0</td><td>Sleep Ray</td><td>G1</td><td>20</td><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>AN, MR, UndIm, InanimIm, MindIm</td></tr>
+<tr><td>Evo 1</td><td>Bewitching Lights</td><td>G1</td><td>20</td><td>30</td><td>3</td><td>1</td><td>100</td><td>1</td><td>AN, MR-, MindIm, NUW</td></tr>
+<tr><td>Evo 2</td><td>Warrior Illusion</td><td>G1</td><td>10</td><td>5</td><td>0</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Warrior Illusion x1: HP 1, Prot 0, MR 10, Mor 50, Str 10, Att 10, Def 10, Prec 10, Enc 0, CS 12, MM 22, Eth, Illu, Inanim, Mind, Amph, NNEat, PR +25, SpSi, Wpn: Phantasmal Weapon</td></tr>
+<tr><td>Evo 3</td><td>False Fire</td><td>G1F1</td><td>20</td><td>30+</td><td>1</td><td>1</td><td>14+</td><td>1</td><td>AP, MR, NUW</td></tr>
+<tr><td>Evo 3</td><td>Elf Shot</td><td>G1N1</td><td>20</td><td>30+</td><td>0</td><td>4</td><td>100</td><td>1</td><td>AN, MR, NUW</td></tr>
+<tr><td>Alt 1</td><td>Blurred Body</td><td>G1</td><td>10</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>AN</td></tr>
+<tr><td>Alt 2</td><td>Mirror Image</td><td>G1</td><td>10</td><td>0</td><td>0</td><td>0</td><td>2+</td><td>1</td><td>AN</td></tr>
+<tr><td>Alt 2</td><td>Blur</td><td>G1</td><td>20</td><td>20</td><td>1</td><td>0</td><td>0</td><td>1</td><td>AN</td></tr>
+<tr><td>Conj 3</td><td>Conjure Phantasmal</td><td>G1</td><td>100</td><td>5</td><td>0</td><td>0</td><td>0</td><td>2</td><td>Wolves</td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Phantasmal Wolf x2: HP 11, Prot 0, MR 12, Mor 14, Str 11, Att 14, Def 12, Prec 5, Enc 2, CS 26, MM 26, FS, MS, Eth, Magic, NNEat, TrSi, Wpn: Phantasmal Bite</td></tr>
+<tr><td>Conj 6</td><td>Summon Sprites</td><td>G1N1</td><td>100</td><td>1</td><td>0</td><td>0</td><td>0</td><td>6</td><td>NUW</td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Sprite x6: HP 2, Prot 0, MR 14, Mor 7, Str 3, Att 14, Def 19, Prec 14, Enc 1, CS 10, MM 22, FS, SS, Fly, Glamour, Magic, NNEat, Stealth 65, TrSi, Wpn: Fist, Elf Shot</td></tr>
+<tr><td>Ench 1</td><td>True Sight</td><td>G1</td><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Ench 2</td><td>Shroud of Splendor</td><td>G1F1</td><td>10</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>AN</td></tr>
+<tr><td>Ench 3</td><td>Gift of True Sight</td><td>G1</td><td>20</td><td>10</td><td>1</td><td>0</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr><td>Ench 6</td><td>Steal Sight</td><td>G1</td><td>20</td><td>20</td><td>0</td><td>100</td><td>0</td><td>1</td><td>MR</td></tr>
+<tr><td>Thau 1</td><td>Fascination</td><td>G1</td><td>20</td><td>15</td><td>0</td><td>100</td><td>100</td><td>1</td><td>AN, MR, MindIm</td></tr>
+<tr><td>Thau 1</td><td>Personal Luck</td><td>G1</td><td>20</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>UndIm, InanimIm</td></tr>
+<tr><td>Thau 1</td><td>Curse</td><td>G1S1</td><td>30</td><td>50</td><td>0</td><td>100</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Thau 3</td><td>Luck</td><td>G1</td><td>20</td><td>10</td><td>1</td><td>2</td><td>0</td><td>1</td><td>UndIm, InanimIm</td></tr>
+<tr><td>Thau 4</td><td>Mind Blank</td><td>G1S1</td><td>20</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Evo 2</td><td>Ephemeral Bolt</td><td>G2</td><td>10</td><td>35+</td><td>1</td><td>2</td><td>4+</td><td>1</td><td>AN, MR</td></tr>
+<tr><td>Evo 3</td><td>Dance of Ephemeral</td><td>G2</td><td>10</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>AN Swords</td></tr>
+<tr><td>Evo 3</td><td>Cloud of Dreamless</td><td>G2A1</td><td>20</td><td>30</td><td>3+</td><td>3</td><td>4346+</td><td>1</td><td>AN, MR, UndIm, InanimIm,</td></tr>
+<tr class="spell-desc"><td colspan="10">Slumber                                                                                        MindIm</td></tr>
+<tr><td>Alt 3</td><td>Displace Body</td><td>G2</td><td>10</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>AN</td></tr>
+<tr><td>Alt 3</td><td>Group Blur</td><td>G2</td><td>40</td><td>20</td><td>3+</td><td>0</td><td>0</td><td>1</td><td>AN</td></tr>
+<tr><td>Alt 6</td><td>Gift of Displacement</td><td>G2</td><td>20</td><td>10</td><td>1</td><td>0</td><td>0</td><td>1</td><td>AN</td></tr>
+<tr><td>Conj 4</td><td>Conjure Phantasmal</td><td>G2</td><td>100</td><td>5</td><td>0</td><td>0</td><td>0</td><td>2</td><td>Warriors</td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Phantasmal Warrior x2: HP 14, Prot 9, MR 14, Mor 13, Str 12, Att 13, Def 17, Prec 13, Enc 3, CS 11, MM 20, Eth, Magic, NNEat, TrSi, Wpn: Phantasmal Weapon</td></tr>
+<tr><td>Conj 7</td><td>Conjure Phantasmal Knight G2</td><td>100</td><td>5</td><td>0</td><td>0</td><td>0</td><td>1</td><td></td><td></td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Phantasmal Knight x1: HP 15, Prot 17, MR 14, Mor 14, Str 12, Att 14, Def 20, Prec 13, Enc 3, CS 12, MM 20, Eth, Magic, NNEat, TrSi, Rider 3, Wpn: Phantasmal Lance, Phantasmal Weapon, Mount: Phantasmal Steed</td></tr>
+<tr><td>Ench 1</td><td>False Fetters</td><td>G2</td><td>10</td><td>15</td><td>2+</td><td>0</td><td>0</td><td>1</td><td>MR</td></tr>
+<tr><td>Ench 3</td><td>Shroud of Bewilderment</td><td>G2</td><td>20</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>AN</td></tr>
+<tr><td>Ench 3</td><td>Horrible Visage</td><td>G2D1</td><td>10</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>AN</td></tr>
+<tr><td>Ench 4</td><td>Gift of Splendor</td><td>G2F1</td><td>20</td><td>10</td><td>1</td><td>0</td><td>0</td><td>1</td><td>AN</td></tr>
+<tr><td>Thau 2</td><td>Sleep</td><td>G2</td><td>20</td><td>35</td><td>0</td><td>100</td><td>0</td><td>1</td><td>AN, MR, UndIm, InanimIm, MindIm</td></tr>
+<tr><td>Thau 3</td><td>Despair</td><td>G2</td><td>10</td><td>30</td><td>5+</td><td>1</td><td>4</td><td>1</td><td>AN, MR</td></tr>
+<tr><td>Thau 4</td><td>Slumber</td><td>G2</td><td>20</td><td>35</td><td>3+</td><td>100</td><td>0</td><td>1</td><td>AN, MR, UndIm, InanimIm, MindIm</td></tr>
+<tr><td>Thau 5</td><td>Confusion</td><td>G2</td><td>10</td><td>30</td><td>1</td><td>3</td><td>0</td><td>1</td><td>MR, MindIm</td></tr>
+<tr><td>Thau 5</td><td>Group Luck</td><td>G2</td><td>40</td><td>15</td><td>3+</td><td>2</td><td>0</td><td>1</td><td>UndIm, InanimIm</td></tr>
+<tr><td>Thau 6</td><td>Mirror Mind</td><td>G2S1</td><td>20</td><td>15</td><td>3+</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Evo 4</td><td>Ephemeral Blast</td><td>G3</td><td>10</td><td>40+</td><td>4+</td><td>2</td><td>7+</td><td>1</td><td>AN, MR</td></tr>
+<tr><td>Evo 4</td><td>Ghost Wolves</td><td>G3</td><td>10</td><td>5</td><td>0</td><td>0</td><td>0</td><td>2</td><td></td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Wolf Illusion x2: HP 1, Prot 0, MR 10, Mor 50, Str 9, Att 10, Def 10, Prec 10, Enc 0, CS 26, MM 22, Eth, Illu, Inanim, Mind, Amph, NNEat, PR +25, SpSi, Wpn: Phantasmal Bite</td></tr>
+<tr><td>Evo 5</td><td>Illusory Army</td><td>G3</td><td>100</td><td>3+</td><td>0</td><td>0</td><td>0</td><td>20+</td><td></td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Warrior Illusion x20+: HP 1, Prot 0, MR 10, Mor 50, Str 10, Att 10, Def 10, Prec 10, Enc 0, CS 12, MM 22, Eth, Illu, Inanim, Mind, Amph, NNEat, PR +25, SpSi, Wpn: Phantasmal Weapon</td></tr>
+<tr><td>Evo 6</td><td>False Horror</td><td>G3</td><td>10</td><td>5</td><td>0</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr class="spell-desc"><td colspan="10">Summons False Horror x1: HP 1, Prot 0, MR 10, Mor 50, Str 10, Att 10, Def 13, Prec 10, Enc 0, CS 4, MM 22, Float, Eth, Illu, Inanim, Mind, Amph, NNEat, PR +25, Fear +5, SpSi, Wpn: Phantasmal Claw, Phantasmal Claw</td></tr>
+<tr><td>Alt 4</td><td>Twilight</td><td>G3</td><td>100</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>BE, NUW</td></tr>
+<tr><td>Alt 5</td><td>Nightfall</td><td>G3</td><td>100</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>BE, NUW</td></tr>
+<tr><td>Alt 5</td><td>Shadow Warriors</td><td>G3</td><td>100</td><td>20</td><td>20+</td><td>0</td><td>0</td><td>1</td><td>AN</td></tr>
+<tr><td>Alt 6</td><td>Invisibility</td><td>G3</td><td>10</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>AN</td></tr>
+<tr><td>Ench 6</td><td>Fay-eyed Warriors</td><td>G3</td><td>100</td><td>15</td><td>20+</td><td>0</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr><td>Conj 5</td><td>Conjure Phantasmal Beast G3</td><td>100</td><td>5</td><td>0</td><td>0</td><td>0</td><td>1</td><td></td><td></td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Phantasmal Beast x1: HP 62, Prot 6, MR 15, Mor 15, Str 19, Att 14, Def 12, Prec 10, Enc 2, CS 18, MM 20, Eth, Magic, Amph, NNEat, TrSi, Wpn: Phantasmal Claw, Phantasmal Claw, Phantasmal Claw, Phantasmal Claw, Phantasmal Bite</td></tr>
+<tr><td>Ench 6</td><td>Aura of Splendor</td><td>G3F1</td><td>40</td><td>15</td><td>5+</td><td>0</td><td>0</td><td>1</td><td>AN</td></tr>
+<tr><td>Thau 4</td><td>Visions of Death</td><td>G3</td><td>20</td><td>35+</td><td>0</td><td>100</td><td>25+</td><td>1</td><td>AN, MR</td></tr>
+<tr><td>Thau 6</td><td>Unending Nightmare</td><td>G3D1</td><td>20</td><td>35</td><td>3+</td><td>100</td><td>0</td><td>1</td><td>AN, MR, UndIm, InanimIm, MindIm</td></tr>
+<tr><td>Thau 7</td><td>Charm</td><td>G3</td><td>30</td><td>25</td><td>0</td><td>100</td><td>0</td><td>1</td><td>AN, MR, MindIm</td></tr>
+<tr><td>Thau 7</td><td>Mass Confusion</td><td>G3</td><td>10</td><td>30</td><td>5+</td><td>3</td><td>0</td><td>1</td><td>MR, MindIm</td></tr>
+<tr><td>Evo 7</td><td>Wailing Winds</td><td>G4A1</td><td>200</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>BE, NUW</td></tr>
+<tr><td>Alt 7</td><td>Army of Shades</td><td>G4</td><td>200</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td>AN</td></tr>
+<tr><td>Alt 8</td><td>Displaced Warriors</td><td>G4</td><td>100</td><td>15</td><td>20+</td><td>0</td><td>0</td><td>1</td><td>AN</td></tr>
+<tr><td>Ench 7</td><td>Aura of Bewilderment</td><td>G4</td><td>100</td><td>15</td><td>5+</td><td>0</td><td>0</td><td>1</td><td>AN</td></tr>
+<tr><td>Ench 7</td><td>Nightmare Masks</td><td>G4D1</td><td>100</td><td>15</td><td>5+</td><td>0</td><td>0</td><td>1</td><td>AN</td></tr>
+<tr><td>Ench 7</td><td>Warriors of the Dawn</td><td>G4F1</td><td>100</td><td>20</td><td>20+</td><td>0</td><td>0</td><td>1</td><td>AN</td></tr>
+<tr><td>Thau 8</td><td>Battle Fortune</td><td>G4</td><td>200</td><td>15</td><td>20+</td><td>5</td><td>0</td><td>1</td><td>UndIm, InanimIm</td></tr>
+<tr><td>Evo 7</td><td>Shimmering Fields</td><td>G5</td><td>200</td><td>25</td><td>50</td><td>0</td><td>9+</td><td>1</td><td>AN, MR</td></tr>
+<tr><td>Evo 8</td><td>Aurora Borealis</td><td>G5S1</td><td>200</td><td>1</td><td>1</td><td>-1</td><td>0</td><td>1</td><td>BE, NUW</td></tr>
+<tr><td>Ench 8</td><td>Mists of Deception</td><td>G5A1</td><td>200</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>BE, NUW</td></tr>
+<tr><td>Thau 6</td><td>Sandman&#x27;s Blessing</td><td>G5</td><td>20</td><td>30</td><td>25</td><td>0</td><td>0</td><td>1</td><td>AN, MR, UndIm, InanimIm, MindIm</td></tr>
+<tr><td>Thau 9</td><td>Dreamwild Legion</td><td>G5</td><td>400</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td>UndIm, InanimIm</td></tr>
+<tr><td>Thau 9</td><td>Legion&#x27;s Demise</td><td>G7</td><td>400</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>AN, MR-, BE</td></tr>
+</tbody></table>
+```
 
 ## Blood Spells
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Blood 0 | Bleed | B1 | 100 | 30+ | 0 | 0 | 0 | 1 | AN, MR, UndIm, InanimIm, NUW |
-| Blood 1 | Blood Burst | B1 | 200 | 35 | 1 | 5 | 11+ | 1 | AN, UndIm, InanimIm, NUW |
-| Blood 1 | Blood Heal | B1 | 100 | 0 | 0 | 3 | 50 | 1 | AN, UndIm, InanimIm, NUW |
-| Blood 1 | Sabbath Master | B1 | 100 | 0 | 0 | 0 | 0 | 1 | NUW |
-| Blood 1 | Sabbath Slave | B1 | 100 | 0 | 0 | 0 | 0 | 1 | NUW |
-| Blood 1 | Reinvigoration | B1 | 100 | 0 | 0 | 0 | 200 | 1 | AN, NUW |
-| Blood 1 | Summon Imps | B1 | 100 | 1 | 0 | 0 | 0 | 5 | NUW Summons Imp x5: HP 8, Prot 6, MR 13, Mor 9, Str 9, Att 11, Def 15, Prec 10, Enc 1, CS 7, MM 22, Fly, Demon, NNEat, FR +15, CR -5, Wpn: Claws |
-| Blood 1 | Blood Boil | B1F1 | 50 | 25 | 0 | 100 | 11+ | 1 | AN, MR, UndIm, InanimIm |
-| Blood 2 | Banish Demon | B1 | 100 | 30 | 0 | 100 | Death | 1 | MR, UndIm, NUW |
-| Blood 3 | Leeching Touch | B1 | 20 | 1 | 0 | 0 | 15+ | 1 | AN, InanimIm |
-| Blood 4 | Hellfire | B1F2 | 100 | 25+ | 3 | 0 | 9+ | 2 | AP, NUW |
-| Blood 7 | Leech | B1 | 100 | 30 | 1 | 25 | 25+ | 1 | AN, InanimIm, NUW |
-| Blood 8 | Damage Reversal | B1 | 100 | 0 | 0 | 0 | 0 | 1 | NUW |
-| Blood 6 | Soul Transaction | B1G1 | 100 | 20 | 0 | 100 | 0 | 1 | AN, MR+, MindIm, NUW |
-| Blood 2 | Agony | B2 | 100 | 40 | 4+ | 2 | 1 | 1 | AN, MR, UndIm, InanimIm, NUW |
-| Blood 3 | Pain Transfer | B2 | 20 | 0 | 0 | 0 | 0 | 1 | NUW |
-| Blood 4 | Blood Lust | B2 | 100 | 0 | BF | 0 | 0 | 1 | UndIm, NUW |
-| Blood 4 | Call Lesser Horror | B2S2 | 200 | 5 | 0 | -2 | 0 | 1 | NUW Summons Tainted Soul x1: HP 5, Prot 0, MR 15, Mor 50, Str 10, Att 18, Def 18, Prec 5, Enc 0, CS 20, MM 22, SS, Float, Eth, Spi, Magic, Mind, Amph, NNEat, Magic Power 1, PR +15, SpSi, Void Sanity 20, Wpn: Life Draining Flare |
-| Blood 5 | Hellbind Heart | B2 | 100 | 30 | 0 | 100 | 0 | 1 | AN, MR, MindIm, NUW |
-| Blood 5 | Summon Illearth | B2E2 | 200 | 1 | 0 | 0 | 0 | 1 | NUW Summons Illearth x1: HP 93, Prot 12, MR 16, Mor 50, Str 22, Att 10, Def 10, Prec 0, Enc 0, CS 12, MM 16, Inanim, Magic, Mind, Trample, Amph, NNEat, Reconstruction 9%, PR +25, SpSi, Wpn: Crystal Fist, Crystal Fist |
-| Blood 6 | Harm | B2 | 100 | 50 | 4+ | 5 | 2+ | 1 | AN, MR, InanimIm, NUW |
-| Blood 2 | Hell Power | B3 | 300 | 0 | 0 | 0 | 0 | 1 | NUW |
-| Blood 6 | Blood Rain | B3 | 300 | 0 | 0 | 0 | 0 | 1 | BE, NUW |
-| Blood 6 | Call Horror | B3S3 | 300 | 5 | 0 | -2 | 0 | 1 | NUW Summons Mind Slime Horror x1: HP 28, Prot 10, MR 20, Mor 30, Str 14, Att 18, Def 16, Prec 10, Enc 0, CS 6, MM 22, Float, Eth, Spi, Magic, Amph, NNEat, Reinvig 2, Magic Power 1, SR +15, PR +15, Fear +10, SpSi, Damage Reversal 2 vs MR, Void Sanity 20, Invisibility, Mag: S5, Wpn: Weakness Tentacle, Weakness Tentacle, Weakness Tentacle, Weakness Tentacle, Weakness Tentacle |
-| Blood 8 | Rush of Strength | B3 | 100 | 0 | BF | 0 | 0 | 1 | NUW |
-| Blood 8 | Life for a Life | B3 | 199 | 100 | 0 | 100 | 40+ | 1 | AN, InanimIm, NUW |
-| Blood 8 | Infernal Prison | B3F1 | 200 | 35 | 0 | 100 | 0 | 1 | AN, NUW |
-| Blood 8 | Claws of Kokytos | B3W1 | 200 | 35 | 0 | 100 | 0 | 1 | AN, NUW |
-| Blood 5 | Bloodletting | B4 | 400 | 0 | BF | 0 | 1 | 1 | AN, MR, UndIm, InanimIm, NUW |
-| Blood 7 | Purify Blood | B4N1 | 300 | 0 | BF | 0 | 0 | 1 | NUW |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Blood 0</td><td>Bleed</td><td>B1</td><td>100</td><td>30+</td><td>0</td><td>0</td><td>0</td><td>1</td><td>AN, MR, UndIm, InanimIm, NUW</td></tr>
+<tr><td>Blood 1</td><td>Blood Burst</td><td>B1</td><td>200</td><td>35</td><td>1</td><td>5</td><td>11+</td><td>1</td><td>AN, UndIm, InanimIm, NUW</td></tr>
+<tr><td>Blood 1</td><td>Blood Heal</td><td>B1</td><td>100</td><td>0</td><td>0</td><td>3</td><td>50</td><td>1</td><td>AN, UndIm, InanimIm, NUW</td></tr>
+<tr><td>Blood 1</td><td>Sabbath Master</td><td>B1</td><td>100</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr><td>Blood 1</td><td>Sabbath Slave</td><td>B1</td><td>100</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr><td>Blood 1</td><td>Reinvigoration</td><td>B1</td><td>100</td><td>0</td><td>0</td><td>0</td><td>200</td><td>1</td><td>AN, NUW</td></tr>
+<tr><td>Blood 1</td><td>Summon Imps</td><td>B1</td><td>100</td><td>1</td><td>0</td><td>0</td><td>0</td><td>5</td><td>NUW</td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Imp x5: HP 8, Prot 6, MR 13, Mor 9, Str 9, Att 11, Def 15, Prec 10, Enc 1, CS 7, MM 22, Fly, Demon, NNEat, FR +15, CR -5, Wpn: Claws</td></tr>
+<tr><td>Blood 1</td><td>Blood Boil</td><td>B1F1</td><td>50</td><td>25</td><td>0</td><td>100</td><td>11+</td><td>1</td><td>AN, MR, UndIm, InanimIm</td></tr>
+<tr><td>Blood 2</td><td>Banish Demon</td><td>B1</td><td>100</td><td>30</td><td>0</td><td>100</td><td>Death</td><td>1</td><td>MR, UndIm, NUW</td></tr>
+<tr><td>Blood 3</td><td>Leeching Touch</td><td>B1</td><td>20</td><td>1</td><td>0</td><td>0</td><td>15+</td><td>1</td><td>AN, InanimIm</td></tr>
+<tr><td>Blood 4</td><td>Hellfire</td><td>B1F2</td><td>100</td><td>25+</td><td>3</td><td>0</td><td>9+</td><td>2</td><td>AP, NUW</td></tr>
+<tr><td>Blood 7</td><td>Leech</td><td>B1</td><td>100</td><td>30</td><td>1</td><td>25</td><td>25+</td><td>1</td><td>AN, InanimIm, NUW</td></tr>
+<tr><td>Blood 8</td><td>Damage Reversal</td><td>B1</td><td>100</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr><td>Blood 6</td><td>Soul Transaction</td><td>B1G1</td><td>100</td><td>20</td><td>0</td><td>100</td><td>0</td><td>1</td><td>AN, MR+, MindIm, NUW</td></tr>
+<tr><td>Blood 2</td><td>Agony</td><td>B2</td><td>100</td><td>40</td><td>4+</td><td>2</td><td>1</td><td>1</td><td>AN, MR, UndIm, InanimIm, NUW</td></tr>
+<tr><td>Blood 3</td><td>Pain Transfer</td><td>B2</td><td>20</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr><td>Blood 4</td><td>Blood Lust</td><td>B2</td><td>100</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td>UndIm, NUW</td></tr>
+<tr><td>Blood 4</td><td>Call Lesser Horror</td><td>B2S2</td><td>200</td><td>5</td><td>0</td><td>-2</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Tainted Soul x1: HP 5, Prot 0, MR 15, Mor 50, Str 10, Att 18, Def 18, Prec 5, Enc 0, CS 20, MM 22, SS, Float, Eth, Spi, Magic, Mind, Amph, NNEat, Magic Power 1, PR +15, SpSi, Void Sanity 20, Wpn: Life Draining Flare</td></tr>
+<tr><td>Blood 5</td><td>Hellbind Heart</td><td>B2</td><td>100</td><td>30</td><td>0</td><td>100</td><td>0</td><td>1</td><td>AN, MR, MindIm, NUW</td></tr>
+<tr><td>Blood 5</td><td>Summon Illearth</td><td>B2E2</td><td>200</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Illearth x1: HP 93, Prot 12, MR 16, Mor 50, Str 22, Att 10, Def 10, Prec 0, Enc 0, CS 12, MM 16, Inanim, Magic, Mind, Trample, Amph, NNEat, Reconstruction 9%, PR +25, SpSi, Wpn: Crystal Fist, Crystal Fist</td></tr>
+<tr><td>Blood 6</td><td>Harm</td><td>B2</td><td>100</td><td>50</td><td>4+</td><td>5</td><td>2+</td><td>1</td><td>AN, MR, InanimIm, NUW</td></tr>
+<tr><td>Blood 2</td><td>Hell Power</td><td>B3</td><td>300</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr><td>Blood 6</td><td>Blood Rain</td><td>B3</td><td>300</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>BE, NUW</td></tr>
+<tr><td>Blood 6</td><td>Call Horror</td><td>B3S3</td><td>300</td><td>5</td><td>0</td><td>-2</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Mind Slime Horror x1: HP 28, Prot 10, MR 20, Mor 30, Str 14, Att 18, Def 16, Prec 10, Enc 0, CS 6, MM 22, Float, Eth, Spi, Magic, Amph, NNEat, Reinvig 2, Magic Power 1, SR +15, PR +15, Fear +10, SpSi, Damage Reversal 2 vs MR, Void Sanity 20, Invisibility, Mag: S5, Wpn: Weakness Tentacle, Weakness Tentacle, Weakness Tentacle, Weakness Tentacle, Weakness Tentacle</td></tr>
+<tr><td>Blood 8</td><td>Rush of Strength</td><td>B3</td><td>100</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr><td>Blood 8</td><td>Life for a Life</td><td>B3</td><td>199</td><td>100</td><td>0</td><td>100</td><td>40+</td><td>1</td><td>AN, InanimIm, NUW</td></tr>
+<tr><td>Blood 8</td><td>Infernal Prison</td><td>B3F1</td><td>200</td><td>35</td><td>0</td><td>100</td><td>0</td><td>1</td><td>AN, NUW</td></tr>
+<tr><td>Blood 8</td><td>Claws of Kokytos</td><td>B3W1</td><td>200</td><td>35</td><td>0</td><td>100</td><td>0</td><td>1</td><td>AN, NUW</td></tr>
+<tr><td>Blood 5</td><td>Bloodletting</td><td>B4</td><td>400</td><td>0</td><td>BF</td><td>0</td><td>1</td><td>1</td><td>AN, MR, UndIm, InanimIm, NUW</td></tr>
+<tr><td>Blood 7</td><td>Purify Blood</td><td>B4N1</td><td>300</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td>NUW</td></tr>
+</tbody></table>
+```
 
 ## Priest Spells
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Div 0 | Blessing | H1 | 0 | 15+ | 5+ | 100 | 0 | 1 |  |
-| Div 0 | Banishment | H1 | 0 | 25+ | 4+ | 0 | 4+ | 1 | AN, MR, Restriction Non-specialized God |
-| Div 0 | Ashes to Ashes | H1 | 0 | 25+ | 4+ | 0 | 4+ | 1 | AN, MR |
-| Div 0 | Purifying Water | H1 | 0 | 25+ | 6+ | 0 | 2+ | 1 | AN, MR, Restriction Water God |
-| Div 0 | Pull from the Grave | H1 | 0 | 25+ | 4+ | 0 | 4+ | 1 | AN, MR, Restriction Earth God |
-| Div 0 | Sacred Wind | H1 | 0 | 30+ | 15+ | 0 | 1 | 1 | AN, MR, Restriction Air God |
-| Div 0 | Final Rest | H1 | 0 | 25+ | 2+ | 0 | Death | 1 | AN, MR-, Restriction Nature God |
-| Div 0 | Decree of the Underworld H1 | 0 | 25+ | 4+ | 0 | 4+ | 1 | AN, MR, Restriction Death | God |
-| Div 0 | Stellar Decree | H1 | 0 | 35+ | 8+ | 0 | 2+ | 1 | AN, MR, Restriction Astral God |
-| Div 0 | Return of the Past | H1 | 0 | 30+ | 8+ | 0 | 2+ | 1 | AN, MR, Restriction Glamour God |
-| Div 0 | Sermon of Courage | H2 | 0 | 25+ | 10+ | 100 | 1 | 1 | AN |
-| Div 0 | Smite Demon | H2 | 0 | 30+ | 0 | 100 | 15+ | 1 | AN, MR, UndIm |
-| Div 0 | Holy Word | H2 | 0 | 25 | 0 | 100 | 100 | 1 | MR |
-| Div 0 | Holy Avenger | H2 | 0 | 0 | 0 | 0 | 0 | 1 |  |
-| Div 0 | Divine Blessing | H3 | 0 | 0 | BF | 100 | 0 | 1 |  |
-| Div 0 | Smite | H3 | 0 | 30 | 0 | 100 | 10 | 1 | AN, MR, Restriction Non-specialized God |
-| Div 0 | Heavenly Fire | H3 | 0 | 30 | 0 | 100 | 10 | 1 | AN, MR |
-| Div 0 | Watery Death | H3 | 0 | 25 | 0 | 100 | 10 | 1 | AN, MR, Restriction Water God |
-| Div 0 | Word of Stone | H3 | 0 | 25 | 0 | 100 | 10 | 1 | AN, MR, Restriction Earth God |
-| Div 0 | Heavenly Strike | H3 | 0 | 50 | 0 | 100 | 10 | 1 | AN, MR, Restriction Air God |
-| Div 0 | Word of Power | H3 | 0 | 100 | 0 | 100 | 10 | 1 | AN, MR, Restriction Astral God |
-| Div 0 | Syllable of Death | H3 | 0 | 25 | 0 | 100 | 10 | 1 | AN, MR, Restriction Death God |
-| Div 0 | Word of Thorns | H3 | 0 | 30 | 0 | 100 | 5 | 1 | AN, MR, Restriction Nature God |
-| Div 0 | Word of Bewilderment | H3 | 0 | 30 | 0 | 100 | 10 | 1 | AN, MR, UndIm, InanimIm, Restriction Glamour God |
-| Div 0 | Claim Life | H3 | 0 | 30 | 0 | 100 | 20 | 1 | AN, MR, UndIm, InanimIm, Restriction Blood God |
-| Div 0 | Fanaticism | H4 | 0 | 0 | BF | 0 | 1 | 1 | AN |
-| Div 0 | Divine Channeling | H5 | 90 | 0 | 0 | 0 | 0 | 1 | BE |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Div 0</td><td>Blessing</td><td>H1</td><td>0</td><td>15+</td><td>5+</td><td>100</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Div 0</td><td>Banishment</td><td>H1</td><td>0</td><td>25+</td><td>4+</td><td>0</td><td>4+</td><td>1</td><td>AN, MR, Restriction Non-specialized God</td></tr>
+<tr><td>Div 0</td><td>Ashes to Ashes</td><td>H1</td><td>0</td><td>25+</td><td>4+</td><td>0</td><td>4+</td><td>1</td><td>AN, MR</td></tr>
+<tr><td>Div 0</td><td>Purifying Water</td><td>H1</td><td>0</td><td>25+</td><td>6+</td><td>0</td><td>2+</td><td>1</td><td>AN, MR, Restriction Water God</td></tr>
+<tr><td>Div 0</td><td>Pull from the Grave</td><td>H1</td><td>0</td><td>25+</td><td>4+</td><td>0</td><td>4+</td><td>1</td><td>AN, MR, Restriction Earth God</td></tr>
+<tr><td>Div 0</td><td>Sacred Wind</td><td>H1</td><td>0</td><td>30+</td><td>15+</td><td>0</td><td>1</td><td>1</td><td>AN, MR, Restriction Air God</td></tr>
+<tr><td>Div 0</td><td>Final Rest</td><td>H1</td><td>0</td><td>25+</td><td>2+</td><td>0</td><td>Death</td><td>1</td><td>AN, MR-, Restriction Nature God</td></tr>
+<tr><td>Div 0</td><td>Decree of the Underworld H1</td><td>0</td><td>25+</td><td>4+</td><td>0</td><td>4+</td><td>1</td><td>AN, MR, Restriction Death</td><td>God</td></tr>
+<tr><td>Div 0</td><td>Stellar Decree</td><td>H1</td><td>0</td><td>35+</td><td>8+</td><td>0</td><td>2+</td><td>1</td><td>AN, MR, Restriction Astral God</td></tr>
+<tr><td>Div 0</td><td>Return of the Past</td><td>H1</td><td>0</td><td>30+</td><td>8+</td><td>0</td><td>2+</td><td>1</td><td>AN, MR, Restriction Glamour God</td></tr>
+<tr><td>Div 0</td><td>Sermon of Courage</td><td>H2</td><td>0</td><td>25+</td><td>10+</td><td>100</td><td>1</td><td>1</td><td>AN</td></tr>
+<tr><td>Div 0</td><td>Smite Demon</td><td>H2</td><td>0</td><td>30+</td><td>0</td><td>100</td><td>15+</td><td>1</td><td>AN, MR, UndIm</td></tr>
+<tr><td>Div 0</td><td>Holy Word</td><td>H2</td><td>0</td><td>25</td><td>0</td><td>100</td><td>100</td><td>1</td><td>MR</td></tr>
+<tr><td>Div 0</td><td>Holy Avenger</td><td>H2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Div 0</td><td>Divine Blessing</td><td>H3</td><td>0</td><td>0</td><td>BF</td><td>100</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Div 0</td><td>Smite</td><td>H3</td><td>0</td><td>30</td><td>0</td><td>100</td><td>10</td><td>1</td><td>AN, MR, Restriction Non-specialized God</td></tr>
+<tr><td>Div 0</td><td>Heavenly Fire</td><td>H3</td><td>0</td><td>30</td><td>0</td><td>100</td><td>10</td><td>1</td><td>AN, MR</td></tr>
+<tr><td>Div 0</td><td>Watery Death</td><td>H3</td><td>0</td><td>25</td><td>0</td><td>100</td><td>10</td><td>1</td><td>AN, MR, Restriction Water God</td></tr>
+<tr><td>Div 0</td><td>Word of Stone</td><td>H3</td><td>0</td><td>25</td><td>0</td><td>100</td><td>10</td><td>1</td><td>AN, MR, Restriction Earth God</td></tr>
+<tr><td>Div 0</td><td>Heavenly Strike</td><td>H3</td><td>0</td><td>50</td><td>0</td><td>100</td><td>10</td><td>1</td><td>AN, MR, Restriction Air God</td></tr>
+<tr><td>Div 0</td><td>Word of Power</td><td>H3</td><td>0</td><td>100</td><td>0</td><td>100</td><td>10</td><td>1</td><td>AN, MR, Restriction Astral God</td></tr>
+<tr><td>Div 0</td><td>Syllable of Death</td><td>H3</td><td>0</td><td>25</td><td>0</td><td>100</td><td>10</td><td>1</td><td>AN, MR, Restriction Death God</td></tr>
+<tr><td>Div 0</td><td>Word of Thorns</td><td>H3</td><td>0</td><td>30</td><td>0</td><td>100</td><td>5</td><td>1</td><td>AN, MR, Restriction Nature God</td></tr>
+<tr><td>Div 0</td><td>Word of Bewilderment</td><td>H3</td><td>0</td><td>30</td><td>0</td><td>100</td><td>10</td><td>1</td><td>AN, MR, UndIm, InanimIm,</td></tr>
+<tr class="spell-desc"><td colspan="10">Restriction Glamour God</td></tr>
+<tr><td>Div 0</td><td>Claim Life</td><td>H3</td><td>0</td><td>30</td><td>0</td><td>100</td><td>20</td><td>1</td><td>AN, MR, UndIm, InanimIm, Restriction Blood God</td></tr>
+<tr><td>Div 0</td><td>Fanaticism</td><td>H4</td><td>0</td><td>0</td><td>BF</td><td>0</td><td>1</td><td>1</td><td>AN</td></tr>
+<tr><td>Div 0</td><td>Divine Channeling</td><td>H5</td><td>90</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>BE</td></tr>
+</tbody></table>
+```
 
 ## National Spells: Arcoscephale (age 1)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Ench 6 | Sow Dragon Teeth | E2 | 100 | 1 | 0 | 0 | 0 | 10 | NUW Summons Spartae x10: HP 8, Prot 19, MR 13, Mor 18, Str 11, Att 12, Def 12, Prec 10, Enc 0, CS 7, MM 19, Inanim, Magic, PAmph, NNEat, PiR, CR +15, PR +25, SpSi, Wpn: Golden Spear |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Ench 6</td><td>Sow Dragon Teeth</td><td>E2</td><td>100</td><td>1</td><td>0</td><td>0</td><td>0</td><td>10</td><td>NUW</td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Spartae x10: HP 8, Prot 19, MR 13, Mor 18, Str 11, Att 12, Def 12, Prec 10, Enc 0, CS 7, MM 19, Inanim, Magic, PAmph, NNEat, PiR, CR +15, PR +25, SpSi, Wpn: Golden Spear</td></tr>
+</tbody></table>
+```
 
 ## National Spells: Mekone (age 1)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Ench 6 | Sow Dragon Teeth | E2 | 100 | 1 | 0 | 0 | 0 | 10 | NUW Summons Spartae x10: HP 8, Prot 19, MR 13, Mor 18, Str 11, Att 12, Def 12, Prec 10, Enc 0, CS 7, MM 19, Inanim, Magic, PAmph, NNEat, PiR, CR +15, PR +25, SpSi, Wpn: Golden Spear |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Ench 6</td><td>Sow Dragon Teeth</td><td>E2</td><td>100</td><td>1</td><td>0</td><td>0</td><td>0</td><td>10</td><td>NUW</td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Spartae x10: HP 8, Prot 19, MR 13, Mor 18, Str 11, Att 12, Def 12, Prec 10, Enc 0, CS 7, MM 19, Inanim, Magic, PAmph, NNEat, PiR, CR +15, PR +25, SpSi, Wpn: Golden Spear</td></tr>
+</tbody></table>
+```
 
 ## National Spells: Pangaea (age 1)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Ench 0 | Tune of Fear | N1 | 5 | 0 | 25 | 0 | 0 | 1 | AN, MindIm, NUW |
-| Ench 0 | Tune of Growth | N1 | 5 | 0 | 25 | 0 | 0 | 1 | NUW |
-| Ench 0 | Tune of Dancing Death | N1 | 5 | 0 | 25 | 0 | 31+ | 1 | AN, MR, MindIm, NUW |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Ench 0</td><td>Tune of Fear</td><td>N1</td><td>5</td><td>0</td><td>25</td><td>0</td><td>0</td><td>1</td><td>AN, MindIm, NUW</td></tr>
+<tr><td>Ench 0</td><td>Tune of Growth</td><td>N1</td><td>5</td><td>0</td><td>25</td><td>0</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr><td>Ench 0</td><td>Tune of Dancing Death</td><td>N1</td><td>5</td><td>0</td><td>25</td><td>0</td><td>31+</td><td>1</td><td>AN, MR, MindIm, NUW</td></tr>
+</tbody></table>
+```
 
 ## National Spells: Sauromatia (age 1)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Conj 1 | Call Ancestor | D1 | 20 | 1 | 0 | 0 | 0 | 1 | Summons Ancestral Spirit x1: HP 1, Prot 0, MR 11, Mor 30, Str 1, Att 8, Def 8, Prec 10, Enc 0, CS 12, MM 18, Float, Eth, Spi, Sacr, Und, PAmph, NNEat, Stealth 40, CR +15, PR +25, SpSi, Wpn: Paralyze |
-| Conj 7 | Wrath of the Ancestors | D1 | 100 | 1 | 0 | 0 | 0 | 20+ | Summons Ancestral Spirit x20+: HP 1, Prot 0, MR 11, Mor 30, Str 1, Att 8, Def 8, Prec 10, Enc 0, CS 12, MM 18, Float, Eth, Spi, Sacr, Und, PAmph, NNEat, Stealth 40, CR +15, PR +25, SpSi, Wpn: Paralyze |
-| Ench 3 | Awaken Tattoos | N1H1 | 20 | 20+ | 5+ | 100 | 0 | 1 |  |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Conj 1</td><td>Call Ancestor</td><td>D1</td><td>20</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Ancestral Spirit x1: HP 1, Prot 0, MR 11, Mor 30, Str 1, Att 8, Def 8, Prec 10, Enc 0, CS 12, MM 18, Float, Eth, Spi, Sacr, Und, PAmph, NNEat, Stealth 40, CR +15, PR +25, SpSi, Wpn: Paralyze</td></tr>
+<tr><td>Conj 7</td><td>Wrath of the Ancestors</td><td>D1</td><td>100</td><td>1</td><td>0</td><td>0</td><td>0</td><td>20+</td><td></td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Ancestral Spirit x20+: HP 1, Prot 0, MR 11, Mor 30, Str 1, Att 8, Def 8, Prec 10, Enc 0, CS 12, MM 18, Float, Eth, Spi, Sacr, Und, PAmph, NNEat, Stealth 40, CR +15, PR +25, SpSi, Wpn: Paralyze</td></tr>
+<tr><td>Ench 3</td><td>Awaken Tattoos</td><td>N1H1</td><td>20</td><td>20+</td><td>5+</td><td>100</td><td>0</td><td>1</td><td></td></tr>
+</tbody></table>
+```
 
 ## National Spells: Fomoria (age 1)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Conj 8 | Dance of the Morrigans | D5A2 | 400 | 0 | 0 | 0 | 0 | 1 | BE, NUW |
-| Thau 3 | Geas | G2 | 20 | 25 | 0 | 100 | 0 | 1 | MR+, MindIm |
-| Ench 7 | Curse of Balor | G3D1 | 100 | 20 | 11+ | 100 | 0 | 1 | MR |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Conj 8</td><td>Dance of the Morrigans</td><td>D5A2</td><td>400</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td>BE, NUW</td></tr>
+<tr><td>Thau 3</td><td>Geas</td><td>G2</td><td>20</td><td>25</td><td>0</td><td>100</td><td>0</td><td>1</td><td>MR+, MindIm</td></tr>
+<tr><td>Ench 7</td><td>Curse of Balor</td><td>G3D1</td><td>100</td><td>20</td><td>11+</td><td>100</td><td>0</td><td>1</td><td>MR</td></tr>
+</tbody></table>
+```
 
 ## National Spells: Tir na n'Og (age 1)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Thau 3 | Geas | G2 | 20 | 25 | 0 | 100 | 0 | 1 | MR+, MindIm |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Thau 3</td><td>Geas</td><td>G2</td><td>20</td><td>25</td><td>0</td><td>100</td><td>0</td><td>1</td><td>MR+, MindIm</td></tr>
+</tbody></table>
+```
 
 ## National Spells: Marverni (age 1)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Ench 3 | Awaken Tattoos | N1H1 | 20 | 20+ | 5+ | 100 | 0 | 1 |  |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Ench 3</td><td>Awaken Tattoos</td><td>N1H1</td><td>20</td><td>20+</td><td>5+</td><td>100</td><td>0</td><td>1</td><td></td></tr>
+</tbody></table>
+```
 
 ## National Spells: Agartha (age 1)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Evo 5 | Liquid Flames of Rhuax | F3E1 | 20 | 30+ | 1 | 0 | 24+ | 1 | AP, NUW |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Evo 5</td><td>Liquid Flames of Rhuax</td><td>F3E1</td><td>20</td><td>30+</td><td>1</td><td>0</td><td>24+</td><td>1</td><td>AP, NUW</td></tr>
+</tbody></table>
+```
 
 ## National Spells: Abysia (age 1)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Ench 5 | Inner Furnace | F3 | 100 | 0 | BF | 0 | 0 | 1 | MindIm, NUW |
-| Evo 5 | Liquid Flames of Rhuax | F3E1 | 20 | 30+ | 1 | 0 | 24+ | 1 | AP, NUW |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Ench 5</td><td>Inner Furnace</td><td>F3</td><td>100</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td>MindIm, NUW</td></tr>
+<tr><td>Evo 5</td><td>Liquid Flames of Rhuax</td><td>F3E1</td><td>20</td><td>30+</td><td>1</td><td>0</td><td>24+</td><td>1</td><td>AP, NUW</td></tr>
+</tbody></table>
+```
 
 ## National Spells: Ubar (age 1)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Evo 6 | Smokeless Flame | F3A1 | 30 | 35+ | 1 | 1 | 45+ | 1 | AP, NUW |
-| Evo 4 | Scorching Wind | A2F1 | 30 | 40 | 6+ | 0 | 0 | 1 | AN, MR, UndIm, InanimIm, NUW |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Evo 6</td><td>Smokeless Flame</td><td>F3A1</td><td>30</td><td>35+</td><td>1</td><td>1</td><td>45+</td><td>1</td><td>AP, NUW</td></tr>
+<tr><td>Evo 4</td><td>Scorching Wind</td><td>A2F1</td><td>30</td><td>40</td><td>6+</td><td>0</td><td>0</td><td>1</td><td>AN, MR, UndIm, InanimIm, NUW</td></tr>
+</tbody></table>
+```
 
 ## National Spells: Kailasa (age 1)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Thau 6 | Celestial Music | S3 | 100 | 1 | BF | 0 | 0 | 1 | NUW |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Thau 6</td><td>Celestial Music</td><td>S3</td><td>100</td><td>1</td><td>BF</td><td>0</td><td>0</td><td>1</td><td>NUW</td></tr>
+</tbody></table>
+```
 
 ## National Spells: T'ien Ch'i (age 1)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Evo 5 | Celestial Chastisement | S3 | 20 | 20 | 0 | 100 | 8+ | 1 | AN |
-| Conj 1 | Call Ancestor | D1 | 20 | 1 | 0 | 0 | 0 | 1 | Summons Ancestral Spirit x1: HP 1, Prot 0, MR 11, Mor 30, Str 1, Att 8, Def 8, Prec 10, Enc 0, CS 12, MM 18, Float, Eth, Spi, Sacr, Und, PAmph, NNEat, Stealth 40, CR +15, PR +25, SpSi, Wpn: Paralyze |
-| Conj 7 | Wrath of the Ancestors | D1 | 100 | 1 | 0 | 0 | 0 | 20+ | Summons Ancestral Spirit x20+: HP 1, Prot 0, MR 11, Mor 30, Str 1, Att 8, Def 8, Prec 10, Enc 0, CS 12, MM 18, Float, Eth, Spi, Sacr, Und, PAmph, NNEat, Stealth 40, CR +15, PR +25, SpSi, Wpn: Paralyze |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Evo 5</td><td>Celestial Chastisement</td><td>S3</td><td>20</td><td>20</td><td>0</td><td>100</td><td>8+</td><td>1</td><td>AN</td></tr>
+<tr><td>Conj 1</td><td>Call Ancestor</td><td>D1</td><td>20</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Ancestral Spirit x1: HP 1, Prot 0, MR 11, Mor 30, Str 1, Att 8, Def 8, Prec 10, Enc 0, CS 12, MM 18, Float, Eth, Spi, Sacr, Und, PAmph, NNEat, Stealth 40, CR +15, PR +25, SpSi, Wpn: Paralyze</td></tr>
+<tr><td>Conj 7</td><td>Wrath of the Ancestors</td><td>D1</td><td>100</td><td>1</td><td>0</td><td>0</td><td>0</td><td>20+</td><td></td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Ancestral Spirit x20+: HP 1, Prot 0, MR 11, Mor 30, Str 1, Att 8, Def 8, Prec 10, Enc 0, CS 12, MM 18, Float, Eth, Spi, Sacr, Und, PAmph, NNEat, Stealth 40, CR +15, PR +25, SpSi, Wpn: Paralyze</td></tr>
+</tbody></table>
+```
 
 ## National Spells: Yomi (age 1)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Alt 6 | End of Weakness | E2 | 100 | 0 | BF | 0 | 0 | 1 | UndIm, NUW |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Alt 6</td><td>End of Weakness</td><td>E2</td><td>100</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td>UndIm, NUW</td></tr>
+</tbody></table>
+```
 
 ## National Spells: Caelum (age 1)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Thau 6 | Parting of the Soul | D1A1 | 40 | 30 | 0 | 100 | 15+ | 1 | AN, MR, MindIm |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Thau 6</td><td>Parting of the Soul</td><td>D1A1</td><td>40</td><td>30</td><td>0</td><td>100</td><td>15+</td><td>1</td><td>AN, MR, MindIm</td></tr>
+</tbody></table>
+```
 
 ## National Spells: Xibalba (age 1)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Thau 2 | Break the Third Soul | A1 | 20 | 30 | 0 | 5 | 20+ | 1 | AN, UndIm, InanimIm, NUW |
-| Thau 3 | Gift of the Third Soul | A1 | 20 | 20 | 0 | 0 | 0 | 1 | UndIm, InanimIm |
-| Thau 2 | Break the Second Soul | E1 | 20 | 30 | 0 | 5 | 0 | 1 | Mun, AN, NUW |
-| Thau 3 | Gift of the Second Soul | E1 | 20 | 20 | 0 | 0 | 0 | 1 | Mun |
-| Thau 2 | Break the Fourth Soul | D1 | 20 | 30 | 0 | 5 | 0 | 1 | Mun, AN, NUW |
-| Thau 3 | Gift of the Fourth Soul | D1 | 20 | 20 | 0 | 2 | 0 | 1 | Mun |
-| Blood 2 | Break the First Soul | B1 | 20 | 30 | 0 | 5 | 0 | 1 | AN, UndIm, InanimIm, NUW |
-| Blood 3 | Gift of the First Soul | B1 | 20 | 20 | 0 | 0 | 0 | 1 | UndIm, InanimIm |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Thau 2</td><td>Break the Third Soul</td><td>A1</td><td>20</td><td>30</td><td>0</td><td>5</td><td>20+</td><td>1</td><td>AN, UndIm, InanimIm, NUW</td></tr>
+<tr><td>Thau 3</td><td>Gift of the Third Soul</td><td>A1</td><td>20</td><td>20</td><td>0</td><td>0</td><td>0</td><td>1</td><td>UndIm, InanimIm</td></tr>
+<tr><td>Thau 2</td><td>Break the Second Soul</td><td>E1</td><td>20</td><td>30</td><td>0</td><td>5</td><td>0</td><td>1</td><td>Mun, AN, NUW</td></tr>
+<tr><td>Thau 3</td><td>Gift of the Second Soul</td><td>E1</td><td>20</td><td>20</td><td>0</td><td>0</td><td>0</td><td>1</td><td>Mun</td></tr>
+<tr><td>Thau 2</td><td>Break the Fourth Soul</td><td>D1</td><td>20</td><td>30</td><td>0</td><td>5</td><td>0</td><td>1</td><td>Mun, AN, NUW</td></tr>
+<tr><td>Thau 3</td><td>Gift of the Fourth Soul</td><td>D1</td><td>20</td><td>20</td><td>0</td><td>2</td><td>0</td><td>1</td><td>Mun</td></tr>
+<tr><td>Blood 2</td><td>Break the First Soul</td><td>B1</td><td>20</td><td>30</td><td>0</td><td>5</td><td>0</td><td>1</td><td>AN, UndIm, InanimIm, NUW</td></tr>
+<tr><td>Blood 3</td><td>Gift of the First Soul</td><td>B1</td><td>20</td><td>20</td><td>0</td><td>0</td><td>0</td><td>1</td><td>UndIm, InanimIm</td></tr>
+</tbody></table>
+```
 
 ## National Spells: Vanheim (age 1)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Conj 6 | Summon Valkyries | A3D1 | 100 | 1 | 0 | 0 | 0 | 7 | NUW Summons Valkyrie x7: HP 12, Prot 13, MR 14, Mor 12, Str 11, Att 13, Def 16, Prec 13, Enc 5, CS 11, MM 20, Fly, Glamour, Sacr, Stealth 65, SpSi, Wpn: Light Lance |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Conj 6</td><td>Summon Valkyries</td><td>A3D1</td><td>100</td><td>1</td><td>0</td><td>0</td><td>0</td><td>7</td><td>NUW</td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Valkyrie x7: HP 12, Prot 13, MR 14, Mor 12, Str 11, Att 13, Def 16, Prec 13, Enc 5, CS 11, MM 20, Fly, Glamour, Sacr, Stealth 65, SpSi, Wpn: Light Lance</td></tr>
+</tbody></table>
+```
 
 ## National Spells: Helheim (age 1)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Conj 6 | Summon Valkyries | A3D1 | 100 | 1 | 0 | 0 | 0 | 7 | NUW Summons Valkyrie x7: HP 12, Prot 13, MR 14, Mor 12, Str 11, Att 13, Def 16, Prec 13, Enc 5, CS 11, MM 20, Fly, Glamour, Sacr, Stealth 65, SpSi, Wpn: Light Lance |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Conj 6</td><td>Summon Valkyries</td><td>A3D1</td><td>100</td><td>1</td><td>0</td><td>0</td><td>0</td><td>7</td><td>NUW</td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Valkyrie x7: HP 12, Prot 13, MR 14, Mor 12, Str 11, Att 13, Def 16, Prec 13, Enc 5, CS 11, MM 20, Fly, Glamour, Sacr, Stealth 65, SpSi, Wpn: Light Lance</td></tr>
+</tbody></table>
+```
 
 ## National Spells: Therodos (age 1)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Ench 6 | Sow Dragon Teeth | E2 | 100 | 1 | 0 | 0 | 0 | 10 | NUW Summons Spartae x10: HP 8, Prot 19, MR 13, Mor 18, Str 11, Att 12, Def 12, Prec 10, Enc 0, CS 7, MM 19, Inanim, Magic, PAmph, NNEat, PiR, CR +15, PR +25, SpSi, Wpn: Golden Spear |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Ench 6</td><td>Sow Dragon Teeth</td><td>E2</td><td>100</td><td>1</td><td>0</td><td>0</td><td>0</td><td>10</td><td>NUW</td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Spartae x10: HP 8, Prot 19, MR 13, Mor 18, Str 11, Att 12, Def 12, Prec 10, Enc 0, CS 7, MM 19, Inanim, Magic, PAmph, NNEat, PiR, CR +15, PR +25, SpSi, Wpn: Golden Spear</td></tr>
+</tbody></table>
+```
 
 ## National Spells: Arcoscephale (age 2)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Ench 6 | Sow Dragon Teeth | E2 | 100 | 1 | 0 | 0 | 0 | 10 | NUW Summons Spartae x10: HP 8, Prot 19, MR 13, Mor 18, Str 11, Att 12, Def 12, Prec 10, Enc 0, CS 7, MM 19, Inanim, Magic, PAmph, NNEat, PiR, CR +15, PR +25, SpSi, Wpn: Golden Spear |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Ench 6</td><td>Sow Dragon Teeth</td><td>E2</td><td>100</td><td>1</td><td>0</td><td>0</td><td>0</td><td>10</td><td>NUW</td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Spartae x10: HP 8, Prot 19, MR 13, Mor 18, Str 11, Att 12, Def 12, Prec 10, Enc 0, CS 7, MM 19, Inanim, Magic, PAmph, NNEat, PiR, CR +15, PR +25, SpSi, Wpn: Golden Spear</td></tr>
+</tbody></table>
+```
 
 ## National Spells: Phlegra (age 2)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Ench 6 | Sow Dragon Teeth | E2 | 100 | 1 | 0 | 0 | 0 | 10 | NUW Summons Spartae x10: HP 8, Prot 19, MR 13, Mor 18, Str 11, Att 12, Def 12, Prec 10, Enc 0, CS 7, MM 19, Inanim, Magic, PAmph, NNEat, PiR, CR +15, PR +25, SpSi, Wpn: Golden Spear |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Ench 6</td><td>Sow Dragon Teeth</td><td>E2</td><td>100</td><td>1</td><td>0</td><td>0</td><td>0</td><td>10</td><td>NUW</td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Spartae x10: HP 8, Prot 19, MR 13, Mor 18, Str 11, Att 12, Def 12, Prec 10, Enc 0, CS 7, MM 19, Inanim, Magic, PAmph, NNEat, PiR, CR +15, PR +25, SpSi, Wpn: Golden Spear</td></tr>
+</tbody></table>
+```
 
 ## National Spells: Pangaea (age 2)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Ench 0 | Tune of Fear | N1 | 5 | 0 | 25 | 0 | 0 | 1 | AN, MindIm, NUW |
-| Ench 0 | Tune of Growth | N1 | 5 | 0 | 25 | 0 | 0 | 1 | NUW |
-| Ench 0 | Tune of Dancing Death | N1 | 5 | 0 | 25 | 0 | 31+ | 1 | AN, MR, MindIm, NUW |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Ench 0</td><td>Tune of Fear</td><td>N1</td><td>5</td><td>0</td><td>25</td><td>0</td><td>0</td><td>1</td><td>AN, MindIm, NUW</td></tr>
+<tr><td>Ench 0</td><td>Tune of Growth</td><td>N1</td><td>5</td><td>0</td><td>25</td><td>0</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr><td>Ench 0</td><td>Tune of Dancing Death</td><td>N1</td><td>5</td><td>0</td><td>25</td><td>0</td><td>31+</td><td>1</td><td>AN, MR, MindIm, NUW</td></tr>
+</tbody></table>
+```
 
 ## National Spells: Asphodel (age 2)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Conj 3 | Sleep Vines | N1G1 | 20 | 20 | 1 | 2 | 0 | 1 |  |
-| Conj 4 | Vengeful Vines | N1D1 | 20 | 20 | 1 | 2 | 0 | 1 |  |
-| Ench 0 | Quick Roots | H1 | 0 | 30+ | 1+ | 100 | 0 | 1 | AN |
-| Ench 0 | Regrowth | H2 | 0 | 30+ | 2+ | 100 | 0 | 1 | AN |
-| Ench 0 | Mend the Dead | H2 | 0 | 25+ | 0 | 100 | 40+ | 1 | AN |
-| Ench 0 | Puppet Mastery | H3 | 0 | 0 | BF | 100 | 0 | 1 | AN, MR |
-| Ench 0 | Carrion Growth | H4 | 0 | 0 | BF | 100 | 0 | 1 | AN, MR- |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Conj 3</td><td>Sleep Vines</td><td>N1G1</td><td>20</td><td>20</td><td>1</td><td>2</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Conj 4</td><td>Vengeful Vines</td><td>N1D1</td><td>20</td><td>20</td><td>1</td><td>2</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Ench 0</td><td>Quick Roots</td><td>H1</td><td>0</td><td>30+</td><td>1+</td><td>100</td><td>0</td><td>1</td><td>AN</td></tr>
+<tr><td>Ench 0</td><td>Regrowth</td><td>H2</td><td>0</td><td>30+</td><td>2+</td><td>100</td><td>0</td><td>1</td><td>AN</td></tr>
+<tr><td>Ench 0</td><td>Mend the Dead</td><td>H2</td><td>0</td><td>25+</td><td>0</td><td>100</td><td>40+</td><td>1</td><td>AN</td></tr>
+<tr><td>Ench 0</td><td>Puppet Mastery</td><td>H3</td><td>0</td><td>0</td><td>BF</td><td>100</td><td>0</td><td>1</td><td>AN, MR</td></tr>
+<tr><td>Ench 0</td><td>Carrion Growth</td><td>H4</td><td>0</td><td>0</td><td>BF</td><td>100</td><td>0</td><td>1</td><td>AN, MR-</td></tr>
+</tbody></table>
+```
 
 ## National Spells: Ermor (age 2)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Div 0 | Unholy Command | H1 | 0 | 10 | 0 | 0 | 0 | 1 | AN, MR- |
-| Div 0 | Unholy Protection | H1 | 0 | 20 | 1 | 100 | 0 | 1 |  |
-| Div 0 | Unholy Blessing | H1 | 0 | 20 | 1 | 100 | 0 | 1 |  |
-| Div 0 | Unholy Power | H1 | 0 | 20 | 1 | 100 | 0 | 1 |  |
-| Div 0 | Unholy Protection | H2 | 0 | 10 | 10 | 100 | 0 | 1 |  |
-| Div 0 | Unholy Blessing | H2 | 0 | 10 | 10 | 100 | 0 | 1 |  |
-| Div 0 | Unholy Power | H3 | 0 | 10 | 5 | 100 | 0 | 1 |  |
-| Div 0 | Unholy Blessing | H3 | 0 | 0 | BF | 100 | 0 | 1 |  |
-| Div 0 | Protection of the Sepulchre H3 | 0 | 0 | BF | 100 | 0 | 1 | MR- |  |
-| Div 0 | Power of the Sepulchre | H4 | 0 | 0 | BF | 0 | 0 | 1 |  |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Div 0</td><td>Unholy Command</td><td>H1</td><td>0</td><td>10</td><td>0</td><td>0</td><td>0</td><td>1</td><td>AN, MR-</td></tr>
+<tr><td>Div 0</td><td>Unholy Protection</td><td>H1</td><td>0</td><td>20</td><td>1</td><td>100</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Div 0</td><td>Unholy Blessing</td><td>H1</td><td>0</td><td>20</td><td>1</td><td>100</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Div 0</td><td>Unholy Power</td><td>H1</td><td>0</td><td>20</td><td>1</td><td>100</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Div 0</td><td>Unholy Protection</td><td>H2</td><td>0</td><td>10</td><td>10</td><td>100</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Div 0</td><td>Unholy Blessing</td><td>H2</td><td>0</td><td>10</td><td>10</td><td>100</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Div 0</td><td>Unholy Power</td><td>H3</td><td>0</td><td>10</td><td>5</td><td>100</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Div 0</td><td>Unholy Blessing</td><td>H3</td><td>0</td><td>0</td><td>BF</td><td>100</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Div 0</td><td>Protection of the Sepulchre H3</td><td>0</td><td>0</td><td>BF</td><td>100</td><td>0</td><td>1</td><td>MR-</td><td></td></tr>
+<tr><td>Div 0</td><td>Power of the Sepulchre</td><td>H4</td><td>0</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+</tbody></table>
+```
 
 ## National Spells: Sceleria (age 2)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Div 0 | Unholy Command | H1 | 0 | 10 | 0 | 0 | 0 | 1 | AN, MR- |
-| Div 0 | Unholy Protection | H1 | 0 | 20 | 1 | 100 | 0 | 1 |  |
-| Div 0 | Unholy Blessing | H1 | 0 | 20 | 1 | 100 | 0 | 1 |  |
-| Div 0 | Unholy Power | H1 | 0 | 20 | 1 | 100 | 0 | 1 |  |
-| Div 0 | Unholy Protection | H2 | 0 | 10 | 10 | 100 | 0 | 1 |  |
-| Div 0 | Unholy Blessing | H2 | 0 | 10 | 10 | 100 | 0 | 1 |  |
-| Div 0 | Apostasy | H3 | 0 | 50 | 0 | 100 | 0 | 1 | MR- |
-| Div 0 | Unholy Power | H3 | 0 | 10 | 5 | 100 | 0 | 1 |  |
-| Div 0 | Unholy Blessing | H3 | 0 | 0 | BF | 100 | 0 | 1 |  |
-| Div 0 | Protection of the Sepulchre H3 | 0 | 0 | BF | 100 | 0 | 1 | MR- |  |
-| Div 0 | Power of the Sepulchre | H4 | 0 | 0 | BF | 0 | 0 | 1 |  |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Div 0</td><td>Unholy Command</td><td>H1</td><td>0</td><td>10</td><td>0</td><td>0</td><td>0</td><td>1</td><td>AN, MR-</td></tr>
+<tr><td>Div 0</td><td>Unholy Protection</td><td>H1</td><td>0</td><td>20</td><td>1</td><td>100</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Div 0</td><td>Unholy Blessing</td><td>H1</td><td>0</td><td>20</td><td>1</td><td>100</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Div 0</td><td>Unholy Power</td><td>H1</td><td>0</td><td>20</td><td>1</td><td>100</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Div 0</td><td>Unholy Protection</td><td>H2</td><td>0</td><td>10</td><td>10</td><td>100</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Div 0</td><td>Unholy Blessing</td><td>H2</td><td>0</td><td>10</td><td>10</td><td>100</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Div 0</td><td>Apostasy</td><td>H3</td><td>0</td><td>50</td><td>0</td><td>100</td><td>0</td><td>1</td><td>MR-</td></tr>
+<tr><td>Div 0</td><td>Unholy Power</td><td>H3</td><td>0</td><td>10</td><td>5</td><td>100</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Div 0</td><td>Unholy Blessing</td><td>H3</td><td>0</td><td>0</td><td>BF</td><td>100</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Div 0</td><td>Protection of the Sepulchre H3</td><td>0</td><td>0</td><td>BF</td><td>100</td><td>0</td><td>1</td><td>MR-</td><td></td></tr>
+<tr><td>Div 0</td><td>Power of the Sepulchre</td><td>H4</td><td>0</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+</tbody></table>
+```
 
 ## National Spells: Man (age 2)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Thau 1 | Chorus Master | G1 | 20 | 0 | 0 | 0 | 0 | 1 |  |
-| Thau 1 | Chorus Slave | G1 | 20 | 0 | 0 | 0 | 0 | 1 |  |
-| Thau 3 | Geas | G2 | 20 | 25 | 0 | 100 | 0 | 1 | MR+, MindIm |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Thau 1</td><td>Chorus Master</td><td>G1</td><td>20</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Thau 1</td><td>Chorus Slave</td><td>G1</td><td>20</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Thau 3</td><td>Geas</td><td>G2</td><td>20</td><td>25</td><td>0</td><td>100</td><td>0</td><td>1</td><td>MR+, MindIm</td></tr>
+</tbody></table>
+```
 
 ## National Spells: Eriu (age 2)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Thau 3 | Geas | G2 | 20 | 25 | 0 | 100 | 0 | 1 | MR+, MindIm |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Thau 3</td><td>Geas</td><td>G2</td><td>20</td><td>25</td><td>0</td><td>100</td><td>0</td><td>1</td><td>MR+, MindIm</td></tr>
+</tbody></table>
+```
 
 ## National Spells: Ulm (age 2)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Evo 3 | Iron Darts | E1H1 | 10 | 40 | 0 | 5 | 13 | 3+ | AP, NUW |
-| Evo 6 | Iron Blizzard | E1H1 | 50 | 30 | 0 | 3 | 10 | 20+ | AP, NUW |
-| Thau 5 | Tempering the Will | E3 | 20 | 0 | BF | 100 | 0 | 1 | MR-, MindIm |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Evo 3</td><td>Iron Darts</td><td>E1H1</td><td>10</td><td>40</td><td>0</td><td>5</td><td>13</td><td>3+</td><td>AP, NUW</td></tr>
+<tr><td>Evo 6</td><td>Iron Blizzard</td><td>E1H1</td><td>50</td><td>30</td><td>0</td><td>3</td><td>10</td><td>20+</td><td>AP, NUW</td></tr>
+<tr><td>Thau 5</td><td>Tempering the Will</td><td>E3</td><td>20</td><td>0</td><td>BF</td><td>100</td><td>0</td><td>1</td><td>MR-, MindIm</td></tr>
+</tbody></table>
+```
 
 ## National Spells: Marignon (age 2)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Evo 4 | Holy Pyre | F2 | 20 | 40+ | 23+ | 1 | 7+ | 1 | AP, NUW |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Evo 4</td><td>Holy Pyre</td><td>F2</td><td>20</td><td>40+</td><td>23+</td><td>1</td><td>7+</td><td>1</td><td>AP, NUW</td></tr>
+</tbody></table>
+```
 
 ## National Spells: Abysia (age 2)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Ench 5 | Inner Furnace | F3 | 100 | 0 | BF | 0 | 0 | 1 | MindIm, NUW |
-| Evo 5 | Liquid Flames of Rhuax | F3E1 | 20 | 30+ | 1 | 0 | 24+ | 1 | AP, NUW |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Ench 5</td><td>Inner Furnace</td><td>F3</td><td>100</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td>MindIm, NUW</td></tr>
+<tr><td>Evo 5</td><td>Liquid Flames of Rhuax</td><td>F3E1</td><td>20</td><td>30+</td><td>1</td><td>0</td><td>24+</td><td>1</td><td>AP, NUW</td></tr>
+</tbody></table>
+```
 
 ## National Spells: Ashdod (age 2)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Evo 4 | Strange Fire | S2F1 | 20 | 40+ | 3 | 1 | 8+ | 1 | AP, NUW |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Evo 4</td><td>Strange Fire</td><td>S2F1</td><td>20</td><td>40+</td><td>3</td><td>1</td><td>8+</td><td>1</td><td>AP, NUW</td></tr>
+</tbody></table>
+```
 
 ## National Spells: Na'Ba (age 2)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Evo 6 | Smokeless Flame | F3A1 | 30 | 35+ | 1 | 1 | 45+ | 1 | AP, NUW |
-| Evo 4 | Scorching Wind | A2F1 | 30 | 40 | 6+ | 0 | 0 | 1 | AN, MR, UndIm, InanimIm, NUW |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Evo 6</td><td>Smokeless Flame</td><td>F3A1</td><td>30</td><td>35+</td><td>1</td><td>1</td><td>45+</td><td>1</td><td>AP, NUW</td></tr>
+<tr><td>Evo 4</td><td>Scorching Wind</td><td>A2F1</td><td>30</td><td>40</td><td>6+</td><td>0</td><td>0</td><td>1</td><td>AN, MR, UndIm, InanimIm, NUW</td></tr>
+</tbody></table>
+```
 
 ## National Spells: Bandar Log (age 2)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Thau 6 | Celestial Music | S3 | 100 | 1 | BF | 0 | 0 | 1 | NUW |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Thau 6</td><td>Celestial Music</td><td>S3</td><td>100</td><td>1</td><td>BF</td><td>0</td><td>0</td><td>1</td><td>NUW</td></tr>
+</tbody></table>
+```
 
 ## National Spells: T'ien Ch'i (age 2)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Evo 5 | Celestial Chastisement | S3 | 20 | 20 | 0 | 100 | 8+ | 1 | AN |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Evo 5</td><td>Celestial Chastisement</td><td>S3</td><td>20</td><td>20</td><td>0</td><td>100</td><td>8+</td><td>1</td><td>AN</td></tr>
+</tbody></table>
+```
 
 ## National Spells: Caelum (age 2)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Thau 6 | Parting of the Soul | D1A1 | 40 | 30 | 0 | 100 | 15+ | 1 | AN, MR, MindIm |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Thau 6</td><td>Parting of the Soul</td><td>D1A1</td><td>40</td><td>30</td><td>0</td><td>100</td><td>15+</td><td>1</td><td>AN, MR, MindIm</td></tr>
+</tbody></table>
+```
 
 ## National Spells: Xibalba (age 2)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Thau 2 | Break the Third Soul | A1 | 20 | 30 | 0 | 5 | 20+ | 1 | AN, UndIm, InanimIm, NUW |
-| Thau 3 | Gift of the Third Soul | A1 | 20 | 20 | 0 | 0 | 0 | 1 | UndIm, InanimIm |
-| Thau 2 | Break the Second Soul | E1 | 20 | 30 | 0 | 5 | 0 | 1 | Mun, AN, NUW |
-| Thau 3 | Gift of the Second Soul | E1 | 20 | 20 | 0 | 0 | 0 | 1 | Mun |
-| Thau 2 | Break the Fourth Soul | D1 | 20 | 30 | 0 | 5 | 0 | 1 | Mun, AN, NUW |
-| Thau 3 | Gift of the Fourth Soul | D1 | 20 | 20 | 0 | 2 | 0 | 1 | Mun |
-| Blood 2 | Break the First Soul | B1 | 20 | 30 | 0 | 5 | 0 | 1 | AN, UndIm, InanimIm, NUW |
-| Blood 3 | Gift of the First Soul | B1 | 20 | 20 | 0 | 0 | 0 | 1 | UndIm, InanimIm |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Thau 2</td><td>Break the Third Soul</td><td>A1</td><td>20</td><td>30</td><td>0</td><td>5</td><td>20+</td><td>1</td><td>AN, UndIm, InanimIm, NUW</td></tr>
+<tr><td>Thau 3</td><td>Gift of the Third Soul</td><td>A1</td><td>20</td><td>20</td><td>0</td><td>0</td><td>0</td><td>1</td><td>UndIm, InanimIm</td></tr>
+<tr><td>Thau 2</td><td>Break the Second Soul</td><td>E1</td><td>20</td><td>30</td><td>0</td><td>5</td><td>0</td><td>1</td><td>Mun, AN, NUW</td></tr>
+<tr><td>Thau 3</td><td>Gift of the Second Soul</td><td>E1</td><td>20</td><td>20</td><td>0</td><td>0</td><td>0</td><td>1</td><td>Mun</td></tr>
+<tr><td>Thau 2</td><td>Break the Fourth Soul</td><td>D1</td><td>20</td><td>30</td><td>0</td><td>5</td><td>0</td><td>1</td><td>Mun, AN, NUW</td></tr>
+<tr><td>Thau 3</td><td>Gift of the Fourth Soul</td><td>D1</td><td>20</td><td>20</td><td>0</td><td>2</td><td>0</td><td>1</td><td>Mun</td></tr>
+<tr><td>Blood 2</td><td>Break the First Soul</td><td>B1</td><td>20</td><td>30</td><td>0</td><td>5</td><td>0</td><td>1</td><td>AN, UndIm, InanimIm, NUW</td></tr>
+<tr><td>Blood 3</td><td>Gift of the First Soul</td><td>B1</td><td>20</td><td>20</td><td>0</td><td>0</td><td>0</td><td>1</td><td>UndIm, InanimIm</td></tr>
+</tbody></table>
+```
 
 ## National Spells: Phaeacia (age 2)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Ench 6 | Sow Dragon Teeth | E2 | 100 | 1 | 0 | 0 | 0 | 10 | NUW Summons Spartae x10: HP 8, Prot 19, MR 13, Mor 18, Str 11, Att 12, Def 12, Prec 10, Enc 0, CS 7, MM 19, Inanim, Magic, PAmph, NNEat, PiR, CR +15, PR +25, SpSi, Wpn: Golden Spear |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Ench 6</td><td>Sow Dragon Teeth</td><td>E2</td><td>100</td><td>1</td><td>0</td><td>0</td><td>0</td><td>10</td><td>NUW</td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Spartae x10: HP 8, Prot 19, MR 13, Mor 18, Str 11, Att 12, Def 12, Prec 10, Enc 0, CS 7, MM 19, Inanim, Magic, PAmph, NNEat, PiR, CR +15, PR +25, SpSi, Wpn: Golden Spear</td></tr>
+</tbody></table>
+```
 
 ## National Spells: Vanheim (age 2)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Conj 6 | Summon Valkyries | A3D1 | 100 | 1 | 0 | 0 | 0 | 7 | NUW Summons Valkyrie x7: HP 12, Prot 13, MR 14, Mor 12, Str 11, Att 13, Def 16, Prec 13, Enc 5, CS 11, MM 20, Fly, Glamour, Sacr, Stealth 65, SpSi, Wpn: Light Lance |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Conj 6</td><td>Summon Valkyries</td><td>A3D1</td><td>100</td><td>1</td><td>0</td><td>0</td><td>0</td><td>7</td><td>NUW</td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Valkyrie x7: HP 12, Prot 13, MR 14, Mor 12, Str 11, Att 13, Def 16, Prec 13, Enc 5, CS 11, MM 20, Fly, Glamour, Sacr, Stealth 65, SpSi, Wpn: Light Lance</td></tr>
+</tbody></table>
+```
 
 ## National Spells: Ys (age 2)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Thau 3 | Geas | G2 | 20 | 25 | 0 | 100 | 0 | 1 | MR+, MindIm |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Thau 3</td><td>Geas</td><td>G2</td><td>20</td><td>25</td><td>0</td><td>100</td><td>0</td><td>1</td><td>MR+, MindIm</td></tr>
+</tbody></table>
+```
 
 ## National Spells: Arcoscephale (age 3)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Ench 6 | Sow Dragon Teeth | E2 | 100 | 1 | 0 | 0 | 0 | 10 | NUW Summons Spartae x10: HP 8, Prot 19, MR 13, Mor 18, Str 11, Att 12, Def 12, Prec 10, Enc 0, CS 7, MM 19, Inanim, Magic, PAmph, NNEat, PiR, CR +15, PR +25, SpSi, Wpn: Golden Spear |
-| Thau 3 | Rhapsody of the Dead | D1 | 20 | 15+ | 4+ | 0 | 4+ | 1 | AN, MR, MindIm, NUW |
-| Thau 3 | Rhapsody of Life | N1 | 20 | 15+ | 0 | 5 | 10+ | 1 | AN, InanimIm, MindIm, NUW |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Ench 6</td><td>Sow Dragon Teeth</td><td>E2</td><td>100</td><td>1</td><td>0</td><td>0</td><td>0</td><td>10</td><td>NUW</td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Spartae x10: HP 8, Prot 19, MR 13, Mor 18, Str 11, Att 12, Def 12, Prec 10, Enc 0, CS 7, MM 19, Inanim, Magic, PAmph, NNEat, PiR, CR +15, PR +25, SpSi, Wpn: Golden Spear</td></tr>
+<tr><td>Thau 3</td><td>Rhapsody of the Dead</td><td>D1</td><td>20</td><td>15+</td><td>4+</td><td>0</td><td>4+</td><td>1</td><td>AN, MR, MindIm, NUW</td></tr>
+<tr><td>Thau 3</td><td>Rhapsody of Life</td><td>N1</td><td>20</td><td>15+</td><td>0</td><td>5</td><td>10+</td><td>1</td><td>AN, InanimIm, MindIm, NUW</td></tr>
+</tbody></table>
+```
 
 ## National Spells: Phlegra (age 3)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Ench 6 | Sow Dragon Teeth | E2 | 100 | 1 | 0 | 0 | 0 | 10 | NUW Summons Spartae x10: HP 8, Prot 19, MR 13, Mor 18, Str 11, Att 12, Def 12, Prec 10, Enc 0, CS 7, MM 19, Inanim, Magic, PAmph, NNEat, PiR, CR +15, PR +25, SpSi, Wpn: Golden Spear |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Ench 6</td><td>Sow Dragon Teeth</td><td>E2</td><td>100</td><td>1</td><td>0</td><td>0</td><td>0</td><td>10</td><td>NUW</td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Spartae x10: HP 8, Prot 19, MR 13, Mor 18, Str 11, Att 12, Def 12, Prec 10, Enc 0, CS 7, MM 19, Inanim, Magic, PAmph, NNEat, PiR, CR +15, PR +25, SpSi, Wpn: Golden Spear</td></tr>
+</tbody></table>
+```
 
 ## National Spells: Pangaea (age 3)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Ench 0 | Tune of Fear | N1 | 5 | 0 | 25 | 0 | 0 | 1 | AN, MindIm, NUW |
-| Ench 0 | Tune of Growth | N1 | 5 | 0 | 25 | 0 | 0 | 1 | NUW |
-| Ench 0 | Tune of Dancing Death | N1 | 5 | 0 | 25 | 0 | 31+ | 1 | AN, MR, MindIm, NUW |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Ench 0</td><td>Tune of Fear</td><td>N1</td><td>5</td><td>0</td><td>25</td><td>0</td><td>0</td><td>1</td><td>AN, MindIm, NUW</td></tr>
+<tr><td>Ench 0</td><td>Tune of Growth</td><td>N1</td><td>5</td><td>0</td><td>25</td><td>0</td><td>0</td><td>1</td><td>NUW</td></tr>
+<tr><td>Ench 0</td><td>Tune of Dancing Death</td><td>N1</td><td>5</td><td>0</td><td>25</td><td>0</td><td>31+</td><td>1</td><td>AN, MR, MindIm, NUW</td></tr>
+</tbody></table>
+```
 
 ## National Spells: Pythium (age 3)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Ench 2 | Gift of the Sacred Swamp | N1H1 | 20 | 15 | 5+ | 0 | 0 | 1 |  |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Ench 2</td><td>Gift of the Sacred Swamp</td><td>N1H1</td><td>20</td><td>15</td><td>5+</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+</tbody></table>
+```
 
 ## National Spells: Lemuria (age 3)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Div 0 | Unholy Command | H1 | 0 | 10 | 0 | 0 | 0 | 1 | AN, MR- |
-| Div 0 | Unholy Protection | H1 | 0 | 20 | 1 | 100 | 0 | 1 |  |
-| Div 0 | Unholy Blessing | H1 | 0 | 20 | 1 | 100 | 0 | 1 |  |
-| Div 0 | Unholy Power | H1 | 0 | 20 | 1 | 100 | 0 | 1 |  |
-| Div 0 | Anathema | H2 | 0 | 50 | 1 | 100 | 0 | 1 |  |
-| Div 0 | Unholy Protection | H2 | 0 | 10 | 10 | 100 | 0 | 1 |  |
-| Div 0 | Unholy Blessing | H2 | 0 | 10 | 10 | 100 | 0 | 1 |  |
-| Div 0 | Apostasy | H3 | 0 | 50 | 0 | 100 | 0 | 1 | MR- |
-| Div 0 | Unholy Power | H3 | 0 | 10 | 5 | 100 | 0 | 1 |  |
-| Div 0 | Unholy Blessing | H3 | 0 | 0 | BF | 100 | 0 | 1 |  |
-| Div 0 | Protection of the | H3 | 0 | 0 | BF | 100 | 0 | 1 | MR- Shadelands |
-| Div 0 | Power of the Shadelands | H4 | 0 | 0 | BF | 0 | 0 | 1 |  |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Div 0</td><td>Unholy Command</td><td>H1</td><td>0</td><td>10</td><td>0</td><td>0</td><td>0</td><td>1</td><td>AN, MR-</td></tr>
+<tr><td>Div 0</td><td>Unholy Protection</td><td>H1</td><td>0</td><td>20</td><td>1</td><td>100</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Div 0</td><td>Unholy Blessing</td><td>H1</td><td>0</td><td>20</td><td>1</td><td>100</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Div 0</td><td>Unholy Power</td><td>H1</td><td>0</td><td>20</td><td>1</td><td>100</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Div 0</td><td>Anathema</td><td>H2</td><td>0</td><td>50</td><td>1</td><td>100</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Div 0</td><td>Unholy Protection</td><td>H2</td><td>0</td><td>10</td><td>10</td><td>100</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Div 0</td><td>Unholy Blessing</td><td>H2</td><td>0</td><td>10</td><td>10</td><td>100</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Div 0</td><td>Apostasy</td><td>H3</td><td>0</td><td>50</td><td>0</td><td>100</td><td>0</td><td>1</td><td>MR-</td></tr>
+<tr><td>Div 0</td><td>Unholy Power</td><td>H3</td><td>0</td><td>10</td><td>5</td><td>100</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Div 0</td><td>Unholy Blessing</td><td>H3</td><td>0</td><td>0</td><td>BF</td><td>100</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Div 0</td><td>Protection of the</td><td>H3</td><td>0</td><td>0</td><td>BF</td><td>100</td><td>0</td><td>1</td><td>MR- Shadelands</td></tr>
+<tr><td>Div 0</td><td>Power of the Shadelands</td><td>H4</td><td>0</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+</tbody></table>
+```
 
 ## National Spells: Ulm (age 3)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Evo 3 | Iron Darts | E1H1 | 10 | 40 | 0 | 5 | 13 | 3+ | AP, NUW |
-| Evo 6 | Iron Blizzard | E1H1 | 50 | 30 | 0 | 3 | 10 | 20+ | AP, NUW |
-| Thau 5 | Tempering the Will | E3 | 20 | 0 | BF | 100 | 0 | 1 | MR-, MindIm |
-| Ench 4 | Gift of the Moon | S1 | 20 | 30+ | 1 | 100 | 0 | 1 | Anim |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Evo 3</td><td>Iron Darts</td><td>E1H1</td><td>10</td><td>40</td><td>0</td><td>5</td><td>13</td><td>3+</td><td>AP, NUW</td></tr>
+<tr><td>Evo 6</td><td>Iron Blizzard</td><td>E1H1</td><td>50</td><td>30</td><td>0</td><td>3</td><td>10</td><td>20+</td><td>AP, NUW</td></tr>
+<tr><td>Thau 5</td><td>Tempering the Will</td><td>E3</td><td>20</td><td>0</td><td>BF</td><td>100</td><td>0</td><td>1</td><td>MR-, MindIm</td></tr>
+<tr><td>Ench 4</td><td>Gift of the Moon</td><td>S1</td><td>20</td><td>30+</td><td>1</td><td>100</td><td>0</td><td>1</td><td>Anim</td></tr>
+</tbody></table>
+```
 
 ## National Spells: Agartha (age 3)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Alt 5 | Iron Marionettes | E3 | 100 | 30 | 25 | 100 | 0 | 1 |  |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Alt 5</td><td>Iron Marionettes</td><td>E3</td><td>100</td><td>30</td><td>25</td><td>100</td><td>0</td><td>1</td><td></td></tr>
+</tbody></table>
+```
 
 ## National Spells: Marignon (age 3)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Evo 4 | Holy Pyre | F2 | 20 | 40+ | 23+ | 1 | 7+ | 1 | AP, NUW |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Evo 4</td><td>Holy Pyre</td><td>F2</td><td>20</td><td>40+</td><td>23+</td><td>1</td><td>7+</td><td>1</td><td>AP, NUW</td></tr>
+</tbody></table>
+```
 
 ## National Spells: Abysia (age 3)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Ench 5 | Inner Furnace | F3 | 100 | 0 | BF | 0 | 0 | 1 | MindIm, NUW |
-| Evo 5 | Liquid Flames of Rhuax | F3E1 | 20 | 30+ | 1 | 0 | 24+ | 1 | AP, NUW |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Ench 5</td><td>Inner Furnace</td><td>F3</td><td>100</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td>MindIm, NUW</td></tr>
+<tr><td>Evo 5</td><td>Liquid Flames of Rhuax</td><td>F3E1</td><td>20</td><td>30+</td><td>1</td><td>0</td><td>24+</td><td>1</td><td>AP, NUW</td></tr>
+</tbody></table>
+```
 
 ## National Spells: Ragha (age 3)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Thau 6 | Parting of the Soul | D1A1 | 40 | 30 | 0 | 100 | 15+ | 1 | AN, MR, MindIm |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Thau 6</td><td>Parting of the Soul</td><td>D1A1</td><td>40</td><td>30</td><td>0</td><td>100</td><td>15+</td><td>1</td><td>AN, MR, MindIm</td></tr>
+</tbody></table>
+```
 
 ## National Spells: Caelum (age 3)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Thau 6 | Parting of the Soul | D1A1 | 40 | 30 | 0 | 100 | 15+ | 1 | AN, MR, MindIm |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Thau 6</td><td>Parting of the Soul</td><td>D1A1</td><td>40</td><td>30</td><td>0</td><td>100</td><td>15+</td><td>1</td><td>AN, MR, MindIm</td></tr>
+</tbody></table>
+```
 
 ## National Spells: Gath (age 3)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Evo 4 | Strange Fire | S2F1 | 20 | 40+ | 3 | 1 | 8+ | 1 | AP, NUW |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Evo 4</td><td>Strange Fire</td><td>S2F1</td><td>20</td><td>40+</td><td>3</td><td>1</td><td>8+</td><td>1</td><td>AP, NUW</td></tr>
+</tbody></table>
+```
 
 ## National Spells: T'ien Ch'i (age 3)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Evo 5 | Celestial Chastisement | S3 | 20 | 20 | 0 | 100 | 8+ | 1 | AN |
-| Conj 1 | Call Ancestor | D1 | 20 | 1 | 0 | 0 | 0 | 1 | Summons Ancestral Spirit x1: HP 1, Prot 0, MR 11, Mor 30, Str 1, Att 8, Def 8, Prec 10, Enc 0, CS 12, MM 18, Float, Eth, Spi, Sacr, Und, PAmph, NNEat, Stealth 40, CR +15, PR +25, SpSi, Wpn: Paralyze |
-| Conj 7 | Wrath of the Ancestors | D1 | 100 | 1 | 0 | 0 | 0 | 20+ | Summons Ancestral Spirit x20+: HP 1, Prot 0, MR 11, Mor 30, Str 1, Att 8, Def 8, Prec 10, Enc 0, CS 12, MM 18, Float, Eth, Spi, Sacr, Und, PAmph, NNEat, Stealth 40, CR +15, PR +25, SpSi, Wpn: Paralyze |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Evo 5</td><td>Celestial Chastisement</td><td>S3</td><td>20</td><td>20</td><td>0</td><td>100</td><td>8+</td><td>1</td><td>AN</td></tr>
+<tr><td>Conj 1</td><td>Call Ancestor</td><td>D1</td><td>20</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Ancestral Spirit x1: HP 1, Prot 0, MR 11, Mor 30, Str 1, Att 8, Def 8, Prec 10, Enc 0, CS 12, MM 18, Float, Eth, Spi, Sacr, Und, PAmph, NNEat, Stealth 40, CR +15, PR +25, SpSi, Wpn: Paralyze</td></tr>
+<tr><td>Conj 7</td><td>Wrath of the Ancestors</td><td>D1</td><td>100</td><td>1</td><td>0</td><td>0</td><td>0</td><td>20+</td><td></td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Ancestral Spirit x20+: HP 1, Prot 0, MR 11, Mor 30, Str 1, Att 8, Def 8, Prec 10, Enc 0, CS 12, MM 18, Float, Eth, Spi, Sacr, Und, PAmph, NNEat, Stealth 40, CR +15, PR +25, SpSi, Wpn: Paralyze</td></tr>
+</tbody></table>
+```
 
 ## National Spells: Jomon (age 3)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Div 0 | Teaching Sign | H1N1 | 0 | 0 | 0 | 0 | 0 | 1 |  |
-| Div 0 | Fear-not Sign | H1A1 | 0 | 15 | 2+ | 100 | 0 | 1 |  |
-| Div 0 | Welcome Sign | H1F1 | 0 | 5 | 0 | 100 | 0 | 1 | MR- |
-| Div 0 | Earth-touching Sign | H1E1 | 0 | 20 | 0 | 100 | Death | 1 | AN, MR-, UndIm |
-| Div 0 | Meditation Sign | H1W1 | 0 | 0 | 0 | 0 | 15 | 1 |  |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Div 0</td><td>Teaching Sign</td><td>H1N1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Div 0</td><td>Fear-not Sign</td><td>H1A1</td><td>0</td><td>15</td><td>2+</td><td>100</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Div 0</td><td>Welcome Sign</td><td>H1F1</td><td>0</td><td>5</td><td>0</td><td>100</td><td>0</td><td>1</td><td>MR-</td></tr>
+<tr><td>Div 0</td><td>Earth-touching Sign</td><td>H1E1</td><td>0</td><td>20</td><td>0</td><td>100</td><td>Death</td><td>1</td><td>AN, MR-, UndIm</td></tr>
+<tr><td>Div 0</td><td>Meditation Sign</td><td>H1W1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>15</td><td>1</td><td></td></tr>
+</tbody></table>
+```
 
 ## National Spells: Xibalba (age 3)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Thau 2 | Break the Third Soul | A1 | 20 | 30 | 0 | 5 | 20+ | 1 | AN, UndIm, InanimIm, NUW |
-| Thau 3 | Gift of the Third Soul | A1 | 20 | 20 | 0 | 0 | 0 | 1 | UndIm, InanimIm |
-| Thau 2 | Break the Second Soul | E1 | 20 | 30 | 0 | 5 | 0 | 1 | Mun, AN, NUW |
-| Thau 3 | Gift of the Second Soul | E1 | 20 | 20 | 0 | 0 | 0 | 1 | Mun |
-| Thau 2 | Break the Fourth Soul | D1 | 20 | 30 | 0 | 5 | 0 | 1 | Mun, AN, NUW |
-| Thau 3 | Gift of the Fourth Soul | D1 | 20 | 20 | 0 | 2 | 0 | 1 | Mun |
-| Blood 2 | Break the First Soul | B1 | 20 | 30 | 0 | 5 | 0 | 1 | AN, UndIm, InanimIm, NUW |
-| Blood 3 | Gift of the First Soul | B1 | 20 | 20 | 0 | 0 | 0 | 1 | UndIm, InanimIm |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Thau 2</td><td>Break the Third Soul</td><td>A1</td><td>20</td><td>30</td><td>0</td><td>5</td><td>20+</td><td>1</td><td>AN, UndIm, InanimIm, NUW</td></tr>
+<tr><td>Thau 3</td><td>Gift of the Third Soul</td><td>A1</td><td>20</td><td>20</td><td>0</td><td>0</td><td>0</td><td>1</td><td>UndIm, InanimIm</td></tr>
+<tr><td>Thau 2</td><td>Break the Second Soul</td><td>E1</td><td>20</td><td>30</td><td>0</td><td>5</td><td>0</td><td>1</td><td>Mun, AN, NUW</td></tr>
+<tr><td>Thau 3</td><td>Gift of the Second Soul</td><td>E1</td><td>20</td><td>20</td><td>0</td><td>0</td><td>0</td><td>1</td><td>Mun</td></tr>
+<tr><td>Thau 2</td><td>Break the Fourth Soul</td><td>D1</td><td>20</td><td>30</td><td>0</td><td>5</td><td>0</td><td>1</td><td>Mun, AN, NUW</td></tr>
+<tr><td>Thau 3</td><td>Gift of the Fourth Soul</td><td>D1</td><td>20</td><td>20</td><td>0</td><td>2</td><td>0</td><td>1</td><td>Mun</td></tr>
+<tr><td>Blood 2</td><td>Break the First Soul</td><td>B1</td><td>20</td><td>30</td><td>0</td><td>5</td><td>0</td><td>1</td><td>AN, UndIm, InanimIm, NUW</td></tr>
+<tr><td>Blood 3</td><td>Gift of the First Soul</td><td>B1</td><td>20</td><td>20</td><td>0</td><td>0</td><td>0</td><td>1</td><td>UndIm, InanimIm</td></tr>
+</tbody></table>
+```
 
 ## National Spells: C'tis (age 3)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Div 0 | Protection of the Grave | H1 | 0 | 20 | 1 | 100 | 0 | 1 |  |
-| Div 0 | Power of the Grave | H1 | 0 | 20 | 1 | 100 | 0 | 1 |  |
-| Div 0 | Protection of the Grave | H2 | 0 | 10 | 10 | 100 | 0 | 1 |  |
-| Div 0 | Royal Power | H3 | 0 | 10 | 5 | 100 | 0 | 1 |  |
-| Div 0 | Royal Protection | H3 | 0 | 0 | BF | 100 | 0 | 1 | MR- |
-| Div 0 | Power of the Reborn King | H4 | 0 | 0 | BF | 0 | 0 | 1 |  |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Div 0</td><td>Protection of the Grave</td><td>H1</td><td>0</td><td>20</td><td>1</td><td>100</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Div 0</td><td>Power of the Grave</td><td>H1</td><td>0</td><td>20</td><td>1</td><td>100</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Div 0</td><td>Protection of the Grave</td><td>H2</td><td>0</td><td>10</td><td>10</td><td>100</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Div 0</td><td>Royal Power</td><td>H3</td><td>0</td><td>10</td><td>5</td><td>100</td><td>0</td><td>1</td><td></td></tr>
+<tr><td>Div 0</td><td>Royal Protection</td><td>H3</td><td>0</td><td>0</td><td>BF</td><td>100</td><td>0</td><td>1</td><td>MR-</td></tr>
+<tr><td>Div 0</td><td>Power of the Reborn King</td><td>H4</td><td>0</td><td>0</td><td>BF</td><td>0</td><td>0</td><td>1</td><td></td></tr>
+</tbody></table>
+```
 
 ## National Spells: Midgård (age 3)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Conj 6 | Summon Valkyries | A3D1 | 100 | 1 | 0 | 0 | 0 | 7 | NUW Summons Valkyrie x7: HP 12, Prot 13, MR 14, Mor 12, Str 11, Att 13, Def 16, Prec 13, Enc 5, CS 11, MM 20, Fly, Glamour, Sacr, Stealth 65, SpSi, Wpn: Light Lance |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Conj 6</td><td>Summon Valkyries</td><td>A3D1</td><td>100</td><td>1</td><td>0</td><td>0</td><td>0</td><td>7</td><td>NUW</td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Valkyrie x7: HP 12, Prot 13, MR 14, Mor 12, Str 11, Att 13, Def 16, Prec 13, Enc 5, CS 11, MM 20, Fly, Glamour, Sacr, Stealth 65, SpSi, Wpn: Light Lance</td></tr>
+</tbody></table>
+```
 
 ## National Spells: Erytheia (age 3)
 
-| School | Spell Name | Path | Fat | Rng | AoE | Pre | Dmg | NoE | Special |
-|---|---|---|---|---|---|---|---|---|---|
-| Ench 6 | Sow Dragon Teeth | E2 | 100 | 1 | 0 | 0 | 0 | 10 | NUW Summons Spartae x10: HP 8, Prot 19, MR 13, Mor 18, Str 11, Att 12, Def 12, Prec 10, Enc 0, CS 7, MM 19, Inanim, Magic, PAmph, NNEat, PiR, CR +15, PR +25, SpSi, Wpn: Golden Spear |
+```{=html}
+<table class="table spell-table">
+<thead><tr><th>School</th><th>Spell Name</th><th>Path</th><th>Fat</th><th>Rng</th><th>AoE</th><th>Pre</th><th>Dmg</th><th>NoE</th><th>Special</th></tr></thead>
+<tbody>
+<tr><td>Ench 6</td><td>Sow Dragon Teeth</td><td>E2</td><td>100</td><td>1</td><td>0</td><td>0</td><td>0</td><td>10</td><td>NUW</td></tr>
+<tr class="spell-desc"><td colspan="10">Summons Spartae x10: HP 8, Prot 19, MR 13, Mor 18, Str 11, Att 12, Def 12, Prec 10, Enc 0, CS 7, MM 19, Inanim, Magic, PAmph, NNEat, PiR, CR +15, PR +25, SpSi, Wpn: Golden Spear</td></tr>
+</tbody></table>
+```
 

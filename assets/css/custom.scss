@@ -34,3 +34,16 @@ pre {
 code {
   color: $code-color;
 }
+
+// Spell tables: full-width description row beneath each spell, like the manual.
+table.spell-table {
+  td, th { vertical-align: top; }
+  tr.spell-desc td {
+    font-size: 0.85rem;
+    color: #aebfce;
+    padding: 0.1rem 0.6rem 0.6rem 1.4rem;
+    border-top: 0;
+  }
+  // keep the spell's own stat row tight against its description
+  tr.spell-desc + tr td { border-top-width: 2px; }
+}
