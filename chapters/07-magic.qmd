@@ -1,132 +1,395 @@
 # Magic
 
-<!-- source: PDF p.73 -->
+If the combat system is the heart of Dominions 6, the magic system is the soul. Everything is
+affected by magic in some way. The most powerful spells can summon awesome monsters or change
+the face of the entire world. Magic can also be used to craft artifacts. Some basic points:
+
+- Spells are either **rituals**, which are cast outside of combat, or **battle magic**, which
+  is used in tactical battles.
+- Magic depends both on the path and the school of magic.
+- The path skill of a given mage is generally fixed and doesn't change easily.
+- A school is a group of spells which can be learned through research, performed in
+  laboratories.
+- Magic gems and blood slaves are needed for many spells. Gems are produced by magic sites,
+  including those in a nation's home province.
+- Gems and blood slaves can be carried by commanders or stored in a nation's pool. Labs provide
+  access to the national pool.
+- The Construction school allows for the building of magical items and artifacts.
+- There are also **Divine spells**, special battle magic spells that can be cast by priests.
 
 ## The Paths of Magical Power
 
-<!-- p.73 -->
+There are nine paths of magical power. The first four are the elemental paths of **Fire, Air,
+Water and Earth**. The next four are the sorcery paths of **Astral, Nature, Death and
+Glamour**. Finally there is the path of **Blood**, which is part of neither elemental nor
+sorcery magic.
+
+There are eight types of magical gems corresponding to one path each. There are no Blood gems
+-- Blood magic requires blood slaves, obtained through blood hunting.
+
+A fire mage can eventually learn all of the Fire spells in all schools for which he has the
+requisite magical ability, once his nation has researched them. But he cannot learn Nature or
+Earth spells unless he first gains those path skills. While magic items can increase a mage's
+skill in paths he already possesses, a mage can only acquire new paths through Empowerment.
 
 ## The Schools of Magical Research
 
-<!-- p.73 -->
+There are seven schools of magical research: **Conjuration, Alteration, Evocation,
+Construction, Enchantment, Thaumaturgy, and Blood Magic**. (The school of Blood Magic is not
+the same as the path of Blood Magic, although the two are related.) To cast a spell, (a) your
+nation must have researched the school up to the level required, (b) the mage must have
+proficiency in the required path(s), and (c) the mage must have any gems or blood slaves
+required.
 
-### Access to Magic Spells
+**Conjuration**
+: Summons powers and beings from other worlds. Many spells bring you additional units.
 
-<!-- p.74 -->
+**Alteration**
+: Changes the physical world (increased strength, fire resistance, weather changes, etc).
+
+**Evocation**
+: Projects arcane power into the physical world: fireballs, lightning bolts. Lots of battle
+magic.
+
+**Construction**
+: Determines which magic items you can craft. Some construction spells make magic units.
+
+**Enchantment**
+: Grants magical properties to men, items or the land (protective domes, long-lasting health).
+
+**Thaumaturgy**
+: Manipulates the arcane world in ways traditionally associated with sorcery (sending souls
+after a soldier, scrying distant lands).
+
+**Blood Magic**
+: All spells that use blood magic have to be unlocked by researching this school.
+
+## Access to Magic Spells
+
+Each spell has a path requirement, listed as a number of symbols. Spells that are a higher
+level in a school don't necessarily require more path skill: Will o' the Wisp is a level 5
+Conjuration spell but only requires Fire-1. Schools categorize spells but not rigorously
+(Acashic Knowledge is a Conjuration spell that searches provinces for magic gems).
 
 ### Combined Paths
 
-<!-- p.74 -->
+Some spells require knowledge of multiple paths. The mage must have the requisite level in each
+path. When calculating bonuses for extra skill levels (see Fatigue), only the first magic path
+listed is considered. Dual path spells and rituals use magic gems of the primary path.
 
-## Empowerment
+### Empowerment
 
-<!-- p.74 -->
+A mage may permanently increase his skill in any path by using Empowerment, which costs a lot
+of magic gems. For the first skill level in a path, the cost is 50 magic gems of that type. For
+subsequent increases the cost is 15 x [target level]. This is the only way to gain skill in a
+path a unit doesn't have. Magic items that increase magic skill only work if the user's skill
+in that path is at least 1 (as do battlefield spells like Power of the Spheres).
 
 ## Indirect Magic
 
-<!-- p.74 -->
+Indirect magic represents the general arcane knowledge a mage possesses about any path in which
+he has skill, giving side benefits. The more skill, the more benefit. The more powerful bonuses
+usually have a minimum skill requirement of 3 or 4. At the first level usually only increased
+leadership is gained, scaling with level.
+
+| Path | Level 1+ | Level 3+ | Level 4+ |
+|------|----------|----------|----------|
+| Fire | Ldr +10/level, Magic Ldr +10/level, Shorter life | Fire Res +5 | Fire Res +5 |
+| Air | Magic Ldr +10/level | Shock Res +5 | Shock Res +5 |
+| Water | Magic Ldr +10/level | Cold Res +5 | Cold Res +5 |
+| Earth | Magic Ldr +10/level | Natural Protection +3 | Affliction Resistance +1 |
+| Astral | Magic Ldr +20/level | -- | Magic Resistance +1 |
+| Death | Undead Ldr +50/level | Rarely dies of old age | Morale +10 |
+| Nature | Magic Ldr +10/level, Supplies +10/level, Longer life | Poison Res +5 | Poison Res +5 |
+| Glamour | Magic Ldr +10/level | False Damage Regen | True Sight |
+| Blood | Undead Ldr +10/level, Magic Ldr +10/level | HP +5 | HP +5 |
+
+: Indirect Magic bonuses
+
+The False Damage Regen from glamour heals 1 point of false damage per combat round. Indirect
+magic applies to all units with any magic skill, including pretenders.
+
+> **Example:** Playing Asphodel, Carrion Woods, you select a Freak Lord pretender with Fire 2,
+> Air 2, Water 3, Earth 4, and Blood 1. The pretender gains +20 Leadership and +20 Magic
+> Leadership (Fire 2), +20 Magic Leadership (Air 2), +5 Cold Resistance and +30 Magic Leadership
+> (Water 3), +3 Protection, +1 Affliction Resistance and +40 Magic Leadership (Earth 4), and +10
+> Undead Leadership and +10 Magic Leadership (Blood 1).
 
 ## Types of spells
 
-<!-- p.75 -->
+Spells are divided into two categories: Rituals and Battle Magic.
 
 ### Battle Magic
 
-<!-- p.75 -->
+Battle magic can only be cast during a tactical battle. It can be scripted into a mage's list
+of battle actions using Set battle orders. If a battle spell requires gems, that mage must have
+those gems in his inventory before the battle begins. Some battle spells affect the whole
+battlefield and are termed **battle enchantments**; a battle enchantment is dispelled if its
+caster dies, and all battle enchantments and temporary effects are dispelled if the battle
+lasts until sunset.
 
 #### Interrupts
 
-<!-- p.75 -->
+Spells must be prepared for a while before they can be cast; during this preparation the caster
+can be interrupted if damaged. The preparation time is about half of the time required to cast
+the spell (the other half is recovery). The chance of being interrupted is the percentage of
+full hit points caused by the damage, plus 25%. A strike inflicting half a caster's full hit
+points would have a 75% chance of interrupting.
+
+Units with the "combat caster" ability (e.g. the paladin) and mindless units are half as
+likely to be interrupted. Some monsters are innate spell casters that require no preparation
+time.
 
 #### Battle Magic mechanics
 
-<!-- p.75 -->
+The method for resolving battle magic is very similar to that for missile weapons. Mages have a
+Precision attribute, and spells have a Precision rating; for calculation these are added
+together. Some spells (Acid Bolt) are armor-piercing (Protection counts for half); some (Orb
+Lightning) are armor-negating (Protection bypassed entirely).
+
+Some spells check the target's Magic Resistance instead of Protection. Magic Resistance is most
+often binary: it either protects or it does not. Some spells (mostly Astral) require the caster
+to defeat the target's Magic Resistance:
+
+- **Caster's Penetration roll:** 11 + DRN + (additional skill in spell path) / 2
+- **Target's MR roll:** Magic Resistance + DRN + (skill in spell path) / 2
+
+The caster wins ties. "Magic resistance negates easily" gives the caster a -4 penetration
+modifier ("easy to resist"); "hard to resist" gives +4.
 
 #### Fatigue
 
-<!-- p.76 -->
+Casting spells in battle costs fatigue. For each skill level in the required path the mage
+exceeds the minimum, he incurs 1 / (1 + (mage skill - minimum skill)) of the listed spell
+fatigue. So one extra skill level means half fatigue, two means a third, three means a quarter,
+and so on.
+
+Spell casters also incur fatigue equal to their base Encumbrance + 2x the Encumbrance of any
+armor worn for each spell cast (not subject to skill reduction). Fatigue is very important for
+spell casters; higher-skill mages have an advantage. Spells like Reinvigoration or Relief can
+be very useful.
 
 ### Rituals
 
-<!-- p.76 -->
+Rituals are spells with an effect on the world map, taking an entire month (game turn) to cast.
+If a ritual requires gems, the mage may only use gems from a laboratory, and rituals can only
+be cast in provinces with labs. Some rituals affect the entire province they are cast in;
+some of these (called **local enchantments**) last longer than one turn. An example is Dome of
+Air, which persists until dispelled (or until the caster dies, or usually until the province is
+conquered). Some local enchantments have a limited duration that can be extended by adding
+extra gems during creation (usually 1 month per extra gem, some up to 3 months per gem).
 
-### Global Enchantments
+Rituals can be automated to recast each month by the same mage using `Shift+m` when selected
+in a laboratory province. If a spell didn't get cast, the most likely problem is insufficient
+gems of the correct type.
 
-<!-- p.77 -->
+## Global Enchantments
 
-#### Dispelling global enchantments
+Global enchantments are very powerful rituals that affect the entire world. Only a certain
+number (3, 5, 7, or 9, set in Game Setup) can be in effect at once (view with `F6`). When
+casting one, you can add more gems than required, because the more gems used, the harder it is
+to dispel. The maximum number of gems a mage can use to cast a ritual is his path level x 100.
 
-<!-- p.77 -->
+Like local enchantments, globals are dependent on their caster: if the caster dies, the global
+is dispelled (extra gems don't protect against assassination). Some globals are tied to a
+specific province (e.g. Stellar Focus); if that country is conquered, the global is dispelled.
+
+### Dispelling global enchantments
+
+Globals can be dispelled by casting a dispel ritual (the common one is **Dispel**, an
+Enchantment-5 spell requiring Astral-3), or by casting another global when the maximum is
+already active (replacing a random existing one). The exception: if you cast a global already
+in effect by another nation, your version tries to replace the enemy version. In order:
+
+- If there is already a global of the same name active, the new global attempts to replace it.
+- If there are fewer than the max active and not already an instance of this spell, the new
+  global immediately fills an empty slot.
+- If the maximum is already active, the new global attempts to replace a randomly chosen spell
+  (which can be one of your own).
 
 #### Dispel mechanics
 
-<!-- p.77 -->
+When Dispel is cast or a global tries to replace another, the two spells are compared:
+
+- +1 for each extra gem (above the casting requirement)
+- +5 for each level of skill by the casting mage in the spell's path above the requirement
+
+A DRN is added to each side; the higher number wins.
 
 #### Protection vs global enchantments
 
-<!-- p.78 -->
+Most globals that affect units can be protected against with Enchanted Domes (e.g. Dome of
+Solid Air), except strikeback (trap) domes. Many global enchantments only take effect inside
+their own dominion; protecting against these can be done by pushing away the enemy dominion.
 
-#### Grand Communions
+### Grand Communions
 
-<!-- p.78 -->
+Some nations have perfected the communal casting of rituals. When a mage with the Grand
+Communion ability casts a global ritual, other mages with the same ability can use the 'Grand
+Communion' order to add their skill level to the power of the ritual.
+
+> **Example:** An Arch Theurg casts dispel with 12 extra gems. Two Theurgs (astral 2 each) and
+> four Theurg Acolytes (astral 1 each) join via Grand Communion, adding 4 + 4 = 8, bringing the
+> dispel attempt's strength to 20.
 
 ## Communions
 
-<!-- p.78 -->
+The Astral and Blood paths contain a special spell type called **communion** that lets mages
+temporarily increase their magic skill in combat and distribute spellcasting fatigue among
+other friendly mages. It requires two mages: one casting the master spell, one the slave spell.
+The Astral spells are **Communion Master** and **Communion Slave**; the Blood equivalents are
+**Sabbath Master** and **Sabbath Slave** (which cost blood slaves).
 
-### Level bonus
+**Level bonus**
+: A communion master gains *n* extra levels in each of his known magic paths for every 2^n
+slaves. So a master with 2 slaves gains +1, with 4 slaves gains +2.
 
-<!-- p.78 -->
+**Fatigue distribution**
+: The fatigue assigned to each participant is the cost of the master's spell divided by the
+number of participants, modified by slave skill:
+  - slave level = master level: no modification
+  - slave level > master level: fatigue / 2
+  - slave level < master level / 2: fatigue x 4
+  - slave level < master level: fatigue x 2
 
-### Fatigue distribution
+A participant is the communion master casting the spell plus all friendly communion slaves on
+the battlefield. Slaves cannot act on their own but benefit from self-buffs cast by the
+master. If the communion breaks because all masters are dead or fled, slaves suffer a backlash:
+stunned for about one round and 3d50 fatigue damage each. Some magic items (Crystal Matrix,
+Slave Matrix, Slave's Heart, Master's Athame) let mages participate automatically without
+casting the spell.
 
-<!-- p.78 -->
+**Communal Chants:** Spellsingers of MA Man have Chorus Master and Chorus Slave (Chorus Slaves
+leave the communion when knocked unconscious).
 
-### Definition of participant
+There can be one communion of each type (communion / sabbath / chorus) active at once, with
+separate masters, slaves, and bonuses:
 
-<!-- p.78 -->
-
-### Communal Chants
-
-<!-- p.79 -->
-
-### Different Communions
-
-<!-- p.79 -->
+- **Communion:** 25% longer casting time for spells.
+- **Sabbath:** only half as much fatigue on the caster, but 20% extra fatigue on slaves.
+- **Chorus:** 25% longer casting time. Slaves drop out when losing consciousness.
 
 ## Magic Gems
 
-<!-- p.79 -->
+Gems are the physical manifestation of the paths of arcane power. They are generated by magic
+sites and added automatically to the magic resource treasury (`F7`) each turn, as long as
+there is a connection through friendly territory to a province with a laboratory.
 
-### Managing your magic resources
-
-<!-- p.79 -->
+The magic resource treasury lists all your gems and your acquisition rate. The "pool" button
+collects all gems from commanders stationed in a province with a lab (useful for blood
+hunters). You can also transfer gems between commanders.
 
 ### Using magic gems in combat
 
-<!-- p.79 -->
+Mages can use magic gems in combat to temporarily raise their skill level and to reduce
+fatigue. A mage can only use as many gems as his current skill level in that path each turn.
+Using a magic gem gains one skill level in that path (to cast a spell beyond his skill, reduce
+fatigue, or both), but a mage may never increase his skill by more than one via gems, nor gain
+skill in a path in which he had none.
+
+You may script spells the mage lacks skill for and place the necessary gems in his inventory,
+or include extra gems for the computer to use to reduce fatigue. Checking "conservative gem
+use" makes the mage use gems sparingly and for scripted spells only. Some spells increase a
+caster's skill for the whole combat duration (unlike gems, which last only one spell in one
+round).
 
 ## Research
 
-<!-- p.80 -->
+The research bars in the Arcane Laboratory (`F5`) show research progress per school. Research
+speed equals the total research abilities of all commanders ordered to research that turn, who
+must be in a province with a friendly laboratory. Normally only commanders with magic skill can
+research; the higher a mage's magic skills, the more research points.
+
+Research points are affected by Magic/Drain scales. A few nations have special researchers
+without magic skill: philosophers of Arcoscephale and Therodoros, and units with Divine
+Insights (Monks of Man, Cloistered Ladies of Feminie). Divinely-inspired researchers in a lab
+are capped at the dominion strength in the province. Philosophers get a research bonus from
+Sloth scales and are unaffected by Magic or Drain scales.
+
+- **Research ability:** (5 + (2x magic levels of mage)) +/- research bonus/penalty (never below
+  1).
+- The affliction Dementia reduces research ability by half.
 
 ### Legendary Spells
 
-<!-- p.80 -->
+Level 9 of all magic schools except construction consists of legendary spells. When you
+research this level you choose a single spell. The others can be researched too, but one at a
+time, making it very expensive to get all the level 9 spells of a school. They are usually very
+powerful or more cost-effective than lesser ones.
 
 ## Magic Items
 
-<!-- p.80 -->
+The Construction school allows you to construct magic items by giving the order "Forge Item" to
+a mage in a laboratory. The items at research level 9 are **artifacts** and are unique (only
+one of each can exist). Other items can be forged without restriction, given the appropriate
+Construction research level, skill, and gems.
+
+Unique artifacts start to **yearn** to be forged once their creation seems within reach; a
+yearning artifact can be forged at half the usual cost. An artifact may start yearning once at
+least one of these has occurred (each increases the yearning rate by 50%):
+
+- At least one nation has researched Construction level 9.
+- The global enchantment Forge of the Ancients has been cast.
+- The Throne of Creation has been claimed.
+- The Throne of the Artificer has been claimed.
+
+A mage can be set to repeatedly forge the same item every turn with `Shift+o`. Some items are
+restricted to certain nations (e.g. Black Halberd for MA Ulm) and only show up in the forge for
+those nations (with a dark blue background). Items discounted for certain nations (e.g.
+Blacksteel Sword for MA Ulm) are shown with a gray background.
 
 ## Divine Magic
 
-<!-- p.81 -->
+Divine spells are a special category that does not depend on research or magic paths. Instead,
+they depend on the **Holy** skill of the caster, available to priests or other units with at
+least one level of Holy skill. All common divine spells are available to all nations at the
+start of the game. All divine magic consists of battlefield spells.
+
+Some divine spells depend on the magic skills of the pretender god. The spells **Banishment**
+and **Smite** have alternative versions that replace the originals if the pretender is
+particularly skilled (level 4 or higher) in one magic path. The highest magic skill of the
+pretender determines the replacement; in case of a tie, the order below decides. If a
+pretender's magic does not reach the threshold in any path, priests retain Banishment and Smite
+as normal.
+
+> **Example:** The priests of a pretender with 6 Air, 4 Earth, and 6 Death would know Wind of
+> Memories and Heavenly Strike instead of Banishment and Smite.
+
+| Path | Smite replacement | Special Effect |
+|------|-------------------|----------------|
+| Fire | Heavenly Fire | 10 armor-negating fire damage is a secondary effect. |
+| Air | Heavenly Strike | Range 50. 5 armor-negating shock damage. |
+| Water | Watery Death | Slightly shorter range. 10 armor-negating drowning damage is a secondary effect. |
+| Earth | Word of Stone | Slightly shorter range. Petrification is a secondary effect. |
+| Astral | Word of Power | Range 100. Secondary effect can paralyze non-mindless units. |
+| Death | Syllable of Death | Slightly shorter range. Secondary effect can kill living beings or exhaust them. |
+| Nature | Word of Thorns | Reduces damage. Entanglement and bleeding as secondary effect. |
+| Glamour | Word of Bewilderment | Confusion as secondary effect. |
+| Blood | Claim Life | Can only target living beings. Increased damage. Gives Chest Wound affliction as a secondary effect. |
+
+: Divine spells replacing Smite
+
+| Path | Banishment replacement | Special Effect |
+|------|------------------------|----------------|
+| Fire | Ashes to Ashes | Causes burning as a secondary effect. |
+| Air | Wind of Memories | Increased range, much increased area of effect, lower damage. |
+| Water | Purifying Water | Increased area of effect, slightly lower damage. Secondary effect causes additional armor-piercing damage (mostly harms unarmored targets). |
+| Earth | Pull from the Grave | Causes Earth Grip as a secondary effect. |
+| Astral | Stellar Decree | Increase range and area of effect, but slightly lower damage. Secondary effect stuns undead with their minds intact. |
+| Death | Decree of the Underworld | Secondary effect causes bewilderment of undead with their minds intact. |
+| Nature | Final Rest | Reduced area of effect, easily resisted but kills targets. |
+| Glamour | Return of the Past | Increased range and area of effect, slightly lower damage. Extra secondary damage that only affects non-mindless undead. |
+| Blood | (none) | There is no Blood Magic spell that replaces Banishment. |
+
+: Divine spells replacing Banishment
 
 ## Alchemy
 
-<!-- p.81 -->
+Magic gems can be converted from one type to another through alchemy, by any commander with
+magical skill (in a province with a friendly laboratory) using the "Alchemy" order. In general,
+alchemy can only convert gems into Astral gems, or convert Astral gems into gems of any other
+type, at a rate of 2:1 (old:new). Converting to Astral and then to another type in a single
+turn is effectively 4:1, so it gets expensive.
 
-
-::: callout-note
-Transcription pending.
-:::
+Alchemy is also possible through magic: ritual Earth and Fire spells of the Alteration school
+convert gems to gold (rather than gems to pearls).
