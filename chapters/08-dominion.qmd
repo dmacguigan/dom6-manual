@@ -1,88 +1,341 @@
 # Dominion
 
-<!-- source: PDF p.82 -->
+The pretenders of Dominions 6 aspire to godhood. Dominion represents this belief in god
+separately from military control, as a force that extends with varying strength from province
+to province.
+
+Friendly dominion (i.e. yours) shows up on the map as a white candle in the province. The
+extent of your dominion is represented by the number of candles. Dominion is measured by
+province: you may have high dominion in one province but low dominion in an adjacent one. You
+can only see the candle symbol for provinces where you have some way of getting information.
+
+Be clear on one point: conquering provinces does not expand your dominion. Your armies can
+march across entire continents without changing the dominion in the provinces they've
+conquered. While a military banner denotes one type of control, dominion depicts another. The
+take-home points are:
+
+- Dominion is not related to military control.
+- Your dominion is represented by white candles; its reach is shown by the yellow border
+  around the provinces it covers.
+- The initial strength of your pretender's dominion (set in god creation) is very important.
+  Once set, you can increase it by building temples.
+- Your god spreads dominion wherever he goes. You can appoint one (and only one) prophet, who
+  spreads dominion too.
+- Temples spread dominion (except for certain nations who must use blood sacrifice) and
+  building them is important.
+- Priests can raise dominion by preaching, which is different from the other types of spread.
+- Some nations can sacrifice blood slaves to spread dominion.
+- The level of your dominion scales in a province is related to the strength of your dominion.
+- In a disciple (team) game, your side only has one overall dominion, and disciples spread
+  dominion like prophets do. You cannot appoint a prophet in a disciple game; the pretenders of
+  disciple nations are treated as prophets of the god nation.
 
 ## Maximum dominion
 
-<!-- p.83 -->
+The maximum dominion you can have in any one of your provinces is equal to the initial dominion
+score of your pretender, plus one for every (five times the number of players on the team)
+temples you have, rounded down.
 
-## Enemy dominion
+> **Example:** In a four-player game with two players per team, your nation has 12 temples and
+> a pretender with an initial dominion score of 3. Your nation can never have more than dominion
+> 4 in any province.
 
-<!-- p.83 -->
+### Enemy dominion
+
+Any dominion that is not yours is enemy dominion, shown on the map as a dark candle if you
+press `Ctrl-3`. Only one nation can have dominion in a single province at a time, so if a
+province is at -3 dominion to you, it is -3 to everyone except the nation exerting +3 dominion
+there.
 
 ## Increasing your dominion
 
-<!-- p.83 -->
+Dominion radiates outward from its four sources: your pretender, your capital, your temples,
+and your prophet (if you have one). In a team game it also radiates from disciples, and in a
+game with Thrones of Ascension, from those as well. This is why your dominion is almost always
+high in and immediately adjacent to your home province: every turn, the game checks for
+dominion spread in your home province.
+
+The chance of your dominion increasing partly depends on your god's initial dominion:
+
+`Chance of increasing dominion = 50% + (maximum dominion * 5%)`
+
+> **Example:** In a game with no teams, a nation has eight temples and a pretender with an
+> initial dominion of 7. Each turn, each temple has a 90% chance of successfully increasing the
+> god's dominion. Building two more temples (to ten) raises the chance per temple to 95%.
+
+This "temple check" is the fundamental unit of dominion increase. Your centers of dominion have
+the following effects:
+
+- **Pretender:** one automatic increase plus two temple checks
+- **Home province:** one temple check
+- **Prophet:** one temple check
+- **Temple:** one temple check
+- **Disciple:** one temple check
+- **Throne of Ascension:** see below
 
 ### Dominion over water
 
-<!-- p.83 -->
+Dominion spread that goes to a random province is less likely to cross water borders. If the
+random target province is a sea province and the origin is not (or vice versa), there is a 50%
+chance that another random province is selected instead.
 
 ### Appointing a prophet
 
-<!-- p.83 -->
+One unit can be named as the prophet of your pretender (except in disciple games). The prophet
+gains:
+
+- If already a priest of level 3 or more, its priest level is increased by 1; otherwise it
+  becomes a level 3 priest, regardless of whether it was a priest before.
+- The prophet spreads dominion like a temple.
+- +2 to Attack, Defence & Precision skills.
+- HP, Str and MR influenced by dominion, just like a pretender god.
+
+### Thrones of Ascension
+
+Provinces with Thrones of Ascension only come into play if the "Thrones of Ascension" victory
+condition is selected (the default). If so, a throne spreads dominion for the owning player as
+though it were a temple, causing anywhere from 1 to 7 temple checks (varies from throne to
+throne). A throne must be claimed to spread dominion, and can only be claimed by a pretender,
+prophet, or level 3 priest using the Claim Throne of Ascension order.
 
 ### Mictlan
 
-<!-- p.84 -->
+The nation of Mictlan in the early and late eras is an exception: its home province, prophet,
+and temples do not spread dominion, and its pretender checks are half as effective. The only
+way for Mictlan to spread dominion (aside from the pretender) is blood sacrifice. Several other
+nations can also spread dominion through blood sacrifices, but their pretenders, prophets, home
+provinces, and temples function normally; for them, blood sacrifices are in addition to normal
+spread.
 
 ### Blood Sacrifices
 
-<!-- p.84 -->
+To conduct a blood sacrifice, a priest of the appropriate nation can sacrifice a number of
+blood slaves up to and including his priest level, in a province containing a temple. For each
+blood slave sacrificed, one temple check is generated. Thus, blood sacrifices can be a powerful
+method of spreading dominion.
 
-### Dominion spread
+## Dominion spread
 
-<!-- p.84 -->
+When a "temple check" occurs:
 
-### Preaching the Word of God
+- If the dominion in the province is **neutral**, dominion increases to +1 automatically.
+- If the province contains **friendly** dominion, the chance to increase by one is 30% minus
+  (3% x current friendly dominion). The higher your dominion, the less likely a random spread
+  increases it. If not increased, the spread goes to a random neighboring province.
+- If the province contains **enemy** dominion, there is a chance to reduce it by one point:
+  `Chance of reducing enemy dominion = 50% + (maximum dominion * 5%) - (current enemy dominion * 5%)`
 
-<!-- p.84 -->
+High enemy dominion is harder to reduce than low. A series of high dominion provinces can act
+as a "wall of faith" that keeps enemy dominion out. Each dominion spread in a province with
+friendly dominion either increases that level or makes a new spread in a random neighbor, so a
+temple check can spread dominion far away as long as all provinces in between have friendly
+dominion.
 
-#### Inquisitor bonus
+## Preaching the Word of God
 
-<!-- p.85 -->
+This order, available to priests, raises the dominion level in their province only. The base
+chance is 30% x priest level. If preaching in a province with enemy dominion, this is reduced.
+If there is a temple in that province, the priest is treated as half a level higher.
 
-#### Heretics
+`Chance of successful preaching = 30% * (priest level (+1/2 for temple)) - (enemy dominion) * 5%`
 
-<!-- p.85 -->
+> **Example:** A level 1 priest preaching in a province with -4 dominion has a 10% chance of
+> increasing his dominion (reducing the enemy from -4 to -3). In neutral or friendly dominion,
+> he would have 30%. With a friendly temple, those become 25% and 45%.
+
+Preaching is independent of pretender dominion strength, depending only on priest level and
+enemy dominion. Preaching can only raise dominion as high as twice the level of the priest (so
+a level 2 priest cannot raise dominion above 4, or above 5 with a temple). This increase is in
+addition to the temple's spread check but only affects that province (it cannot spread to a
+neighbor). The chance of reducing enemy dominion when preaching cannot go below 5%.
+
+### Inquisitor bonus
+
+Inquisitors are more effective at preaching in enemy dominion: their priest level counts as
+double for preaching. Their chance of increasing dominion is (60% x priest level) - (5% x enemy
+dominion level). So a Marignon inquisitor of level 2 would have a 100% chance in a province
+with -4 dominion, but the normal 60% in neutral or friendly dominion.
+
+If the dominion is already as high or higher than twice the priest's level and you give a
+Preach order, a warning appears, but the order will still be set to "Preach" (with no effect).
+The game will not warn you when a previously useful preacher stops being useful, so track this
+yourself.
+
+### Heretics
+
+Heretics spread lies or uncomfortable truths detrimental to faith. Their presence has a chance
+of automatically lowering any pretender's dominion in a province. Heretics are detrimental to
+your dominion, but can be sent into enemy lands (if stealthy) to reduce faith in the enemy god.
+
+`Chance of reducing dominion = Heretic Ability * 20%`
 
 ## Dominion effects
 
-<!-- p.85 -->
+A number of things depend on the state of dominion in a province. Units fighting in friendly
+dominion gain +1 morale; in enemy dominion, -1 morale. A pretender (and prophet) gains hit
+points, strength, and magic resistance in friendly dominion, and suffers penalties in enemy
+dominion, proportional to the dominion level.
 
 ### Dominion scales
 
-<!-- p.85 -->
+The dominion scales you choose when creating your pretender spread with your dominion, but not
+all at once: with Order 3, provinces with low friendly dominion may only gain Order 1 or 2.
+Each turn a province has your dominion, there is a small chance for each scale to tip one step
+toward your chosen scale:
 
-#### Effects of Dominion Scales
+`Chance = (5% * dominion level in the province) + (10% * difference between the actual scale and your nation's scale)`
 
-<!-- p.85 -->
+A big difference makes provincial scales react more quickly; a strong dominion also speeds it
+up (but only half as important as the difference).
 
-#### Heat/Cold scale variability
+The default starting research at neutral Magic/Drain scales is 150 points. The default chance
+of receiving a nation hero is 3% per month.
 
-<!-- p.86 -->
+| Scale | Effect |
+|-------|--------|
+| Order | Increases income by 3%, Resources +2%, Recruitment +10%, Unrest reduction +1, 2% fewer random events |
+| Turmoil | Decreases income by 3%, Resources -2%, Recruitment -10%, Unrest reduction -1, 2% more random events |
+| Productivity | Increases income by 3% and resources by 15% |
+| Sloth | Decreases income by 3% and resources by 15% |
+| Heat/Cold | Each step of heat/cold level away from a race's ideal level decreases tax revenues by 5% and decreases supplies by 10% |
+| Growth | Increases population growth by 0.2% per month, Increases supplies by 10%, Increases income by 1% |
+| Death | Decreases population growth by 0.2% per month, Decreases supplies by 10%, Decreases income by 1% |
+| Fortune | 5% more random events, Chance of a random event being good increased by 10%, Chance of national hero +0.5% |
+| Misfortune | 5% more random events, Chance of a random event being good decreased by 10%, Chance of national hero -0.5% |
+| Magic | Makes spells harder to resist (-0.5 MR per scale rounded down, to all units in a province), All spellcasting generates 10% less fatigue per scale, Gives all friendly mages +1 research points per scale, +50 points of starting research per scale |
+| Drain | Makes spells easier to resist (+0.5 MR per scale rounded down, to all units in a province), All spellcasting generates 10% more fatigue per scale, Gives all mages -1 research points per scale, -50 points of starting research per scale |
 
-#### Extreme heat/cold scales
+: Effects of dominion scales
 
-<!-- p.86 -->
+### Extreme dominion scales
+
+Scales with extreme values (4 or higher) can have additional, often negative effects. Most
+negative scales (sloth, misfortune) have no additional negative effect; having 5 in a negative
+scale is usually bad enough. Scales of 4 or higher also start to spread to neighboring
+provinces, even those in another Pretender's Dominion.
+
+| Scale | Value | Effect |
+|-------|-------|--------|
+| Order | 4+ | People lack creativity. Magic research -2 (or -4 with order 5). |
+| Productivity | 4+ | People get unruly. Unrest increases 1-5/month (or 1-15/month for productivity 5). |
+| Heat | 4+ | Decrease population by 0.4% per month (or 1% with heat 5). |
+| Cold | 4+ | Decrease population by 0.4% per month (or 1% with cold 5). |
+| Death | 4+ | Slowly turns forests & farms into plains and plains into wastelands. |
+| Growth | 4+ | Slowly turns plains into forests or farms (order scale required for farms) and seas into kelp forests. |
+| Growth | 5 | Slowly turns farms into forests. |
+| Fortune | 4+ | Decreases income and resources by 5% (or 15% with fortune 5). |
+| Magic | 4+ | Horrors thrive here and horror marks start to appear. Unrest increases 1-5/month (1-15 for magic 5). |
+
+: Extreme dominion scales
+
+### Heat/Cold scale variability
+
+The heat scale of a province is affected by the current season and terrain in addition to
+dominion. Summer makes it one step warmer and winter one step colder (cave and outer planar
+provinces are not affected by seasons). Deep seas are always at neutral temperature, and other
+seas can only get one step of cold or heat.
+
+**Extreme heat/cold scales** kill off population like a high death scale. Some nations reduce
+this: Abysia likes extreme heat, Niefelheim likes extreme cold. The heat/cold scale in a
+province with a fort counts as one or two steps less for the population-killing effect for these
+nations.
 
 ### Pretender and prophet hit points
 
-<!-- p.86 -->
+For each level of friendly dominion in a province, a prophet and/or pretender gains +1 strength,
++1/2 magic resistance, and +10% hit points. For every level of enemy dominion, they lose -1
+strength, -1/2 magic resistance, and -10% hit points (hit points cannot be reduced below 10% of
+the total).
 
 ## Dominion victory
 
-<!-- p.87 -->
+The most powerful use of dominion is to win the game. If a pretender has no friendly dominion
+anywhere on the map, he or she is eliminated. This is the **Tinkerbell Effect**: if no one
+believes in you, you cease to exist.
 
-### Dominion strategy
+This is more useful than it seems: if you're facing a pretender in his last fortress with a
+strong defending army, you may not need to storm it at all. Instead, besieging the fortress
+while reducing the enemy dominion with your own pretender can wipe him out without a battle.
+Note this refers to all of his dominion everywhere, not just the dominion in his province.
 
-<!-- p.87 -->
+## Dominion strategy
+
+To spread dominion, you have to build temples, preach, or both. Because you can only build
+temples in friendly provinces, and your priests can't enter enemy provinces and survive unless
+they have stealth (like the priests of Man), you need to expand your borders through military
+force in order to spread your religion.
 
 ## Special Dominions
 
-<!-- p.87 -->
+Some nations historically had special dominions with additional effects:
 
+**Arcoscephale (all eras)**
+: Scries on all provinces under its dominion. This scrying is very accurate and reveals enemy
+units using glamour to hide. The information is available to disciple players as well.
 
-::: callout-note
-Transcription pending.
-:::
+**Mictlan, Reign of Blood (early era) / Mictlan, Blood and Rain (late era)**
+: May blood sacrifice. Also has **dying dominion**, meaning it will not spread dominion from
+temples etc. like other nations (affects only this nation regardless of being disciple or god).
+
+**Yomi (early era)**
+: Oni (wild, mischievous demons) appear in all temples inside Yomi's dominion. A high Turmoil
+scale increases the number. The strength of Yomi's dominion does not affect this (as long as it
+is at least 1). The temple's location determines the type (mountains or highlands are required
+for the most powerful types). Oni generals also attract least-powerful Oni in provinces with
+Turmoil or Unrest. Disciples to Yomi do not get this feature.
+
+**R'lyeh, Dreamlands (late era)**
+: Spreads insanity to all non-void beings; madmen emerge to help. Over time, madmen and dreamers
+partly cross into the world of dreams and become void dreamers. Disciple players are slightly
+protected from madness, but far from adequately.
+
+**Ermor, Ashen Empire (middle era)**
+: The dead rise to serve Ermor and the living die so they can rise later. Disciple players start
+with full population, but it dies quickly and undead rise instead. Ermor's dominion also senses
+any unburied corpses in the provinces it covers.
+
+**Asphodel, Carrion Woods (middle era)**
+: The living die and are animated by vines and roots. Manikins rise from the corpses of humans,
+animals, satyrs, harpies, minotaurs, and others. Disciples get this effect too.
+
+**C'tis, Miasma (middle era)**
+: Causes heavy rain that lasts for months, turning the land into soggy wetlands where mosquitoes
+and diseases thrive. All warm-blooded beings without swamp survival are affected by diseases,
+and enemy provinces under this dominion have severely reduced income (C'tis-owned provinces gain
+slightly). All provinces (except seas) slowly turn into swamps or drip caves. Disciples' sacred
+troops are immune; underwater provinces are not affected.
+
+**Agartha, Golem Cult (middle era)**
+: Constructs have increased hit points in this dominion (helping disciples and enemies alike if
+they have constructs).
+
+**May blood sacrifice to increase dominion** (Abysia (all eras); Marverni, Time of Druids;
+Sauromatia, Amazon Queens; Pangaea, Age of Revelry; Vanheim, Age of Vanir; Hinnom, Sons of the
+Fallen; Berytos, Phoenix Empire; Xibalba, Vigil of the Sun (early); Pyrene, Time of the
+Akelarre; Vanheim, Arrival of Man; Nidavangr, Bear, Wolf and Crow (middle); Marignon, Conquerors
+of the Sea; Midgard, Age of Men; Gath, Last of the Giants; Xibalba, Return of the Zotz (late))
+: This ability is not transferred to disciple nations, though disciple nations with the ability
+can still use it. These nations do not have dying dominion. (Note: Marverni has no blood mages,
+so it will have a very hard time finding blood slaves.)
+
+**Phaeacia, Dark Ships (middle era)**
+: All of Phaeacia's commanders can sail if both origin and destination provinces are in friendly
+dominion. The Dark Vessels ability cannot be transferred to other nations.
+
+**Therodos (early era)**
+: Population dies off slowly. Friendly forts under this dominion generate ghosts that help the
+Pretender God. In disciple games this affects the disciples too.
+
+**Mekone (early era)**
+: The dominion is extra efficient at suppressing other faiths. When removing enemy dominion,
+Mekone's maximum strength counts as one higher than it really is.
+
+**Phlegra (middle and late era)**
+: All provinces under Phlegra's dominion have their unrest increased every turn (higher dominion
+strength yields a greater increase). In a disciple game this only takes effect if Phlegra is the
+Pretender God.
+
+**Ubar (early era) / Na'Ba (mid era) / Ind (middle era) / Feminie (late era)**
+: This dominion hides the province name and ownership from enemies unless they investigate more
+closely. Scouts must enter the province to see through this illusion; scouts in nearby provinces
+see it as an independent province with a false name. Disciples benefit from the effect too.
