@@ -55,7 +55,7 @@ def page_lines(p):
     return f.read_text().splitlines() if f.exists() else []
 
 
-def main():
+def main(first=INDEX_FIRST, last=INDEX_LAST):
     toc = load_toc()
     starts = {pg: name for name, pg in toc}
     out = []
@@ -81,7 +81,7 @@ def main():
         rows = []
         table_open = False
 
-    for p in range(INDEX_FIRST, INDEX_LAST + 1):
+    for p in range(first, last + 1):
         lines = page_lines(p)
         nation_title = starts.get(p)
         for raw in lines:
@@ -130,4 +130,7 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    if len(sys.argv) >= 3:
+        main(int(sys.argv[1]), int(sys.argv[2]))
+    else:
+        main()
